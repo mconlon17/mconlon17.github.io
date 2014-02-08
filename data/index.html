@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<link rel="shortcut icon" type="image/x-icon" href="/assets/ico/favicon.ico">  
+	<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/assets/css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="/assets/css/blog.css" rel="stylesheet">
+
+    <title>Some VIVO Data Things</title>
+	
+	<style>
+	/* Move down content because we have a fixed navbar that is 50px tall */
+	body {
+		padding-top: 50px;
+		padding-bottom: 20px;
+	}
+	</style>
+	
+  </head>
+
+  <body role="document">
+  
+  <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Some VIVO Things</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+  
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+	<div class="jumbotron">
+      <div class="container">
+        <h1>Some VIVO Data Things</h1>
+		<p class="lead">Tools for loading data into VIVO and managing data in your VIVO.</p>
+      </div>
+	</div class="jumbotron">
+	
+	<!-- Here's the blog -->
+	
+	<div class="container">
+	
+		<div class="row">
+		
+			<div class="col-sm-8 blog-main">
+			
+				<div class="blog-post">
+					<a id="vivotools"></a><h2 class="blog-post-title">VIVO Tools</h2>
+									
+					<p>VIVO Tools is general purpose Python software library for developing software related to VIVO.
+					At the University of Florida (UF), we use VIVO Tools to write ingest scripts, maintenance scripts,
+					reports, and much more.  <a href="http://github.com/mconlon17/vivotools" 
+					class="btn btn-default btn-success">Download</a></p>
+				</div>
+				
+				<div class="blog-post">
+					<h2 class="blog-post-title">VIVO Name Parts</h2>
+									
+					<p>At UF we had a bit of a problem in our VIVO.  UF likes to store names in strings, for example, 
+					"Conlon, Michael." We had loaded data from a variety of sources using a variety of methods.
+					For some of our data management tools, it was important that VIVO have values for name parts such as
+					foaf:firstName.  We wrote a small script using <a href="#vivotools>VIVO Tools</a> that reads name 
+					strings in rdfs:label assertions in VIVO, parses
+					the name into parts, and makes the appropriate name parts assertions.  <a href="http://github.com/mconlon17/vivo-name-parts" 
+					class="btn btn-default btn-success">Download</a></p>
+				</div>
+			
+			</div><!-- End the blog-main -->
+			
+				<div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+					<div class="sidebar-module sidebar-module-inset">
+						<h4>About VIVO</h4>
+						<p>VIVO is an open source, semantic web application for organizing information.  
+						VIVO is often used by academic institutions to represent the scholarly work
+						of their faculty, staff and students. See <a href="http://vivoweb.org" class="btn
+						btn-xs btn-info">the 
+						VIVO Project Web Site</a> for more info.</p>
+					</div>
+					
+					<div class="sidebar-module">
+						<h4>Good stuff</h4>
+						<ol class="list-unstyled">
+						  <li><a href="http://python.org">Python</a></li>
+						</ol>
+					</div>
+					
+					<div class="sidebar-module">
+						<h4>Elsewhere</h4>
+						<ol class="list-unstyled">
+						  <li><a href="https://github.com/mconlon17">GitHub</a></li>
+						  <li><a href="http://twitter.com/mconlon17">Twitter</a></li>
+						  <li><a href="http://facebook.com/mconlon">Facebook</a></li>
+						  <li><a href="http://vivo.ufl.edu/individual/mconlon">VIVO</a></li>
+						</ol>
+					</div>
+			</div><!-- /.blog-sidebar -->
+			
+		</div><!-- End blog row -->
+
+		<hr>
+
+		<footer>
+		<p>&copy; <a href="http://vivo.ufl.edu/individual/mconlon">Mike Conlon</a>, 
+		<a href="http://www.ufl.edu">University of Florida</a> 2014</br>
+		Need something else?  We'll have some additional links here</br>
+		<a href="http://vivoweb.org">The VIVO Project Web Site</p>
+		</footer>
+
+	</div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
