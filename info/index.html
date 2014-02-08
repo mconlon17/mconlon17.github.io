@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<link rel="shortcut icon" type="image/x-icon" href="/assets/ico/favicon.ico">  
+	<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/assets/css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="/assets/css/blog.css" rel="stylesheet">
+
+    <title>Some VIVO Things Blog</title>
+	
+	<style>
+	/* Move down content because we have a fixed navbar that is 50px tall */
+	body {
+		padding-top: 50px;
+		padding-bottom: 20px;
+	}
+	</style>
+	
+  </head>
+
+  <body role="document">
+  
+  <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Some VIVO Things</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+  
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+	<div class="jumbotron">
+      <div class="container">
+        <h1>Some VIVO Things Blog</h1>
+		<p class="lead">General musings on the community, the software, the data,
+		the semantic web, applications, data management, institutional and scholarly use, updates,
+		and whatever else comes to mind.</p>
+      </div>
+	</div class="jumbotron">
+	
+	<!-- Here's the blog -->
+	
+	<div class="container">
+	
+		<div class="row">
+		
+			<div class="col-sm-8 blog-main">
+			
+				<div class="blog-post">
+					<h2 class="blog-post-title">Getting Started</h2>
+					<p class="blog-post-meta">February 8, 2014 by <a href="http://vivo.ufl.edu/individual/mconlon">Mike</a></p>
+					
+					<p>I've never done a blog before, so please bear with me.  Seems like there's a lot
+					to share about happenings in the VIVO community, tools development and data management.</p>
+					<p>I'm particularly interested in data.  For VIVO, it's usually data about scholarship --
+					representing scholarly activity in all its forms. At the University of Florida (UF for short),
+					we have started with basic data -- people and their departments, grants and their investigators,
+					papers and their authors, courses and their instructors.  As others have found, institutional data
+					can be messy, or flat out missing.  I'll share experiences about data in blog posts to come.</p>
+					<p>To get data in to VIVO, you'll need some tools.  As delivered, VIVO does not have simple tools
+					that can take your institutional data and load it into VIVO.  UF has built some tools that you may find
+					useful.  We'll talk about those tools in the blog, and have them available on the "data in" section of
+					of this site.</p>
+					<p>Once you have data in, you'll want to use it.  After all, isn't this why anyone would go to
+					the trouble to put in any computer system?  Using VIVO means seeing the data.  VIVO comes with profile
+					pages, some navigation aids, and some simple visualizations.  But there is quite a lot more that
+					you will want to do.  UF has built some tools for seeing the data in VIVO -- additional visualizations,
+					inspectors, reports, and graphs.  We build these tools <em>outside</em> of VIVO.  That is, we build the
+					tools using lightweight technology independent of VIVO.  This makes the tools easy to use on any
+					VIVO.  As we mature, we expect that you will be able to use our tools by merely "pointing" them at
+					your VIVO, that is, you won't need to run any local software at all.  Just access our existing tools.
+					<p>Here I'll be writing (blogging?) about what we've done, the tools we've created, and tools
+					we are creating to make use of the data in VIVO.  I'll point at the repos of the software.<p>
+					<p>I hope you find something useful.</p>
+				</div><!-- End Post -->
+			
+			</div><!-- End the blog-main -->
+			
+				<div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+					<div class="sidebar-module sidebar-module-inset">
+						<h4>About VIVO</h4>
+						<p>VIVO is an open source, semantic web application for organizing information.  
+						VIVO is often used by academic institutions to represent the scholarly work
+						of their faculty, staff and students. See <a href="http://vivoweb.org" class="btn
+						btn-xs btn-info">the 
+						VIVO Project Web Site</a> for more info.</p>
+					</div>
+					<div class="sidebar-module">
+						<h4>Archives</h4>
+						<ol class="list-unstyled">
+						  <li><a href="#">February 2014</a></li>
+						</ol>
+					</div>
+					<div class="sidebar-module">
+						<h4>Elsewhere</h4>
+						<ol class="list-unstyled">
+						  <li><a href="https://github.com/mconlon17">GitHub</a></li>
+						  <li><a href="http://twitter.com/mconlon17">Twitter</a></li>
+						  <li><a href="http://facebook.com/mconlon">Facebook</a></li>
+						  <li><a href="http://vivo.ufl.edu/individual/mconlon">VIVO</a></li>
+						</ol>
+					</div>
+			</div><!-- /.blog-sidebar -->
+			
+		</div><!-- End blog row -->
+
+		<hr>
+
+		<footer>
+		<p>&copy; <a href="http://vivo.ufl.edu/individual/mconlon">Mike Conlon</a>, 
+		<a href="http://www.ufl.edu">University of Florida</a> 2014</br>
+		Need something else?  We'll have some additional links here</br>
+		<a href="http://vivoweb.org">The VIVO Project Web Site</p>
+		</footer>
+
+	</div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
