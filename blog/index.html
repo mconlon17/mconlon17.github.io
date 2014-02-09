@@ -14,11 +14,20 @@
     <title>Some VIVO Things Blog</title>
 	
 	<style>
-	/* Move down content because we have a fixed navbar that is 50px tall */
 	body {
-		padding-top: 50px;
-		padding-bottom: 20px;
-	}
+		padding-top: 70px;
+		padding-bottom: 30px;
+		}
+
+	.theme-dropdown .dropdown-menu {
+		display: block;
+		position: static;
+		margin-bottom: 20px;
+		}
+
+	.theme-showcase > p > .btn {
+		margin: 5px 0;
+		}
 	</style>
 	
   </head>
@@ -61,16 +70,16 @@
         </div><!--/.nav-collapse -->
       </div>
     </div>
+	
+	<div class="container theme-showcase" role="main">
   
     <!-- Main jumbotron for a primary marketing message or call to action -->
 	<div class="jumbotron">
-      <div class="container">
         <h1>Some VIVO Things Blog</h1>
 		<p class="lead">General musings on the community, the software, the data,
 		the semantic web, applications, data management, institutional and scholarly use, updates,
 		and whatever else comes to mind.</p>
-      </div>
-	</div class="jumbotron">
+    </div>
 	
 	<!-- Here's the blog -->
 	
@@ -137,14 +146,15 @@
 			</div><!-- /.blog-sidebar -->
 			
 		</div><!-- End blog row -->
+		</div><!-- End blog container -->
 
 		<hr>
 
 		<footer>
 		<p>&copy; <a href="http://vivo.ufl.edu/individual/mconlon">Mike Conlon</a>, 
 		<a href="http://www.ufl.edu">University of Florida</a> 2014</br>
-		Need something else?  We'll have some additional links here</br>
-		<a href="http://vivoweb.org">The VIVO Project Web Site</p>
+		VIVO is an incubated project of <a href="http://duraspace.org">Duraspace</a></br>
+		Visit the <a href="http://vivoweb.org">The VIVO Project Web Site</p> and <a href="https://wiki.duraspace.org/display/VIVO/VIVO+Main+Page">The Duraspace VIVO Wiki</a>
 		</footer>
 
 	</div> <!-- /container -->
