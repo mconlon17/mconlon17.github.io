@@ -1,0 +1,18 @@
+# Find UF papers published in 2013 that appeared in the
+# 10 journals with the highest impact factors
+SELECT ?uri ?issn
+WHERE {
+	?uri a bibo:AcademicArticle .
+	?uri vivo:dateTimeValue ?dtv .
+	?dtv vivo:dateTime ?dt .
+	FILTER (regex(?dt,"^2013"))
+	?uri vivo:hasPublicationVenue ?journal .
+	?journal bibo:issn ?issn .
+	FILTER (?issn = "0028-4793" || ?issn = "0092-8674" || 
+	?issn = "1542-4863" || ?issn = "1471-0064" ||
+	?issn = "0140-6736" || ?issn = "1545-3278" ||
+	?issn = "1061-4036" || ?issn = "1474-1733" ||
+	?issn = "1474-1776" || ?issn = "1087-0156" ||
+	?issn = "1471-003X" || ?issn = "0036-8075" ||
+	?issn = "0098-7485")
+	}
