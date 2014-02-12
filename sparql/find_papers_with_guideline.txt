@@ -1,4 +1,4 @@
-# FInd all the papers that have the word "guideline" in their title
+# Find all the papers that have the word "guideline" in their title
 #
 SELECT ?uri ?year ?title
 WHERE {
