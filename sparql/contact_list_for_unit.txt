@@ -1,0 +1,29 @@
+#
+# Find all the people with a position in the CTSI or any CTSI sub-unit,
+# and list them alphabetically with phone, email, gatorlink, ufid, eracommons if any
+#
+SELECT ?person (SAMPLE(DISTINCT ?xname) AS ?name) 
+    (SAMPLE(DISTINCT ?xphone) AS ?phone)
+    (SAMPLE(DISTINCT ?xemail) AS ?email)
+    (SAMPLE(DISTINCT ?xgatorlink) AS ?gatorlink)
+    (SAMPLE(DISTINCT ?xufid) AS ?ufid)
+    (SAMPLE(DISTINCT ?xeracommons) AS ?eracommons)
+WHERE {
+  {?pos vivo:positionInOrganization <http://vivo.ufl.edu/individual/n8763427> .}
+  UNION
+  {<http://vivo.ufl.edu/individual/n8763427> vivo:hasSubOrganization ?sub .
+   ?pos vivo:positionInOrganization ?sub .}
+  ?pos vivo:dateTimeInterval ?dt .
+  OPTIONAL {?dt vivo:end ?end . }
+  FILTER (!BOUND(?end))
+  ?pos vivo:positionForPerson ?person .
+  ?person rdfs:label ?xname .
+  ?person a ufVivo:UFCurrentEntity .
+  OPTIONAL { ?person vivo:primaryPhoneNumber ?xphone .}
+  OPTIONAL { ?person vivo:primaryEmail ?xemail .}
+  OPTIONAL { ?person ufVivo:gatorlink ?xgatorlink .}
+  OPTIONAL { ?person ufVivo:ufid ?xufid .}
+  OPTIONAL { ?person vivo:eRACommonsId ?xeracommons .}
+}
+GROUP BY ?person
+ORDER BY ?name

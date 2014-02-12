@@ -1,0 +1,40 @@
+# A compliance report showing all papers citing one or more of the 
+# CTSI NIH awards, along with their pmid, pmcid(if any) and nihmsid 
+# (if any)
+SELECT ?pmid 
+	(MAX(DISTINCT ?uri) AS ?furi)
+	(MAX(DISTINCT ?g) AS ?fg)
+	(MAX(DISTINCT ?nihmsid) AS ?fnihmsid)
+	(MAX(DISTINCT ?pmcid) AS ?fpmcid)
+WHERE {
+	SELECT ?uri 
+		(SAMPLE(DISTINCT ?g) AS ?g) 
+		(MAX(DISTINCT ?xpmid) AS ?pmid) 
+		(MAX(DISTINCT ?xnihmsid) AS ?nihmsid) 
+		(MAX(DISTINCT ?xpmcid) AS ?pmcid)
+	WHERE {
+		{?uri ufVivo:grantCited ?g .
+		FILTER(regex(?g,"TR000064","i"))}
+		UNION
+		{?uri ufVivo:grantCited ?g .
+		FILTER(regex(?g,"TR000065","i"))}
+		UNION
+		{?uri ufVivo:grantCited ?g .
+		FILTER(regex(?g,"TR000066","i"))}
+		UNION
+		{?uri ufVivo:grantCited ?g .
+		FILTER(regex(?g,"RR029888","i"))}
+		UNION
+		{?uri ufVivo:grantCited ?g .
+		FILTER(regex(?g,"RR029889","i"))}
+		UNION
+		{?uri ufVivo:grantCited ?g .
+		FILTER(regex(?g,"RR029890","i"))}
+		?uri bibo:pmid ?xpmid .
+		OPTIONAL {?uri vivo:nihmsid ?xnihmsid .}
+		OPTIONAL {?uri vivo:pmcid ?xpmcid .}
+		}
+	GROUP BY ?uri
+	}
+GROUP BY ?pmid
+ORDER BY ?fpmcid ?pmid

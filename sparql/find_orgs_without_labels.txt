@@ -1,0 +1,7 @@
+# List all organizations that do not have labels
+SELECT ?uri 
+WHERE {
+	?uri a foaf:Organization .
+	OPTIONAL {?uri rdfs:label ?label .}
+	FILTER (!BOUND(?label))
+	}
