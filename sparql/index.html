@@ -10,9 +10,11 @@
 		information out. A blog describes experiences with VIVO.">
     <meta name="author" content="Mike Conlon">
 	<link rel="shortcut icon" type="image/x-icon" href="/assets/ico/favicon.ico">  
-	<link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/assets/css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="/assets/css/blog.css" rel="stylesheet">
 
-    <title>Some VIVO Things</title>
+    <title>Some VIVO Information Things</title>
 	
 	<style>
 	body {
@@ -35,7 +37,6 @@
 
   <body role="document">
   
-
   <!-- Fixed navbar -->
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
@@ -46,12 +47,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand active" href="/">Some VIVO Things</a>
+          <a class="navbar-brand" href="/">Some VIVO Things</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li><a href="/data">Data In</a></li>
-            <li><a href="/info">Info Out</a></li>
+            <li class="active"><a href="/info">Info Out</a></li>
             <li><a href="/blog">The Blog</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">More <b class="caret"></b></a>
@@ -75,44 +76,74 @@
 	
 	<div class="container theme-showcase" role="main">
   
-  
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-
-        <h1>Some VIVO Things</h1>
-        <p>A site for things about VIVO -- tools, data, visualizations, and a blog.  There's a 
-		bunch of things being created to manage VIVO data -- load, clean, discover.  And a bunch to visualize 
-		organizations, publications, expertise, and more.</p>
-        <p><a href="/blog" class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
-    </div>
+	<div class="jumbotron">
+        <h1>Sample SPARQL</h1>
+		<p class="lead">SPARQL scripts for getting information from your VIVO</p>
+	</div>
 	
+	<!-- Here's the info stuff -->
+	
+	<div class="container">
+	
+		<div class="row">
+		
+			<div class="col-md-3">
+				<h3>Reports</h3>
+				<p><a href="contact_list_for_unit.txt">Contact list for unit</a></p>
+				<p><a href="nih_open_access_compliance_report.txt">NIH Open Access Compliance Report</a></p>
+				<h3>Data Management</h3>
+				<p><a href="find_unlinked_authorships.txt">Find unlinked authorships</a></p>
+				<p><a href="find_people_to_remove.txt">Find people to remove from VIVO</a></p>
+				<p><a href="find_orgs_without_labels.txt">Find organizations without labels</a></p>
+			</div>
+			
+			<div class="col-md-3">
+				<h3>Papers</h3>
+				<p><a href="find_papers_with_guideline.txt">Find papers with "guideline" in the title</a></p>
+				<p><a href="find_papers_in_top_journals.txt">Find 2013 UF papers in top 10 journals</a></p>
+				<p><a href="count_papers_in_college.txt">Count papers in the College of Medicine for 2012</a></p>
+				<p><a href="count_papers_by_department_in_college.txt">Count papers by department in the College of Medicine for 2012</a></p>
+			</div>
+			
+			<div class="col-md-3">
+				<h3>Grants</h3>
+				<p>Coming soon!</p>
+				<h3>Organizations</h3>
+				<p>Coming soon!</p>
+	
+			</div>
+			
+			<div class="col-md-3">
+				<div class="sidebar-module sidebar-module-inset">
+					<h4>About VIVO</h4>
+					<p>VIVO is an open source, semantic web application for organizing information.  
+					VIVO is often used by academic institutions to represent the scholarly work
+					of their faculty, staff and students. See <a href="http://vivoweb.org" class="btn
+					btn-xs btn-info">the 
+					VIVO Project Web Site</a> for more info.</p>
+				</div>
+				<div class="sidebar-module">
+					<h4>Good Stuff</h4>
+					<ol class="list-unstyled">
+					  <li><a href="http://www.amazon.com/Learning-SPARQL-Bob-DuCharme/dp/1449371434/ref=sr_1_1?ie=UTF8&qid=1392168975&sr=8-1&keywords=learning+sparql">Learning SPARQL</a></li>
+					</ol>
+				</div>
+				<div class="sidebar-module">
+					<h4>Elsewhere</h4>
+					<ol class="list-unstyled">
+					  <li><a href="https://github.com/mconlon17">GitHub</a></li>
+					  <li><a href="http://twitter.com/mconlon17">Twitter</a></li>
+					  <li><a href="http://facebook.com/mconlon">Facebook</a></li>
+					  <li><a href="http://vivo.ufl.edu/individual/mconlon">VIVO</a></li>
+					</ol>
+				</div>
+			</div><!-- /.blog-sidebar -->
+			
+		</div><!-- End blog row -->
+		</div><!-- End info stuff container -->
 
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-4">
-          <h2>Data In</h2>
-          <p>We're creating a variety of easy to use tools to load data
-		  into VIVO, improve self-edit of data, and inspect data in VIVO.  The VIVO Triple Inspector
-		  shows <em>exactly</em> what VIVO stores for each entity.</p>
-          <p><a class="btn btn-default" href="/data" role="button">Create data &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-          <h2>Information Out</h2>
-          <p>Visualizations, reports, explorers, expertise finders, biosketches.
-		  Development is under way to create accessible tools for use by those
-		  interested in understanding more about scholarly activity.</p>
-          <p><a class="btn btn-default" href="/info" role="button">Display information &raquo;</a></p>
-       </div>
-        <div class="col-md-4">
-          <h2>A VIVO Blog</h2>
-          <p>From upgrades to 1.6, activity and applications around the world,
-		  to the conference, implementation fest, sponsor activities, workgroups
-		  and more, we'll post some ideas and updates on the blog.</p>
-          <p><a href="/blog" class="btn btn-default" href="#" role="button">To the blog &raquo;</a></p>
-        </div>
-      </div>
-
-	  <hr>
+		<hr>
 
 		<footer>
 		<p>&copy; <a href="http://vivo.ufl.edu/individual/mconlon">Mike Conlon</a>, 
@@ -121,7 +152,7 @@
 		Visit the <a href="http://vivoweb.org">The VIVO Project Web Site</a> and <a href="https://wiki.duraspace.org/display/VIVO/VIVO+Main+Page">The Duraspace VIVO Wiki</a>
 		</footer>
 
-	  </div> <!-- /container -->
+	</div> <!-- /container -->
 
 
     <!-- Bootstrap core JavaScript

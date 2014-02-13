@@ -1,0 +1,37 @@
+#
+# A query to list URI of people who should not be in VIVO
+#
+# They have no qualifying type AND
+# They have no authorship AND
+# They have no grant AND
+# They have taught no courses
+
+SELECT ?uri ?name ?npubs ?ngrants ?ncourses 
+WHERE  
+{
+	{
+	SELECT ?uri 
+		(SAMPLE(DISTINCT ?xname) AS ?name)
+		(COUNT(DISTINCT ?a) AS ?npubs)
+		(COUNT(DISTINCT ?p) AS ?ngrants)
+		(COUNT(DISTINCT ?t) AS ?ncourses)      
+	WHERE {
+		?uri a ufVivo:UFEntity .
+		?uri a foaf:Person .
+		?uri rdfs:label ?xname . 
+		MINUS { ?uri a vivo:FacultyMember .} # Faculty are always in
+		MINUS { ?uri a vivo:NonAcademic .}
+		MINUS { ?uri ufVivo:ufid ?ufid .} # if they have a ufid, keep them
+		MINUS { ?uri a vivo:Postdoc .}
+		MINUS { ?uri a ufVivo:CourtesyFaculty .}
+		MINUS { ?uri a ufVivo:TemporaryFaculty .}
+		MINUS { ?uri a ufVivo:Housestaff .}
+		MINUS { ?uri a ufVivo:ClinicalFaculty .} 
+		OPTIONAL { ?uri vivo:authorInAuthorship ?a .}
+		OPTIONAL { ?uri vivo:hasPrincipalInvestigatorRole ?p .}
+		OPTIONAL { ?uri vivo:hasTeacherRole ?t .}
+		}
+	GROUP BY ?uri
+	}
+FILTER(?npubs = 0 && ?ngrants = 0 && ?ncourses = 0)
+}

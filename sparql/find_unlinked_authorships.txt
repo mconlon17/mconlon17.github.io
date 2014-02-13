@@ -1,0 +1,7 @@
+PREFIX vivo: http://vivoweb.org/ontology/core#
+SELECT ?uri
+WHERE
+{
+	?uri a vivo:Authorship .
+	FILTER NOT EXISTS {?uri vivo:linkedAuthor ?author }
+}
