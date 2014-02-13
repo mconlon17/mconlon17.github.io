@@ -1,7 +1,4 @@
-mconlon17.github.io
-===================
-
-# A Web Site for VIVO Things
+# [Some VIVO Things](http://mconlon17.github.io), a web site
 
 1. Repos for software created to help manage VIVO and to display results from VIVO
     1. Biosketch maker (coming soon)
