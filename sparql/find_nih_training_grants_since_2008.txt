@@ -1,23 +1,25 @@
+
 # Find all NIH training grants since 2008
 
-SELECT ?grant (SAMPLE(DISTINCT(?xtitle) AS ?title) 
-              (SAMPLE(DISTINCT(?xdt) AS ?dt)
-              (SAMPLE(DISTINCT(?xsponsorawardid) AS ?sponsorawardid)
-              (SAMPLE(DISTINCT(?xamount) AS ?amount)
+SELECT ?grant (SAMPLE(DISTINCT ?xtitle) AS ?title) 
+              (SAMPLE(DISTINCT ?xdt) AS ?dt)
+              (SAMPLE(DISTINCT ?xsponsorawardid) AS ?sponsorawardid)
+              (SAMPLE(DISTINCT ?xamount) AS ?amount)
 WHERE {
 	?grant a vivo:Grant .
-        ?grant rdfs:label ?xtitle .
-	?grant vivo:sponsorAwardId ?sponsorawardid .
+    ?grant rdfs:label ?xtitle .
+	?grant vivo:sponsorAwardId ?xsponsorawardid .
+	?grant vivo:dateTimeInterval ?dti .
+    ?dti vivo:start ?dtv .
+	?dtv vivo:dateTime ?xdt .
+	FILTER ((regex(?xsponsorawardid,"^K")||regex(?xsponsorawardid,"^T")||regex(?xsponsorawardid,"^F"))
+        && (regex(str(?xdt),"^2012")||regex(str(?xdt),"^2011")||regex(str(?xdt),"^2010")||
+        regex(str(?xdt),"^2009")||regex(str(?xdt),"^2008")))
+    OPTIONAL {?grant vivo:totalAwardAmount ?xamount .}
 	{?grant vivo:grantAwardedBy <http://vivo.ufl.edu/individual/n226077> .}
-        UNION
-        {<http://vivo.ufl.edu/individual/n226077> vivo:hasSubOrganization ?sub .
+    UNION
+    {<http://vivo.ufl.edu/individual/n226077> vivo:hasSubOrganization ?sub .
         ?grant vivo:grantAwardedBy ?sub .}
-#	FILTER (regex(?xsponsorawardid,"^K")||regex(?xsponsorawardid,"^T")||regex(?xsponsorawardid,"^F"))
-#	?grant vivo:dateTimeValue ?dtv .
-#	?dtv vivo:dateTime ?xdt .
-#	FILTER (regex(?xdt,"^2013")||regex(?xdt,"^2012")||regex(?xdt,"^2011")||
-#           regex(?xdt,"^2010")||regex(?xdt,"^2009")||regex(?xdt,"^2008"))
-#        OPTIONAL {?grant vivo:totalAwardAmount ?xamount .}
 	}
 GROUP BY ?grant
 ORDER BY DESC(?dt) DESC(?amount)
