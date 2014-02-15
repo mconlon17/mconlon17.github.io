@@ -1,0 +1,22 @@
+#
+# Count the faculty, graduate students and postdocs in a unit
+#
+    SELECT
+           (COUNT(DISTINCT ?fac) AS ?faculty_count)
+           (COUNT(DISTINCT ?pre) AS ?predoc_count)
+           (COUNT(DISTINCT ?pos) AS ?posdoc_count)
+    WHERE {
+        {
+        ?fac ufVivo:homeDept <http://vivo.ufl.edu/individual/n191785> .
+        ?fac a vivo:FacultyMember .
+        }
+        UNION {
+        ?pre ufVivo:homeDept <http://vivo.ufl.edu/individual/n191785> .
+        ?pre a vivo:GraduateStudent .
+        }
+        UNION {
+        ?pos ufVivo:homeDept <http://vivo.ufl.edu/individual/n191785> .
+        ?pos a vivo:Postdoc .
+        }
+    }
+    GROUP BY ?uri
