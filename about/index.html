@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="VIVO, data, information, software, tools, blog, python, D3, Conlon, Florida">
+	<meta name="description" content="Some VIVO Things is a web site by Mike Conlon of the University of Florida
+		that describes software and tools such as python and D3, for getting data into VIVO and for getting 
+		information out. A blog describes experiences with VIVO.">
+    <meta name="author" content="Mike Conlon">
+	<link rel="shortcut icon" type="image/x-icon" href="/assets/ico/favicon.ico">  
+	<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/assets/css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="/assets/css/blog.css" rel="stylesheet">
+
+    <title>Some VIVO Data Things</title>
+	
+	<style>
+	body {
+		padding-top: 70px;
+		padding-bottom: 30px;
+		}
+
+	.theme-dropdown .dropdown-menu {
+		display: block;
+		position: static;
+		margin-bottom: 20px;
+		}
+
+	.theme-showcase > p > .btn {
+		margin: 5px 0;
+		}
+	</style>
+	
+  </head>
+
+  <body role="document">
+  
+  <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Some VIVO Things</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/data">Data In</a></li>
+            <li><a href="/info">Info Out</a></li>
+            <li><a href="/blog">The Blog</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">More <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="http://www.amazon.com/VIVO-Scholarly-Networking-Discovery-Synthesis/dp/1608459934/ref=sr_1_1?ie=UTF8&qid=1391973550&sr=8-1&keywords=vivo+conlon">The VIVO Book</a></li>
+                <li><a href="http://www.amazon.com/Semantic-Working-Ontologist-Second-Edition/dp/0123859654/ref=sr_1_1?ie=UTF8&qid=1391973643&sr=8-1&keywords=semantic+web+for+the+working+ontologist">The Semantic Web for the Working Ontologist</a></li>
+				<li class="divider"></li>
+                <li class="dropdown-header">Some VIVO sites</li>                
+				<li><a href="http://vivo.ufl.edu">University of Florida VIVO</a></li>
+				<li><a href="http://research-hub.griffith.edu.au/">Griffith University Research Hub</a></li>
+				<li class="divider"></li>
+                <li class="dropdown-header">Related CTSA projects</li>
+                <li><a href="http://research.icts.uiowa.edu/polyglot/">CTSAsearch</a></li>
+                <li><a href="http://ctsaconnect.org/">CTSAconnect</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+	
+	<div class="container theme-showcase" role="main">
+  
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+	<div class="jumbotron">
+        <h1>About Some VIVO Things</h1>
+		<p class="lead">A web site about tools for VIVO, and about using VIVO data.</p>
+	</div>
+	
+	<!-- Here's the blog -->
+	
+	<div class="container">
+	
+		<div class="row">
+		
+			<div class="col-md-9 blog-main">
+			
+				<div class="blog-post">
+					<a id="site"></a><h2 class="blog-post-title">About the Site</h2>
+									
+					<p>The idea for the site came from <a href="http://vivo.ufl.edu/display/n64866">Chris Barnes</a> at UF.
+					Chris and I have been working on VIVO since 2009.  Chris thought I should have a web site to talk about
+					VIVO -- a blog, and a site that could introduce people to the various repositories ("repos") at GitHub containing the
+					various tools that I have written for VIVO over the years.</p>
+					<p>As usual, I protested -- too busy, can't learn more things, but Chris persisted.  And, as usual, Chris 
+					was right.  He taught me to use GitHub and to put my software in repos.  He suggested that I learn "Twitter Bootstrap,"
+					and that I build my site at GitHub using Twitter Bootstrap.</p>
+					<p>I did both.  I created this site, hosted from GitHub.  All files are in a GitHub.  You can fork the site if
+					you like.  And I adopted Twitter Bootstrap for a clean look and "mobile first" formatting.  This site looks good on 
+					a browser, a tablet or a phone.  That's due to Twitter Bootstrap.</p>
+					<p>I like data.  I like creating it, managing it, analysing it, displaying it, and making it available to others.
+					This site is mostly about VIVO data.  I won't have much to say about the VIVO software.  That work is done elsewhere.
+					This site assumes you have a VIVO, or are building one.  It assumes you know something about VIVO and would like to
+					learn more.  It assumes that you like to learn.  It assumes that you want to use VIVO data.  If those sound like
+					your interests, you've come to the right place.</p>
+				</div>
+				
+				<div class="blog-post">
+					<a id="vivo"></a><h2 class="blog-post-title">About the VIVO Project</h2>
+									
+					<p>VIVO has been around since 2006.  It took off from 2009 to 2012 as the result of a large multi-institutional
+					project, which I had the honour of leading.  At its peak, more than 180 people were working on the project at
+					seven schools -- Cornell University in Ithaca, Indiana University in Bloomington, the University of Florida, where
+					I work, Weill Cornell Medical College in New York City, Scripps Research Institute in La Jolla, California,
+					Washington University at St. Louis College of Medicine, and Ponce Medical School in Ponce Puerto Rico.  The
+					team was outstanding.  Since the NIH project, VIVO has transitioned to a sponsored project of Duraspace.  They have
+					been tremendous partners.</p>
+					<p>Since 2009 the software was significantly expanded.  We started a conference series, we held
+					implementation fests, VIVO spread to over 200 schools around the world.  VIVO is freely available, open
+					source software for representing the scholarship of institutions.  It is institutionally-based.  Each school
+					makes its own decisions about how VIVO will be used and what will be represented.  VIVO is <em>not</em> like
+					Facebook -- a large centralized site run by a company and selling advertising and your data.  VIVO is a collection
+					of VIVO sites, just like the world wide web is a collection of independent web servers.  VIVO is a semantic web
+					application, based on an open ontology.  That takes some getting used to, but the results are well worth the learning.</p>
+					<p>VIVO has open work groups that you can join.  See the project description to the right on this page.  And VIVO is
+					always looking for sponsors.  For more information on all things VIVO, see the <href="http://vivoweb.org">the
+					project web site.</a>
+				</div>
+				
+				<div class="blog-post">
+					<a id="mconlon"></a><h2 class="blog-post-title">About the Author</h2>
+									
+					<p>I started programming computers in 1971.  I like it.  I got a PhD in Statistics because I liked math and it turned 
+					out I really liked data. As a biostatistician at the University of Florida I have helped many people design experiments, 
+					collect and analyze data.  I always felt that the software I wrote was a first draft, an act in trailblazing.  Others
+					would come along to rewrite, remodel, build operational practices.  I've been a CIO. That was fun. We got a lot done. I 
+					was the technical lead for the PeopleSoft implementation at UF.  That was also great fun.  Large scale project
+					management and leadership is a blast. Since 2010 I've been COO and now co-director of the Clinical and Translational
+					Science Institute at UF.  Our mission is to improve human health by increasing research capacity and accelerating
+					the translation of research findings into improved care and health.  What could be better.  I like to plan and organize.
+					I really like working with people -- one on one, in small or large groups, in big teams. I like to teach and present.  
+					I like to make decisions. I don't like conference calls -- that's a shame, since so much of the modern world seems to 
+					think that conference calls are a method for getting work done. My <a href="http://vivo.ufl.edu/individual/mconlon">VIVO
+					page</a> has additional details.</p>
+				</div>
+			
+			</div><!-- End the blog-main -->
+			
+			<div class="col-md-3">
+				<div class="sidebar-module sidebar-module-inset">
+					<h4>About VIVO</h4>
+					<p>VIVO is an open source, semantic web application for organizing information.  
+					VIVO is often used by academic institutions to represent the scholarly work
+					of their faculty, staff and students. See <a href="http://vivoweb.org" class="btn
+					btn-xs btn-info">the 
+					VIVO Project Web Site</a> for more info.</p>
+				</div>
+				
+				<div class="sidebar-module">
+					<h4>Good stuff</h4>
+					<ol class="list-unstyled">
+					  <li><a href="http://getbootstrap.com">Twitter Bootstrap</a></li>
+					</ol>
+				</div>
+				
+				<div class="sidebar-module">
+					<h4>Elsewhere</h4>
+					<ol class="list-unstyled">
+					  <li><a href="https://github.com/mconlon17">GitHub</a></li>
+					  <li><a href="http://twitter.com/mconlon17">Twitter</a></li>
+					  <li><a href="http://facebook.com/mconlon">Facebook</a></li>
+					  <li><a href="http://vivo.ufl.edu/individual/mconlon">VIVO</a></li>
+					</ol>
+				</div>
+			</div><!-- /.blog-sidebar -->
+			
+		</div><!-- End blog row -->
+		</div><!-- End blog container -->
+
+		<hr>
+
+		<footer>
+		<p>&copy; <a href="http://vivo.ufl.edu/individual/mconlon">Mike Conlon</a>, 
+		<a href="http://www.ufl.edu">University of Florida</a> 2014</br>
+		VIVO is an incubated project of <a href="http://duraspace.org">Duraspace</a></br>
+		Visit the <a href="http://vivoweb.org">The VIVO Project Web Site</a> and <a href="https://wiki.duraspace.org/display/VIVO/VIVO+Main+Page">The Duraspace VIVO Wiki</a>
+		</footer>
+
+	</div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
