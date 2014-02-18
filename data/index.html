@@ -101,6 +101,32 @@
 				</div>
 				
 				<div class="blog-post">
+					<a hid="pubmed"></a><h2 class="blog-post-title">Updating PubMed Attributes</h2>
+									
+					<p><a href="http://biopython.org/DIST/docs/api/Bio.Entrez-module.html">bio.entrez</a> is a powerful
+					python package for accessing <a href="http://en.wikipedia.org/wiki/Entrez">Entrez</a>, the
+					<a href="http://www.ncbi.nlm.nih.gov/">NCBI</a> tool for accessing the 
+					<a href="http://www.nlm.nih.gov">NLM</a> 
+					(branch of the <a href="http://nih.gov">NIH</a>)
+					<a href="">PubMed</a> data.  Using these tools and resources, we've written a script for adding
+					PubMed data to publications already in VIVO.  Entrez is called for each paper in VIVO that has
+					a DOI.  Seven attributes are added to each such paper:
+					<ol>
+						<li>PubMedID. Required to appear on all publications on an NIH biosketch.</li>
+						<li>PubMedCentralID.  Required to demonstrate the paper is compliant with the NIH
+						Open Access Policy.</li>
+						<li>NIHMSID.  Useful for tracking papers that have not yet been assigned other identifiers.</li>
+						<li>Keywords.  MeSH terms assigned by the NLM.  Matched to concepts in VIVO.</li>
+						<li>Abstract.  The full abstract of the paper as it appears in PubMed.</li>
+						<li>Grants cited by the paper. A list of grant identifiers acknowledged as supporting the
+						work of the paper.  Invaluable in tracking which paper resulted from which funding.</li>
+						<li>URL of the full text of the paper.  Read the paper in one click from VIVO.</li>
+					</ol>
+					<a href="http://github.com/mconlon17/vivo-update-pubmed" 
+					class="btn btn-default btn-success">Download</a></p>
+				</div>
+				
+				<div class="blog-post">
 					<a hid="buildings"></a><h2 class="blog-post-title">Add Buildings to VIVO</h2>
 									
 					<p>Adding university buildings to VIVO is easy to do and provides another resource
