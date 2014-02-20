@@ -101,6 +101,32 @@
 				</div>
 				
 				<div class="blog-post">
+					<a hid="pubmed"></a><h2 class="blog-post-title">Updating PubMed Attributes</h2>
+									
+					<p><a href="http://biopython.org/DIST/docs/api/Bio.Entrez-module.html">bio.entrez</a> is a powerful
+					python package for accessing <a href="http://en.wikipedia.org/wiki/Entrez">Entrez</a>, the
+					<a href="http://www.ncbi.nlm.nih.gov/">NCBI</a> tool for accessing the 
+					<a href="http://www.nlm.nih.gov">NLM</a> 
+					(branch of the <a href="http://nih.gov">NIH</a>)
+					<a href="http://www.ncbi.nlm.nih.gov/pubmed">PubMed</a> data.  Using these tools and resources, we've written a script for adding
+					PubMed data to publications already in VIVO.  Entrez is called for each paper in VIVO that has
+					a DOI.  Seven attributes are added to each such paper:
+					<ol>
+						<li>PubMedID. Required to appear on all publications on an NIH biosketch.</li>
+						<li>PubMedCentralID.  Required to demonstrate the paper is compliant with the NIH
+						Open Access Policy.</li>
+						<li>NIHMSID.  Useful for tracking papers that have not yet been assigned other identifiers.</li>
+						<li>Keywords.  MeSH terms assigned by the NLM.  Matched to concepts in VIVO.</li>
+						<li>Abstract.  The full abstract of the paper as it appears in PubMed.</li>
+						<li>Grants cited by the paper. A list of grant identifiers acknowledged as supporting the
+						work of the paper.  Invaluable in tracking which paper resulted from which funding.</li>
+						<li>URL of the full text of the paper.  Read the paper in one click from VIVO.</li>
+					</ol>
+					<a href="http://github.com/mconlon17/vivo-update-pubmed" 
+					class="btn btn-default btn-success">Download</a></p>
+				</div>
+				
+				<div class="blog-post">
 					<a hid="buildings"></a><h2 class="blog-post-title">Add Buildings to VIVO</h2>
 									
 					<p>Adding university buildings to VIVO is easy to do and provides another resource
@@ -135,9 +161,22 @@
 									
 					<p>SJR -- the Scientific Journal Rankings -- are open source scores for journals indicating the 
 					importance of the journal as determined by citations.  The score for more than 20,000 journals
-					are openly available from [SciMago](http://www.scimagojr.com/journalrank.php). At UF we load
-					these rankings into VIVO, updating the SJR score for each journal, or adding an SJR score if
+					are openly available from <a href="http://www.scimagojr.com/journalrank.php">SciMago</a>. At UF 
+					we load these rankings into VIVO, updating the SJR score for each journal, or adding an SJR score if
 					the journal did not have one in VIVO.  <a href="http://github.com/mconlon17/vivo-sjr" 
+					class="btn btn-default btn-success">Download</a></p>
+				</div>
+				
+				<div class="blog-post">
+					<a id="phonenumbers"></a><h2 class="blog-post-title">Repair VIVO Phone Numbers</h2>
+									
+					<p>At UF, VIVO pulls its phone numbers from a master directory of people and their contact
+					contact information known as the UF Directory.  The directory contains phone numbers, but they
+					have not been validated to insure they are syntactically valid.  Area codes may be missing, as
+					may be the first several digits -- assumed to be one of the UF phone exchanges.  Formats for 
+					extensions are varied.  We wrote a script to read phone numbers from VIVO and improve them to 
+					standards.  The script can be run at any time to find and repair phone numbers.
+					<a href="http://github.com/mconlon17/vivo-repair-phone-numbers" 
 					class="btn btn-default btn-success">Download</a></p>
 				</div>
 				
@@ -168,7 +207,7 @@
 				<div class="sidebar-module">
 					<h4>Good stuff</h4>
 					<ol class="list-unstyled">
-					  <li><a href="http://python.org">Python</a></li>
+					  <li><a href="http://python.org">Python</a>, <a href="http://biopython.org/DIST/docs/api/Bio.Entrez-module.html">bio.entrez</a></li>
 					</ol>
 				</div>
 				
