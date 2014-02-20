@@ -47,7 +47,7 @@ d3.json("graph.json", function(error, json) {
       .call(force.drag);
 
   node.append("image")
-      .attr("xlink:href", function(d) { if d.group == "1" return "https://github.com/favicon.ico" else return "https://vivo.ufl.edu/favicon.ico")
+      .attr("xlink:href", function(d) { if (d.group == "1") { return "https://github.com/favicon.ico";} else {return "https://vivo.ufl.edu/favicon.ico";})
       .attr("x", -8)
       .attr("y", -8)
       .attr("width", 16)
