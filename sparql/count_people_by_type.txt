@@ -1,0 +1,11 @@
+#
+# Make a frequency table of types of current people at UF
+#
+SELECT (count(DISTINCT ?uri) as ?ncurrent) ?type
+WHERE {
+    ?uri a ufVivo:UFCurrentEntity .
+    ?uri a foaf:Person .
+    ?uri rdf:type ?type .
+}
+GROUP BY ?type
+ORDER BY DESC(?ncurrent)
