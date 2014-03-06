@@ -92,75 +92,38 @@
 			<div class="col-md-9 blog-main">
 			
 				<div class="blog-post">
-					<h2 class="blog-post-title">CTSA Social Network Analysis at Sunbelt XXXIV</h2>
-					<p class="blog-post-meta">February 23, 2014 by <a href="http://vivo.ufl.edu/individual/mconlon">Mike</a></p>
+					<h2 class="blog-post-title">What does it take to implement VIVO?</h2>
+					<p class="blog-post-meta">March 5, 2014 by <a href="http://vivo.ufl.edu/individual/mconlon">Mike</a></p>
+
+					<p>I am often asked what resources it takes to implement VIVO.  I was asked today, for example.  Sometimes the question comes from technical staff members, sometimes from university administrators.</p>
+
+					<p>The answer is “it depends.”  No one likes this answer, and I don’t either.  It depends on what you want to put into your VIVO and how prepared you are to put the things you have identified into your VIVO.  If you are very prepared and your needs are simple, you should be able to have a two person team set up VIVO in a couple of months and then use 0.5 FTE to maintain it.  But if you are like the University of Florida – large, complex and without mature institutional data management practices (that may sound harsh, but I work there, and have a bunch of experience with the practices) then it may take a man year or more to implement VIVO and up to two FTEs to maintain it.</p>
+
+					<p>Let’s break this down a bit.  What might you want to put in your VIVO?</p>
+
+					<p>People.  You’ll put in your faculty, possibly your postdocs, graduate students, housestaff and possibly your staff.  At UF, we have faculty, postdocs, staff, and housestaff in our VIVO.  We are considering adding graduate students.  At UF, the count of people in VIVO with a current affiliation is 20,692.  The number fluctuates each week based on our automated ingests.  You’ll get your people data from HR or a warehouse.  Hopefully you have a unique person identifier that you can use to determine if the person is already in your VIVO.  And hopefully you’ll get contact information, home department, position information, current status.  Back to UF, we have a unique identifier, but we can’t tell who the postdocs are – they are appointed in many different ways.  The university is working to fix this, but in the interim, we have a special ingest process just to assign postdoc status based on a spreadsheet.  Such is data management in the 21st century. We have a single person ingest process that we run each week based on HR data that creates and updates people as necessary, providing all information about the person.</p>
+
+					<p>Publications.  It’s not much of a VIVO if you don’t have some way of getting the scholarly work of the people onto their profiles.  The library is typically key here.  They will know what resources can be used – electronic subscriptions and their license limitations.  PubMed data is free and can be reused, but it’s biomedical only, which may not cover the scholarship of your institution. At UF, we use bibtex to load publications into VIVO.  We have 53,659 publications in VIVO, mostly from 2008.  We link these to PubMed if possible, adding MESH terms and links to full text.  Most publications are automatically ingested, but some are hand-entered.  We don’t have a source for books written by our faculty.  The university has no record, and the various indexing services typically do not have this data.  The Library of Congress does not typically have affiliation data, so we can’t tell which books were written by people at UF.  We don’t have a source for presentations.  We don’t have an interface to our library’s institutional repository.  We load our publication data each week.  We provide an <a href="http://vivo.ufl.edu/rss/rss-uf-papers.xml">RSS feed</a> of our recent publications.</p>
+
+					<p>Grants.  Most universities have good data on grants they have received.  UF has good data and we have an automated ingest for loading grant data into VIVO.  UF VIVO has all grants made to the university since 2008 – a total of 18,641.  The ingest updates grants if new information is available – sometimes award amounts or dates change, sometimes the investigators change.  Our Division of Sponsored Programs maintains the official data and we reflect it in VIVO.</p>
+
+					<p>Courses.  We get data from the Registrar’s office and load it into VIVO once a year.  We have all courses taught at UF since 2008 through 2012, a total of 87,269, each linked to course catalog, instructor, term.  We’ll add the 2013 data soon, another 15,000 or so courses.  These data form an important part of the profile of the person, indicate scholarly interests, and constitute another indicator of the social fabric of the university.</p>
+
+					<p>That’s it.  We have four core ingests – people, publications, grants and courses.</p>
 					
-					<p>At the UF <a href="http://ctsi.ufl.edu">Clinical and Translational Science Institute</a> (CTSI) there is great interest in collaboration and in improving collaboration across the university.  Collaboration is evidenced by "artifacts" -- co-authored papers, co-written grant proposals, co-investigators on a grant award, a patent or a presentation.  At UF, VIVO is the repository of collaboration information. We have a complete record of co-authorships on papers dating back to 2008, as well as a complete collaboration information for co-investigator relationships on grant awards, also back to 2008.  Unfortunately we don't have such information for proposals, presentations or patents.  In each case, the university does not have a process for generating and managing such information.  A few authors put their presentations in VIVO, but there is no university mandate to do so.</p>
+					</p>To implement VIVO, you’ll need data. You’ll also need a creative IT staff.  VIVO technology – triple store, ontology, RDF – is new to most IT people.  You’ll need open-minded, creative people ready to learn.</p>
+
+					<p>You’ll also need the support of key stakeholders in your institution.  Typically the provost, the vice president for research and the library director are involved in governance, championing and possibly leading your implementation.</p>
+
+					<p>All these issues get discussed at the annual VIVO Implementation Fest.  The Fest brings project managers, planners, technical staff and stakeholders together for a couple of days of sharing and discussing issues related to VIVO implementation.  There’s no registration fee.  This year’s Fest will be at Duke University March 18-19, details on <a href="http://vivoweb.org/blog/2014/02/2014-vivo-implementation-fest">vivoweb.org</a>.</p>
+
+					<p>So if you have champions, staff and data, you’re all set for a straightforward implementation.  Otherwise, more effort and time will be needed.  So “it depends.”</p>
+
+
 					
-					<p>In 2013, as part of its evaluation efforts, the CTSI contracted with the UF <a href="https://www.bebr.ufl.edu/">Bureau of Economic and Business Research</a> (BEBR) to conduct a social network analysis of the publication and grant networks of the university over the five year period 2008-2012.  Several of their findings were presented in two talks at the recently held Sunbelt XXXIV Conference in St. Pete Beach, Florida.<p>
-					
-					<p>The first talk, <a href="https://vivo.ufl.edu/individual/n252218">A network intervention on scientific networks: design and reactions</a>, presented by <a href="http://vivo.ufl.edu/individual/n81483">Dr. Chris McCarty</a>, described social network intervention research done by BEBR to determine if connections across the social network could be lengthened by identifying pairs of investigators who might benefit from an introduction.  Using VIVO as a data source, the BEBR team created pairs of investigators and emailed the investigators asking if the other person in the pair might be interesting as a possible collaborator.  Network characteristics, as well as subject matter and methods were used to make the pairings.  The results indicated that "distance" in the social network was correlated with decreasing interest in collaboration, but that distance of up to 10 connections was still of interest.  More than 30 percent of the pairings were deemed of interested to the recipients of these emails.  This rate could be compared to random pairings of faculty to determine of the social networking heuristics were generating pairings better than could be done by chance.</p>
-					
-					<p>The second talk, <a href="https://vivo.ufl.edu/individual/n503683">Using social networks to evaluate the impact of a CTSA on research at a university</a>, presented by <a href="http://vivo.ufl.edu/individual/n9008048343">Dr. Raffaele Vacca</a>, considered the impact of the CTSI on the social network of the university over the period 2008-2012.  The university has more than 6,000 researchers and many are in the "central component" of the network -- the largest group consisting of researchers connected to at least one other member of the group.  The central component of the social network of the University of Florida is dominated by biomedical researchers.  From 2008-2012, the central position of the CTSI increased and many new connections were made.  The CTSI grew rapidly and with that growth came increasing network span.  The CTSI continues to add new connections as well as making additional connections between its investigators.</p>
-					
-					<p>This is the second SunBelt conference I've attended.  The first was in 2011.  Both conferences were held at the Tradewinds in St. Pete Beach, Florida.  The conference is low-key, informal, and a heck of a lot of fun.  With over 700 participants, and a huge program, there is a great mixing of people and ideas.  Methodologists, theorists, data people, faculty, graduate students, and postdocs from a very wide range of academic disciplines attend.  The hospitality house, held each night, is a special opportunity to meet and mix.  All those interested in networking, regardless of what you may call it -- social network analysis, research networking, network science, or other term -- should try to attend.</p>
-					
-					<p><a href="http://insna.org">The International Network for Social Network Analysis</a>, founded in 1977 is the professional society for researchers interested in social network analysis.  INSNA has endorsed the first annual European Conference on Social Networks to be held in Barcelona, July 1-4, 2014.</p>
 				</div><!-- End Post -->
-			
-				<div class="blog-post">
-					<h2 class="blog-post-title">A Story of VIVO Data</h2>
-					<p class="blog-post-meta">February 16, 2014 by 
-					<a href="http://vivo.ufl.edu/individual/mconlon">Mike</a></p>
-					<p>This is a true story of using VIVO to answer a question that led to a great benefit for the University of Florida. VIVO wasn't the only way to answer the question.  Well, it <em>was</em> the only way to answer the question at UF, we didn't have other data or systems that could do what VIVO could do.  But there are other such systems.  Regardless, 
-					we created the value using VIVO.  Here's the story.</p>
-
-					<p>The <a href="http://www.clinicalresearchforum.org">Clinical Research Forum</a> is a leading advocacy group for clinical research.  Each year they solicit submissions from universities across the country of "top" papers in clinical research for the year.  They recognize the authors, issue a prize, and invite the authors to testify in front of Congress regarding the value of clinical research to the health of the nation.  Having a paper selected as one of the top 10 papers in clinical research for the year is a bit like winning an oscar.  It's the top recognition a clinical researcher can receive, and a top honor for the researcher's university.<p>
-
-					<p>Our Senior Vice President for Health Affairs asked our Clinical and Translational Science Institute Director if we could identify top papers in clinical research written by UF authors for nomination to the Clinical Research Forum.  The director of the CTSI asked me if it would be possible to identify top papers using VIVO.  We discussed for a few minutes how we might define top papers and determined that the appearance of an academic article in 2013 in a top journal as determined by impact factor would qualify the paper.</p>
-
-					<p>I determined top journals by using publicly available web sites listing journals by impact factor and by correlating those results with sites listing journals by other criteria.  I settled on 15 journals.  I then wrote a SPARQL query to find the papers with UF authors appearing in these journals in 2013.  The query is available <a 
-					href="http://mconlon17.github.io/sparql/find_papers_in_top_journals.txt">here</a>.  38 papers were identified by VIVO.  I reviewed the list and removed papers that were not in clinical research. As you might expect, the Clinical Research Forum is looking for papers in clinical research.  One of the top journals on our list was <em>Science</em>.  UF authors had several papers in Science over the course of 2013, but all were in planetary discovery, none in clinical research.  I removed articles that had been identified as academic articles, but were actually letters to the editor or comments on papers by others.  Following this review I had identified 23 clinical research papers that had been written by UF authors and appeared in 2013 in the top 15 journals.</p>
-
-					<p>I looked up each article in PubMed and prepared a Word document with one page per article cut and pasting the article's information from PubMed into the Word document.  I gathered the title, keywords, abstract for each.  I added the SPARQL query as an appendix.</p>
-
-					<p>From the time of the first discussion to the final report, I had spent 2 hours, with most of the time spent identifying the top journals.  This list of top journals is in the query and can be reused.</p>
-
-					<p>The report went back to our senior vice president and a UF selection committee he convened nominated several of the papers from the report to the Clinical Research Forum.  One of the papers was chosen by the Clinical Research Form as the number 5 paper in clinical research in the United States for 2013.  The author will receive a prize, and will testify before Congress.  This is an unprecedented accomplishment for UF clinical research.  We would never have found the paper had it not been for VIVO.</p>
-
-					<h3>Some takeaways</h3>
-					</p>First, the communication path led quickly from our senior vice president to our CTSI to our VIVO.  Our senior vice president believed the CTSI could be helpful.  At the CTSI VIVO was well known and immediately put to use.  Communication channels to senior leadership, such as these, are critical if VIVO is to have impact.  Second, our UF VIVO is disambiguated.  This means that we not only know that someone named J. Johnson, a UF author, has written a paper, we have identified which J. Johnson (UF has six) actually wrote the paper.  We do this for all papers written by UF authors each week, about 150 per week.  Commercial indexing services can't do this.  They only indicate that "someone" with that name has written the paper. UF VIVO has 45,000 disambiguated papers.  These are all the papers written by UF authors since 2008.  As a result, the request led directly to specific authors. Third, alternate methods for identifying papers to be nominated were proposed but would not have identified the paper in question.  The proposed methods all involved asking people what papers they thought should be nominated.  These methods are both incomplete (UF College of Medicine authors published over 2,500 papers in 2013.  Very few of these papers are known to the people who might be asked their opinion) and heavily influenced by relationships of the authors and the people nominating the papers.  The "VIVO Method" described here was unbiased.  <em>All</em> papers were identified and put before the selection committee.</p>
-
-					<p>Winning an unprecedented recognition for UF clinical research is not justification for creating a VIVO.  But it serves as an example of the power of VIVO data, and the good that can come from being ready when a request for data comes along.</p>
-				</div><!-- end post -->
-			
-				<div class="blog-post">
-					<h2 class="blog-post-title">Getting Started</h2>
-					<p class="blog-post-meta">February 8, 2014 by <a href="http://vivo.ufl.edu/individual/mconlon">Mike</a></p>
-					
-					<p>I've never done a blog before, so please bear with me.  Seems like there's a lot
-					to share about happenings in the VIVO community, tools development and data management.</p>
-					<p>I'm particularly interested in data.  For VIVO, it's usually data about scholarship --
-					representing scholarly activity in all its forms. At the University of Florida (UF for short),
-					we have started with basic data -- people and their departments, grants and their investigators,
-					papers and their authors, courses and their instructors.  As others have found, institutional data
-					can be messy, or flat out missing.  I'll share experiences about data in blog posts to come.</p>
-					<p>To get data in to VIVO, you'll need some tools.  As delivered, VIVO does not have simple tools
-					that can take your institutional data and load it into VIVO.  UF has built some tools that you may find
-					useful.  We'll talk about those tools in the blog, and have them available on the "data in" section of
-					of this site.</p>
-					<p>Once you have data in, you'll want to use it.  After all, isn't this why anyone would go to
-					the trouble to put in any computer system?  Using VIVO means seeing the data.  VIVO comes with profile
-					pages, some navigation aids, and some simple visualizations.  But there is quite a lot more that
-					you will want to do.  UF has built some tools for seeing the data in VIVO -- additional visualizations,
-					inspectors, reports, and graphs.  We build these tools <em>outside</em> of VIVO.  That is, we build the
-					tools using lightweight technology independent of VIVO.  This makes the tools easy to use on any
-					VIVO.  As we mature, we expect that you will be able to use our tools by merely "pointing" them at
-					your VIVO, that is, you won't need to run any local software at all.  Just access our existing tools.
-					<p>Here I'll be writing (blogging?) about what we've done, the tools we've created, and tools
-					we are creating to make use of the data in VIVO.  I'll point at the repos of the software.<p>
-					<p>I hope you find something useful.</p>
-				</div><!-- End Post -->
+				
+				<p class="blog-post-meta"><a href="1402.html">Previous Posts</a></p>
 			
 			</div><!-- End the blog-main -->
 			
@@ -176,7 +139,7 @@
 				<div class="sidebar-module">
 					<h4>Archives</h4>
 					<ol class="list-unstyled">
-					  <li><a href="#">February 2014</a></li>
+					  <li><a href="1402.html">February 2014</a></li>
 					</ol>
 				</div>
 				<div class="sidebar-module">

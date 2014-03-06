@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="VIVO, data, information, software, tools, blog, python, D3, Conlon, Florida">
+	<meta name="description" content="Some VIVO Things is a web site by Mike Conlon of the University of Florida
+		that describes software and tools such as python and D3, for getting data into VIVO and for getting 
+		information out. A blog describes experiences with VIVO.">
+    <meta name="author" content="Mike Conlon">
+	<link rel="shortcut icon" type="image/x-icon" href="/assets/ico/favicon.ico">  
+	<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/assets/css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="/assets/css/blog.css" rel="stylesheet">
+
+    <title>Some VIVO Things Blog</title>
+	
+	<style>
+	body {
+		padding-top: 70px;
+		padding-bottom: 30px;
+		}
+
+	.theme-dropdown .dropdown-menu {
+		display: block;
+		position: static;
+		margin-bottom: 20px;
+		}
+
+	.theme-showcase > p > .btn {
+		margin: 5px 0;
+		}
+	</style>
+	
+  </head>
+
+  <body role="document">
+  
+  <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Some VIVO Things</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="/data">Data In</a></li>
+            <li><a href="/info">Info Out</a></li>
+            <li class="active"><a href="/blog">The Blog</a></li>
+			<li><a href="/about">About</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">More <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="http://www.amazon.com/VIVO-Scholarly-Networking-Discovery-Synthesis/dp/1608459934/ref=sr_1_1?ie=UTF8&qid=1391973550&sr=8-1&keywords=vivo+conlon">The VIVO Book</a></li>
+                <li><a href="http://www.amazon.com/Semantic-Working-Ontologist-Second-Edition/dp/0123859654/ref=sr_1_1?ie=UTF8&qid=1391973643&sr=8-1&keywords=semantic+web+for+the+working+ontologist">The Semantic Web for the Working Ontologist</a></li>
+				<li class="divider"></li>
+                <li class="dropdown-header">Some VIVO sites</li>                
+				<li><a href="http://vivo.ufl.edu">University of Florida VIVO</a></li>
+				<li><a href="http://research-hub.griffith.edu.au/">Griffith University Research Hub</a></li>
+				<li class="divider"></li>
+                <li class="dropdown-header">Related CTSA projects</li>
+                <li><a href="http://research.icts.uiowa.edu/polyglot/">CTSAsearch</a></li>
+                <li><a href="http://ctsaconnect.org/">CTSAconnect</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+	
+	<div class="container theme-showcase" role="main">
+  
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+	<div class="jumbotron">
+        <h1>Some VIVO Things Blog</h1>
+		<p class="lead">Musings on the community, software, data, use, and whatever else comes to mind.</p>
+    </div>
+	
+	<!-- Here's the blog -->
+	
+	<div class="container">
+	
+		<div class="row">
+		
+			<div class="col-md-9 blog-main">
+			
+				<div class="blog-post">
+					<h2 class="blog-post-title">CTSA Social Network Analysis at Sunbelt XXXIV</h2>
+					<p class="blog-post-meta">February 23, 2014 by <a href="http://vivo.ufl.edu/individual/mconlon">Mike</a></p>
+					
+					<p>At the UF <a href="http://ctsi.ufl.edu">Clinical and Translational Science Institute</a> (CTSI) there is great interest in collaboration and in improving collaboration across the university.  Collaboration is evidenced by "artifacts" -- co-authored papers, co-written grant proposals, co-investigators on a grant award, a patent or a presentation.  At UF, VIVO is the repository of collaboration information. We have a complete record of co-authorships on papers dating back to 2008, as well as a complete collaboration information for co-investigator relationships on grant awards, also back to 2008.  Unfortunately we don't have such information for proposals, presentations or patents.  In each case, the university does not have a process for generating and managing such information.  A few authors put their presentations in VIVO, but there is no university mandate to do so.</p>
+					
+					<p>In 2013, as part of its evaluation efforts, the CTSI contracted with the UF <a href="https://www.bebr.ufl.edu/">Bureau of Economic and Business Research</a> (BEBR) to conduct a social network analysis of the publication and grant networks of the university over the five year period 2008-2012.  Several of their findings were presented in two talks at the recently held Sunbelt XXXIV Conference in St. Pete Beach, Florida.<p>
+					
+					<p>The first talk, <a href="https://vivo.ufl.edu/individual/n252218">A network intervention on scientific networks: design and reactions</a>, presented by <a href="http://vivo.ufl.edu/individual/n81483">Dr. Chris McCarty</a>, described social network intervention research done by BEBR to determine if connections across the social network could be lengthened by identifying pairs of investigators who might benefit from an introduction.  Using VIVO as a data source, the BEBR team created pairs of investigators and emailed the investigators asking if the other person in the pair might be interesting as a possible collaborator.  Network characteristics, as well as subject matter and methods were used to make the pairings.  The results indicated that "distance" in the social network was correlated with decreasing interest in collaboration, but that distance of up to 10 connections was still of interest.  More than 30 percent of the pairings were deemed of interested to the recipients of these emails.  This rate could be compared to random pairings of faculty to determine of the social networking heuristics were generating pairings better than could be done by chance.</p>
+					
+					<p>The second talk, <a href="https://vivo.ufl.edu/individual/n503683">Using social networks to evaluate the impact of a CTSA on research at a university</a>, presented by <a href="http://vivo.ufl.edu/individual/n9008048343">Dr. Raffaele Vacca</a>, considered the impact of the CTSI on the social network of the university over the period 2008-2012.  The university has more than 6,000 researchers and many are in the "central component" of the network -- the largest group consisting of researchers connected to at least one other member of the group.  The central component of the social network of the University of Florida is dominated by biomedical researchers.  From 2008-2012, the central position of the CTSI increased and many new connections were made.  The CTSI grew rapidly and with that growth came increasing network span.  The CTSI continues to add new connections as well as making additional connections between its investigators.</p>
+					
+					<p>This is the second SunBelt conference I've attended.  The first was in 2011.  Both conferences were held at the Tradewinds in St. Pete Beach, Florida.  The conference is low-key, informal, and a heck of a lot of fun.  With over 700 participants, and a huge program, there is a great mixing of people and ideas.  Methodologists, theorists, data people, faculty, graduate students, and postdocs from a very wide range of academic disciplines attend.  The hospitality house, held each night, is a special opportunity to meet and mix.  All those interested in networking, regardless of what you may call it -- social network analysis, research networking, network science, or other term -- should try to attend.</p>
+					
+					<p><a href="http://insna.org">The International Network for Social Network Analysis</a>, founded in 1977 is the professional society for researchers interested in social network analysis.  INSNA has endorsed the first annual European Conference on Social Networks to be held in Barcelona, July 1-4, 2014.</p>
+				</div><!-- End Post -->
+			
+				<div class="blog-post">
+					<h2 class="blog-post-title">A Story of VIVO Data</h2>
+					<p class="blog-post-meta">February 16, 2014 by 
+					<a href="http://vivo.ufl.edu/individual/mconlon">Mike</a></p>
+					<p>This is a true story of using VIVO to answer a question that led to a great benefit for the University of Florida. VIVO wasn't the only way to answer the question.  Well, it <em>was</em> the only way to answer the question at UF, we didn't have other data or systems that could do what VIVO could do.  But there are other such systems.  Regardless, 
+					we created the value using VIVO.  Here's the story.</p>
+
+					<p>The <a href="http://www.clinicalresearchforum.org">Clinical Research Forum</a> is a leading advocacy group for clinical research.  Each year they solicit submissions from universities across the country of "top" papers in clinical research for the year.  They recognize the authors, issue a prize, and invite the authors to testify in front of Congress regarding the value of clinical research to the health of the nation.  Having a paper selected as one of the top 10 papers in clinical research for the year is a bit like winning an oscar.  It's the top recognition a clinical researcher can receive, and a top honor for the researcher's university.<p>
+
+					<p>Our Senior Vice President for Health Affairs asked our Clinical and Translational Science Institute Director if we could identify top papers in clinical research written by UF authors for nomination to the Clinical Research Forum.  The director of the CTSI asked me if it would be possible to identify top papers using VIVO.  We discussed for a few minutes how we might define top papers and determined that the appearance of an academic article in 2013 in a top journal as determined by impact factor would qualify the paper.</p>
+
+					<p>I determined top journals by using publicly available web sites listing journals by impact factor and by correlating those results with sites listing journals by other criteria.  I settled on 15 journals.  I then wrote a SPARQL query to find the papers with UF authors appearing in these journals in 2013.  The query is available <a 
+					href="http://mconlon17.github.io/sparql/find_papers_in_top_journals.txt">here</a>.  38 papers were identified by VIVO.  I reviewed the list and removed papers that were not in clinical research. As you might expect, the Clinical Research Forum is looking for papers in clinical research.  One of the top journals on our list was <em>Science</em>.  UF authors had several papers in Science over the course of 2013, but all were in planetary discovery, none in clinical research.  I removed articles that had been identified as academic articles, but were actually letters to the editor or comments on papers by others.  Following this review I had identified 23 clinical research papers that had been written by UF authors and appeared in 2013 in the top 15 journals.</p>
+
+					<p>I looked up each article in PubMed and prepared a Word document with one page per article cut and pasting the article's information from PubMed into the Word document.  I gathered the title, keywords, abstract for each.  I added the SPARQL query as an appendix.</p>
+
+					<p>From the time of the first discussion to the final report, I had spent 2 hours, with most of the time spent identifying the top journals.  This list of top journals is in the query and can be reused.</p>
+
+					<p>The report went back to our senior vice president and a UF selection committee he convened nominated several of the papers from the report to the Clinical Research Forum.  One of the papers was chosen by the Clinical Research Form as the number 5 paper in clinical research in the United States for 2013.  The author will receive a prize, and will testify before Congress.  This is an unprecedented accomplishment for UF clinical research.  We would never have found the paper had it not been for VIVO.</p>
+
+					<h3>Some takeaways</h3>
+					</p>First, the communication path led quickly from our senior vice president to our CTSI to our VIVO.  Our senior vice president believed the CTSI could be helpful.  At the CTSI VIVO was well known and immediately put to use.  Communication channels to senior leadership, such as these, are critical if VIVO is to have impact.  Second, our UF VIVO is disambiguated.  This means that we not only know that someone named J. Johnson, a UF author, has written a paper, we have identified which J. Johnson (UF has six) actually wrote the paper.  We do this for all papers written by UF authors each week, about 150 per week.  Commercial indexing services can't do this.  They only indicate that "someone" with that name has written the paper. UF VIVO has 45,000 disambiguated papers.  These are all the papers written by UF authors since 2008.  As a result, the request led directly to specific authors. Third, alternate methods for identifying papers to be nominated were proposed but would not have identified the paper in question.  The proposed methods all involved asking people what papers they thought should be nominated.  These methods are both incomplete (UF College of Medicine authors published over 2,500 papers in 2013.  Very few of these papers are known to the people who might be asked their opinion) and heavily influenced by relationships of the authors and the people nominating the papers.  The "VIVO Method" described here was unbiased.  <em>All</em> papers were identified and put before the selection committee.</p>
+
+					<p>Winning an unprecedented recognition for UF clinical research is not justification for creating a VIVO.  But it serves as an example of the power of VIVO data, and the good that can come from being ready when a request for data comes along.</p>
+				</div><!-- end post -->
+			
+				<div class="blog-post">
+					<h2 class="blog-post-title">Getting Started</h2>
+					<p class="blog-post-meta">February 8, 2014 by <a href="http://vivo.ufl.edu/individual/mconlon">Mike</a></p>
+					
+					<p>I've never done a blog before, so please bear with me.  Seems like there's a lot
+					to share about happenings in the VIVO community, tools development and data management.</p>
+					<p>I'm particularly interested in data.  For VIVO, it's usually data about scholarship --
+					representing scholarly activity in all its forms. At the University of Florida (UF for short),
+					we have started with basic data -- people and their departments, grants and their investigators,
+					papers and their authors, courses and their instructors.  As others have found, institutional data
+					can be messy, or flat out missing.  I'll share experiences about data in blog posts to come.</p>
+					<p>To get data in to VIVO, you'll need some tools.  As delivered, VIVO does not have simple tools
+					that can take your institutional data and load it into VIVO.  UF has built some tools that you may find
+					useful.  We'll talk about those tools in the blog, and have them available on the "data in" section of
+					of this site.</p>
+					<p>Once you have data in, you'll want to use it.  After all, isn't this why anyone would go to
+					the trouble to put in any computer system?  Using VIVO means seeing the data.  VIVO comes with profile
+					pages, some navigation aids, and some simple visualizations.  But there is quite a lot more that
+					you will want to do.  UF has built some tools for seeing the data in VIVO -- additional visualizations,
+					inspectors, reports, and graphs.  We build these tools <em>outside</em> of VIVO.  That is, we build the
+					tools using lightweight technology independent of VIVO.  This makes the tools easy to use on any
+					VIVO.  As we mature, we expect that you will be able to use our tools by merely "pointing" them at
+					your VIVO, that is, you won't need to run any local software at all.  Just access our existing tools.
+					<p>Here I'll be writing (blogging?) about what we've done, the tools we've created, and tools
+					we are creating to make use of the data in VIVO.  I'll point at the repos of the software.<p>
+					<p>I hope you find something useful.</p>
+				</div><!-- End Post -->
+			
+			</div><!-- End the blog-main -->
+			
+			<div class="col-md-3">
+				<div class="sidebar-module sidebar-module-inset">
+					<h4>About VIVO</h4>
+					<p>VIVO is an open source, semantic web application for organizing information.  
+					VIVO is often used by academic institutions to represent the scholarly work
+					of their faculty, staff and students. See <a href="http://vivoweb.org" class="btn
+					btn-xs btn-info">the 
+					VIVO Project Web Site</a> for more info.</p>
+				</div>
+				<div class="sidebar-module">
+					<h4>Archives</h4>
+					<ol class="list-unstyled">
+					  <li><a href="#">February 2014</a></li>
+					</ol>
+				</div>
+				<div class="sidebar-module">
+					<h4>Elsewhere</h4>
+					<ol class="list-unstyled">
+					  <li><a href="https://github.com/mconlon17">GitHub</a></li>
+					  <li><a href="http://twitter.com/mconlon17">Twitter</a></li>
+					  <li><a href="http://facebook.com/mconlon">Facebook</a></li>
+					  <li><a href="http://vivo.ufl.edu/individual/mconlon">VIVO</a></li>
+					</ol>
+				</div>
+			</div><!-- /.blog-sidebar -->
+			
+		</div><!-- End blog row -->
+		</div><!-- End blog container -->
+
+		<hr>
+
+		<footer>
+		<p>&copy; <a href="http://vivo.ufl.edu/individual/mconlon">Mike Conlon</a>, 
+		<a href="http://www.ufl.edu">University of Florida</a> 2014</br>
+		VIVO is an incubated project of <a href="http://duraspace.org">Duraspace</a></br>
+		Visit the <a href="http://vivoweb.org">The VIVO Project Web Site</a> and <a href="https://wiki.duraspace.org/display/VIVO/VIVO+Main+Page">The Duraspace VIVO Wiki</a>
+		</footer>
+
+	</div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
