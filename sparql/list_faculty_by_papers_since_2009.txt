@@ -1,0 +1,20 @@
+
+# For each faculty member, show how many papers the faculty member published since 2009
+
+SELECT ?fac (SAMPLE(DISTINCT ?xname) AS ?facname) (SAMPLE(DISTINCT ?deptxname) AS ?deptname) (COUNT(DISTINCT ?a) AS ?na)
+WHERE {
+    ?fac a vivo:FacultyMember .
+    ?fac a ufVivo:UFCurrentEntity .
+    ?fac rdfs:label ?xname .
+    ?fac ufVivo:homeDept ?dept .
+    ?dept rdfs:label ?deptxname .
+    OPTIONAL{ ?fac vivo:authorInAuthorship ?a . 
+        ?a vivo:linkedInformationResource ?pub . 
+        ?pub a bibo:AcademicArticle . 
+        ?pub vivo:dateTimeValue ?dtv .
+        ?dtv vivo:dateTime ?dt .
+        FILTER (regex(str(?dt),"^2009")||regex(str(?dt),"^2010")||regex(str(?dt),"^2011")
+		    ||regex(str(?dt),"^2012")||regex(str(?dt),"^2013"))}
+}
+GROUP BY ?fac
+ORDER BY DESC(?na)
