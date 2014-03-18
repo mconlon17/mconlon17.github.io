@@ -1,0 +1,12 @@
+
+#  Count papers per concept
+
+SELECT ?uri (SAMPLE(DISTINCT ?xconcept_name) AS ?concept_name) (COUNT (DISTINCT ?pub) AS ?npub)
+WHERE {
+  ?uri a skos:Concept .
+  ?uri rdfs:label ?xconcept_name .
+  ?uri vivo:subjectAreaFor ?pub .
+  ?pub a bibo:AcademicArticle .
+}
+GROUP BY ?uri
+ORDER BY DESC(?npub)
