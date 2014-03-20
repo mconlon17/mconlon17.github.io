@@ -1,0 +1,90 @@
+PREFIX rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd:   <http://www.w3.org/2001/XMLSchema#>
+PREFIX owl:   <http://www.w3.org/2002/07/owl#>
+PREFIX swrl:  <http://www.w3.org/2003/11/swrl#>
+PREFIX swrlb: <http://www.w3.org/2003/11/swrlb#>
+PREFIX vitro: <http://vitro.mannlib.cornell.edu/ns/vitro/0.7#>
+PREFIX bibo: <http://purl.org/ontology/bibo/>
+PREFIX c4o: <http://purl.org/spar/c4o/>
+PREFIX dcelem: <http://purl.org/dc/elements/1.1/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX event: <http://purl.org/NET/c4dm/event.owl#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX fabio: <http://purl.org/spar/fabio/>
+PREFIX geo: <http://aims.fao.org/aos/geopolitical.owl#>
+PREFIX pvs: <http://vivoweb.org/ontology/provenance-support#>
+PREFIX ero: <http://purl.obolibrary.org/obo/>
+PREFIX scires: <http://vivoweb.org/ontology/scientific-research#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX ufVivo: <http://vivo.ufl.edu/ontology/vivo-ufl/>
+PREFIX vitro: <http://vitro.mannlib.cornell.edu/ns/vitro/public#>
+PREFIX vivo: <http://vivoweb.org/ontology/core#>
+
+#  Select Faculty in any of the six colleges of the Health Science Center
+
+SELECT (COUNT (DISTINCT ?fac) AS ?nfac)
+WHERE {
+  ?fac a vivo:FacultyMember .
+  ?fac a ufVivo:UFCurrentEntity .
+  	?fac ufVivo:homeDept ?home .
+	?home rdfs:label ?hlabel .
+#	{<http://vivo.ufl.edu/individual/n166017> vivo:hasSubOrganization ?home .}
+#	UNION
+#	{<http://vivo.ufl.edu/individual/n166017> vivo:hasSubOrganization ?alevel1 .
+#	?alevel1 vivo:hasSubOrganization ?home .}
+#	UNION
+#	{<http://vivo.ufl.edu/individual/n166017> vivo:hasSubOrganization ?blevel1 .
+#	?blevel1 vivo:hasSubOrganization ?blevel2 .
+#	?blevel2 vivo:hasSubOrganization ?home}
+#	UNION
+#	{<http://vivo.ufl.edu/individual/n166017> vivo:hasSubOrganization ?clevel1 .
+#	?clevel1 vivo:hasSubOrganization ?clevel2 .
+#	?clevel2 vivo:hasSubOrganization ?clevel3 .
+#	?clevel3 vivo:hasSubOrganization ?home .}
+#   UNION
+#   Dentistry
+#	{<http://vivo.ufl.edu/individual/n243222> vivo:hasSubOrganization ?home .}
+#	UNION
+#	{<http://vivo.ufl.edu/individual/n243222> vivo:hasSubOrganization ?alevel1 .
+#	?alevel1 vivo:hasSubOrganization ?home .}
+#	UNION
+#	{<http://vivo.ufl.edu/individual/n243222> vivo:hasSubOrganization ?blevel1 .
+#	?blevel1 vivo:hasSubOrganization ?blevel2 .
+#	?blevel2 vivo:hasSubOrganization ?home}
+#	UNION
+#	{<http://vivo.ufl.edu/individual/n243222> vivo:hasSubOrganization ?clevel1 .
+#	?clevel1 vivo:hasSubOrganization ?clevel2 .
+#	?clevel2 vivo:hasSubOrganization ?clevel3 .
+#	?clevel3 vivo:hasSubOrganization ?home .}
+#	UNION
+#   Pharmacy
+#	{<http://vivo.ufl.edu/individual/n466110> vivo:hasSubOrganization ?home .}
+#	UNION
+#	{<http://vivo.ufl.edu/individual/n466110> vivo:hasSubOrganization ?alevel1 .
+#	?alevel1 vivo:hasSubOrganization ?home .}
+#	UNION
+#	{<http://vivo.ufl.edu/individual/n466110> vivo:hasSubOrganization ?blevel1 .
+#	?blevel1 vivo:hasSubOrganization ?blevel2 .
+#	?blevel2 vivo:hasSubOrganization ?home}
+#	UNION
+#	{<http://vivo.ufl.edu/individual/n466110> vivo:hasSubOrganization ?clevel1 .
+#	?clevel1 vivo:hasSubOrganization ?clevel2 .
+#	?clevel2 vivo:hasSubOrganization ?clevel3 .
+#	?clevel3 vivo:hasSubOrganization ?home .}
+#	UNION
+#   VetMed
+	{<http://vivo.ufl.edu/individual/n237306> vivo:hasSubOrganization ?home .}
+	UNION
+	{<http://vivo.ufl.edu/individual/n237306> vivo:hasSubOrganization ?alevel1 .
+	?alevel1 vivo:hasSubOrganization ?home .}
+	UNION
+	{<http://vivo.ufl.edu/individual/n237306> vivo:hasSubOrganization ?blevel1 .
+	?blevel1 vivo:hasSubOrganization ?blevel2 .
+	?blevel2 vivo:hasSubOrganization ?home}
+	UNION
+	{<http://vivo.ufl.edu/individual/n237306> vivo:hasSubOrganization ?clevel1 .
+	?clevel1 vivo:hasSubOrganization ?clevel2 .
+	?clevel2 vivo:hasSubOrganization ?clevel3 .
+	?clevel3 vivo:hasSubOrganization ?home .}
+}

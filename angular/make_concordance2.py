@@ -36,7 +36,7 @@ from datetime import datetime
 
 def make_concordance(debug=False):
     """
-    Extract all the concets in VIVO and organize them into a dictionary
+    Extract all the concepts in VIVO and organize them into a dictionary
     keyed by concept uri.  Data for the concept includes the concet name and
     all concepts co-occuring withthe concept and the count of the co-occurances
     """
@@ -62,9 +62,34 @@ def make_concordance(debug=False):
     i = 0
     for row in rows:
         name = row['name']['value']
-        uri = str(row['uri']['value'])
-        publication = get_publication(uri)
-        concordance[uri] = {'name':name,'concept_uris': publication['concept_uris']}
+        pub_uri = str(row['uri']['value'])
+        publication = get_publication(pub_uri, get_authors = True)
+        for concept_uri1 in publication['concept_uris']:
+            concept_name1 = get_vivo_value(concept_uri1,'rdfs:label')
+            if concept_uri1 not in concordance:
+                concordance[concept_uri1] = {'concept_name' : concept_name1,
+                    'people' : publication['author_uris'],
+                    'pubs' : [pub_uri],
+                    'concepts' : {}}
+            for concept_uri2 in publication['concept_uris']:
+                concept_name2 = get_vivo_value(concept_uri2,'rdfs:label')
+                if concept_uri1 != concept_uri2:
+                    print 'Publication uri',uri,concept_name1,\
+                          concept_uri1,concept_name2,concept_uri
+                    if concept_uri2 not in \
+                       concordance[concept_uri1]['concepts']:
+                        concordance[concept_uri1]['concepts'][concept_uri2]=\
+                        {'pubs':[pub_uri],
+                         'people':[publication['author_uris']]}
+                    else:
+                         pair = concordance[concept_uri1]['concepts'][concept_uri2]
+                         pubs = pair['pubs']
+                         people = pair['people']
+                         if pub_uri not in pubs:
+                             pubs.append(pub_uri)
+                         for author_uri in publication['author_uris']:
+                             if author_uri not in people:
+                                 people.append(author_uri)
         i = i + 1
         print i
         if i > 10:
