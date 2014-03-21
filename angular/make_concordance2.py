@@ -1,6 +1,6 @@
 #!/usr/bin/env/python
 """
-    make_concordance.py -- Examine concepts, people and apers from VIVO,
+    make_conc.py -- Examine concepts, people and apers from VIVO,
     build all combinations of occurances as a python shelf.
 
     make_concordnace2 is intended to be run as a batch process to run daily as
@@ -10,7 +10,8 @@
     --  Started at the VIVO 14 Hackathon.  Just a frame for now
 
     To Do
-    --  Everything
+    --  Add counts to the currances of papers and people in concepts and concept pairs
+    --  Scale testing
 
 """
 
@@ -27,6 +28,7 @@ from vivotools import update_data_property
 from vivotools import get_vivo_value
 from vivotools import get_triples
 from vivotools import get_publication
+import vivotools as vt
 import os
 import sys
 import shelve
@@ -34,7 +36,7 @@ import json
 
 from datetime import datetime
 
-def make_concordance(debug=False):
+def make_conc(debug=False):
     """
     Extract all the concepts in VIVO and organize them into a dictionary
     keyed by concept uri.  Data for the concept includes the concet name and
@@ -51,58 +53,60 @@ def make_concordance(debug=False):
     if 'results' in result and 'bindings' in result['results']:
         rows = result["results"]["bindings"]
     else:
-        return concordance
+        return conc
     if debug:
         print query
         if len(rows) >= 2:
             print rows[0],rows[1]
         elif len(rows) == 1:
             print rows[0]
-    concordance = shelve.open("concordance2")
+    conc = shelve.open("conc2")
     i = 0
     for row in rows:
         name = row['name']['value']
         pub_uri = str(row['uri']['value'])
         publication = get_publication(pub_uri, get_authors = True)
-        for concept_uri1 in publication['concept_uris']:
-            concept_name1 = get_vivo_value(concept_uri1,'rdfs:label')
-            if concept_uri1 not in concordance:
-                concordance[concept_uri1] = {'concept_name' : concept_name1,
-                    'people' : publication['author_uris'],
+        curis = []
+        for curi in publication['concept_uris']:
+            curis.append(str(curi))
+        auris = []
+        for auri in publication['author_uris']:
+            auris.append(str(auri))
+        for curi1 in curis:
+            concept_name1 = get_vivo_value(curi1,'rdfs:label')
+            if curi1 not in conc:
+                entry = {'concept_name' : concept_name1,
+                    'people' : auris,
                     'pubs' : [pub_uri],
                     'concepts' : {}}
-            for concept_uri2 in publication['concept_uris']:
-                concept_name2 = get_vivo_value(concept_uri2,'rdfs:label')
-                if concept_uri1 != concept_uri2:
-                    print 'Publication uri',uri,concept_name1,\
-                          concept_uri1,concept_name2,concept_uri
-                    if concept_uri2 not in \
-                       concordance[concept_uri1]['concepts']:
-                        concordance[concept_uri1]['concepts'][concept_uri2]=\
-                        {'pubs':[pub_uri],
-                         'people':[publication['author_uris']]}
+            else:
+                entry = conc[curi1]
+            for curi2 in curis:
+                concept_name2 = get_vivo_value(curi2,'rdfs:label')
+                if curi1 != curi2:
+                    if curi2 not in entry['concepts']:
+                        entry['concepts'][curi2]= {'concept_name': concept_name2,
+                         'pubs':[pub_uri],
+                         'people':auris}
                     else:
-                         pair = concordance[concept_uri1]['concepts'][concept_uri2]
-                         pubs = pair['pubs']
-                         people = pair['people']
-                         if pub_uri not in pubs:
-                             pubs.append(pub_uri)
-                         for author_uri in publication['author_uris']:
-                             if author_uri not in people:
-                                 people.append(author_uri)
+                        if pub_uri not in entry['concepts'][curi2]['pubs']:
+                           entry['concepts'][curi2]['pubs'].append(pub_uri)
+                        for auri in auris:
+                           if auri not in entry['concepts'][curi2]['people']:
+                               entry['concepts'][curi2]['people'].append(auri)
+            conc[curi1] = entry
         i = i + 1
         print i
         if i > 10:
             break
-    if debug:
-        print concordance.items()[1:3]
-    return concordance
+    return conc
 
 log_file = sys.stdout
 print >>log_file, datetime.now(), "Start"
-concordance = make_concordance(debug=True)
-for key,stuff in concordance.items():
+print >>log_file, "VIVO Tools version", vt.__version__
+conc = make_conc(debug=True)
+for key,stuff in conc.items():
     print key
     print json.dumps(stuff, indent = 4)
-print "Concordance has ", len(concordance)," concepts"
+print "conc has ", len(conc)," concepts"
 print >>log_file, datetime.now(), "Finish"
