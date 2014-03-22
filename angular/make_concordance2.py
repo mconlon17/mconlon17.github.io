@@ -10,7 +10,8 @@
     --  Started at the VIVO 14 Hackathon.  Just a frame for now
 
     To Do
-    --  Add counts to the currances of papers and people in concepts and concept pairs
+    --  Add counts to the ocurrances of papers and people in concepts and
+        concept pairs
     --  Scale testing
 
 """
@@ -73,22 +74,23 @@ def make_conc(debug=False):
         for auri in publication['author_uris']:
             auris.append(str(auri))
         for curi1 in curis:
-            concept_name1 = get_vivo_value(curi1,'rdfs:label')
+            cname1 = get_vivo_value(curi1,'rdfs:label')
             if curi1 not in conc:
-                entry = {'concept_name' : concept_name1,
+                entry = {'name' : cname1,
                     'people' : auris,
                     'pubs' : [pub_uri],
                     'concepts' : {}}
             else:
                 entry = conc[curi1]
             for curi2 in curis:
-                concept_name2 = get_vivo_value(curi2,'rdfs:label')
+                cname2 = get_vivo_value(curi2,'rdfs:label')
                 if curi1 != curi2:
                     if curi2 not in entry['concepts']:
-                        entry['concepts'][curi2]= {'concept_name': concept_name2,
+                        entry['concepts'][curi2]= {'name': cname2,
                          'pubs':[pub_uri],
                          'people':auris}
                     else:
+                        print "Augment"
                         if pub_uri not in entry['concepts'][curi2]['pubs']:
                            entry['concepts'][curi2]['pubs'].append(pub_uri)
                         for auri in auris:
@@ -97,7 +99,7 @@ def make_conc(debug=False):
             conc[curi1] = entry
         i = i + 1
         print i
-        if i > 10:
+        if i > 1000:
             break
     return conc
 
