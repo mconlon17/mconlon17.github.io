@@ -92,33 +92,32 @@
 			<div class="col-md-9 blog-main">
 			
 				<div class="blog-post">
-					<h2 class="blog-post-title">What would you do if you had data?</h2>
-					<p class="blog-post-meta">March 24, 2014 by <a href="http://vivo.ufl.edu/individual/mconlon">Mike</a></p>
-
-					<p>VIVO is a work in progress.  People are creating VIVOs and filling them with data about scholarship.  Let's suppose for a moment that lots of people involved in scholarship had a VIVO that contained data regarding their work and interests.  What would we be able to do?</p>
-
-					<p>Over the past several years, ideas have accumulated regarding the use of VIVO and VIVO data.  Here are half a dozen ideas, in no particular order. I'll have another batch of ideas and batches after that in posts to come.</p>
-
-					<p>Some of the ideas may not be very good.  We can let the community decide what they need by what they are willing to contribute time and resources to build.</p>
-
-					<ol>
-					<li>Event mining.  VIVO can manage data related to events such as seminars, workshops and conferences.  The VIVO event model can represent location, time, name, components and type of event, but more importantly for scholarship, the model can represent concepts and people.  Desktop software such as Word and Outlook are often used by staff members to make and distribute materials for events.  But these tools have no semantic content and no connection to VIVO.  Simple plug-ins for these tools could provide staff members with the means of creating information about the event that could be automatically pushed into VIVO.  VIVO would then have a repository of event information that could be used to answer questions such as "which seminars in the past year have dealt with p53 up regulation?," "which departments have offered seminars involving informatics over the past five years?," "are there upcoming conferences, workshops or symposia that match my interests or those of my students?"</li>
-					<li>Concept cruising.  VIVO can have information about concepts, loosely defined as the ideas behind the scholarship.  An author might publish on Africa, or HIV, or a particular type of savannah grass.  Concepts can be considered connected to other concepts by co-occurrence -- papers, presentations, courses and other works and artifacts in which the concepts appear together.  Concepts are connected to people based on a person's works in which the concept is used.  Visualizations could be built to show connections between concepts and people.  Such visualizations could be used to identify people to serve as experts in various settings, to join teams for future research, to mentor, and to understand the social connections between people and the intellectual connections between their works. VIVO provides ready access to great detail about the people involved with particular concepts and concept pairings.  Papers can be reviewed and authors contacted.</li>
-					<li>VIVO information router.  VIVO often stores contact information including email addresses for people.  We could easily enable queries of people to result in email lists that could be used to contact people.  Suppose a seminar was being given in a particular topic.  We could use VIVO to find people associated with the concepts behind the seminar and concepts related to those concepts.  Rather than emailing "faculty" or other static, organizational groupings, we could email the people who might actually be interested in the seminar.</li>
-					<li>Provenance for VIVO.  VIVO has an open data model.  It is rather easy to add the ability to add new data models for representing new kinds of data.  One very important kind of data is provenance -- data about the data -- where did it come from, when, who produced it, and under what conditions.  The <a href="http://www.w3.org/standards/techs/provenance#w3c_all">W3C provenance model</a> represents this kind of information in a standard way.  The W3C model is also ready to be used in VIVO -- it is an ontology represented in RDF and could easily be added to VIVO giving VIVO the ability to keep track of information about its data.</li>
-					<li>Simple VIVO.  The VIVO data model has many elements.  Sometimes it's richness is distracting -- people new to VIVO can be overwhelmed by VIVO's ability to represent and use information.  There could be a subset, a minimum set of information that could constitute a "simple VIVO" supported by simple applications for creating and managing its data. Using such a set of applications, a much larger collection of institutions might find VIVO accessible.  The effort to create and maintain a VIVO would be clearer.  Once a simple VIVO is established, additional richness of detail and expression of information about scholarship could be added.</li>
-					<li>Groups for VIVO.  VIVO has the data model to put things in groups.  Groups of people could be created such as "my students," "semantic web people," or "people I admire."  Users of VIVO could define their own groups possibly by using a mobile app to drag pictures of people to groups.  Once defined, the creator of the group could email all members of a group, set alerts to be notified if new papers are added for any member of the group, define performance metrics for the group to be tracked over time, share their group with others.</li>
-					</ol>
-
-					<p>The ideas here have accumulated over the years. Some may represent work in progress.  Some will be built by members of the VIVO community. And there are many, many more ideas about how VIVO data can be used.</p>
-
-					<p>Have an idea for VIVO data?  Drop me a note.  You can find me in VIVO.</p>
-
-
+					<h2 class="blog-post-title">Getting Started</h2>
+					<p class="blog-post-meta">February 8, 2014 by <a href="http://vivo.ufl.edu/individual/mconlon">Mike</a></p>
 					
+					<p>I've never done a blog before, so please bear with me.  Seems like there's a lot
+					to share about happenings in the VIVO community, tools development and data management.</p>
+					<p>I'm particularly interested in data.  For VIVO, it's usually data about scholarship --
+					representing scholarly activity in all its forms. At the University of Florida (UF for short),
+					we have started with basic data -- people and their departments, grants and their investigators,
+					papers and their authors, courses and their instructors.  As others have found, institutional data
+					can be messy, or flat out missing.  I'll share experiences about data in blog posts to come.</p>
+					<p>To get data in to VIVO, you'll need some tools.  As delivered, VIVO does not have simple tools
+					that can take your institutional data and load it into VIVO.  UF has built some tools that you may find
+					useful.  We'll talk about those tools in the blog, and have them available on the "data in" section of
+					of this site.</p>
+					<p>Once you have data in, you'll want to use it.  After all, isn't this why anyone would go to
+					the trouble to put in any computer system?  Using VIVO means seeing the data.  VIVO comes with profile
+					pages, some navigation aids, and some simple visualizations.  But there is quite a lot more that
+					you will want to do.  UF has built some tools for seeing the data in VIVO -- additional visualizations,
+					inspectors, reports, and graphs.  We build these tools <em>outside</em> of VIVO.  That is, we build the
+					tools using lightweight technology independent of VIVO.  This makes the tools easy to use on any
+					VIVO.  As we mature, we expect that you will be able to use our tools by merely "pointing" them at
+					your VIVO, that is, you won't need to run any local software at all.  Just access our existing tools.
+					<p>Here I'll be writing (blogging?) about what we've done, the tools we've created, and tools
+					we are creating to make use of the data in VIVO.  I'll point at the repos of the software.<p>
+					<p>I hope you find something useful.</p>
 				</div><!-- End Post -->
-				
-				<p class="blog-post-meta"><a href="what-does-it-take-to-implement-vivo.html">Previous Posts</a></p>
 			
 			</div><!-- End the blog-main -->
 			
@@ -134,8 +133,7 @@
 				<div class="sidebar-module">
 					<h4>Archives</h4>
 					<ol class="list-unstyled">
-					  <li><a href="#">March 2014</a></li>
-					  <li><a href="ctsa-social-network-analysis-at-sunbelt-xxxiv.html">February 2014</a></li>
+					  <li><a href="#">February 2014</a></li>
 					</ol>
 				</div>
 				<div class="sidebar-module">
