@@ -1,0 +1,9 @@
+# Produce an alphabetical list of all the people who have opted in
+# to have profiles in UF VIVO
+
+SELECT ?name ?uri
+WHERE {
+  ?uri a ufVivo:VIVOOptIn .
+  ?uri rdfs:label ?name .
+}
+ORDER BY ?name
