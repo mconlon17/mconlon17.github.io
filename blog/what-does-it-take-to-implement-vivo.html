@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="VIVO, data, information, software, tools, blog, python, D3, Conlon, Florida">
+	<meta name="description" content="Some VIVO Things is a web site by Mike Conlon of the University of Florida
+		that describes software and tools such as python and D3, for getting data into VIVO and for getting 
+		information out. A blog describes experiences with VIVO.">
+    <meta name="author" content="Mike Conlon">
+	<link rel="shortcut icon" type="image/x-icon" href="/assets/ico/favicon.ico">  
+	<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/assets/css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="/assets/css/blog.css" rel="stylesheet">
+
+    <title>Some VIVO Things Blog</title>
+	
+	<style>
+	body {
+		padding-top: 70px;
+		padding-bottom: 30px;
+		}
+
+	.theme-dropdown .dropdown-menu {
+		display: block;
+		position: static;
+		margin-bottom: 20px;
+		}
+
+	.theme-showcase > p > .btn {
+		margin: 5px 0;
+		}
+	</style>
+	
+  </head>
+
+  <body role="document">
+  
+  <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Some VIVO Things</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="/data">Data In</a></li>
+            <li><a href="/info">Info Out</a></li>
+            <li class="active"><a href="/blog">The Blog</a></li>
+			<li><a href="/about">About</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">More <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="http://www.amazon.com/VIVO-Scholarly-Networking-Discovery-Synthesis/dp/1608459934/ref=sr_1_1?ie=UTF8&qid=1391973550&sr=8-1&keywords=vivo+conlon">The VIVO Book</a></li>
+                <li><a href="http://www.amazon.com/Semantic-Working-Ontologist-Second-Edition/dp/0123859654/ref=sr_1_1?ie=UTF8&qid=1391973643&sr=8-1&keywords=semantic+web+for+the+working+ontologist">The Semantic Web for the Working Ontologist</a></li>
+				<li class="divider"></li>
+                <li class="dropdown-header">Some VIVO sites</li>                
+				<li><a href="http://vivo.ufl.edu">University of Florida VIVO</a></li>
+				<li><a href="http://research-hub.griffith.edu.au/">Griffith University Research Hub</a></li>
+				<li class="divider"></li>
+                <li class="dropdown-header">Related CTSA projects</li>
+                <li><a href="http://research.icts.uiowa.edu/polyglot/">CTSAsearch</a></li>
+                <li><a href="http://ctsaconnect.org/">CTSAconnect</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+	
+	<div class="container theme-showcase" role="main">
+  
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+	<div class="jumbotron">
+        <h1>Some VIVO Things Blog</h1>
+		<p class="lead">Musings on the community, software, data, use, and whatever else comes to mind.</p>
+    </div>
+	
+	<!-- Here's the blog -->
+	
+	<div class="container">
+	
+		<div class="row">
+		
+			<div class="col-md-9 blog-main">
+			
+				<div class="blog-post">
+					<h2 class="blog-post-title">What does it take to implement VIVO?</h2>
+					<p class="blog-post-meta">March 5, 2014 by <a href="http://vivo.ufl.edu/individual/mconlon">Mike</a></p>
+
+					<p>I am often asked what resources it takes to implement VIVO.  I was asked today, for example.  Sometimes the question comes from technical staff members, sometimes from university administrators.</p>
+
+					<p>The answer is “it depends.”  No one likes this answer, and I don’t either.  It depends on what you want to put into your VIVO and how prepared you are to put the things you have identified into your VIVO.  If you are very prepared and your needs are simple, you should be able to have a two person team set up VIVO in a couple of months and then use 0.5 FTE to maintain it.  But if you are like the University of Florida – large, complex and without mature institutional data management practices (that may sound harsh, but I work there, and have a bunch of experience with the practices) then it may take a man year or more to implement VIVO and up to two FTEs to maintain it.</p>
+
+					<p>Let’s break this down a bit.  What might you want to put in your VIVO?</p>
+
+					<p>People.  You’ll put in your faculty, possibly your postdocs, graduate students, housestaff and possibly your staff.  At UF, we have faculty, postdocs, staff, and housestaff in our VIVO.  We are considering adding graduate students.  At UF, the count of people in VIVO with a current affiliation is 20,692.  The number fluctuates each week based on our automated ingests.  You’ll get your people data from HR or a warehouse.  Hopefully you have a unique person identifier that you can use to determine if the person is already in your VIVO.  And hopefully you’ll get contact information, home department, position information, current status.  Back to UF, we have a unique identifier, but we can’t tell who the postdocs are – they are appointed in many different ways.  The university is working to fix this, but in the interim, we have a special ingest process just to assign postdoc status based on a spreadsheet.  Such is data management in the 21st century. We have a single person ingest process that we run each week based on HR data that creates and updates people as necessary, providing all information about the person.</p>
+
+					<p>Publications.  It’s not much of a VIVO if you don’t have some way of getting the scholarly work of the people onto their profiles.  The library is typically key here.  They will know what resources can be used – electronic subscriptions and their license limitations.  PubMed data is free and can be reused, but it’s biomedical only, which may not cover the scholarship of your institution. At UF, we use bibtex to load publications into VIVO.  We have 53,659 publications in VIVO, mostly from 2008.  We link these to PubMed if possible, adding MESH terms and links to full text.  Most publications are automatically ingested, but some are hand-entered.  We don’t have a source for books written by our faculty.  The university has no record, and the various indexing services typically do not have this data.  The Library of Congress does not typically have affiliation data, so we can’t tell which books were written by people at UF.  We don’t have a source for presentations.  We don’t have an interface to our library’s institutional repository.  We load our publication data each week.  We provide an <a href="http://vivo.ufl.edu/rss/rss-uf-papers.xml">RSS feed</a> of our recent publications.</p>
+
+					<p>Grants.  Most universities have good data on grants they have received.  UF has good data and we have an automated ingest for loading grant data into VIVO.  UF VIVO has all grants made to the university since 2008 – a total of 18,641.  The ingest updates grants if new information is available – sometimes award amounts or dates change, sometimes the investigators change.  Our Division of Sponsored Programs maintains the official data and we reflect it in VIVO.</p>
+
+					<p>Courses.  We get data from the Registrar’s office and load it into VIVO once a year.  We have all courses taught at UF since 2008 through 2012, a total of 87,269, each linked to course catalog, instructor, term.  We’ll add the 2013 data soon, another 15,000 or so courses.  These data form an important part of the profile of the person, indicate scholarly interests, and constitute another indicator of the social fabric of the university.</p>
+
+					<p>That’s it.  We have four core ingests – people, publications, grants and courses.</p>
+					
+					</p>To implement VIVO, you’ll need data. You’ll also need a creative IT staff.  VIVO technology – triple store, ontology, RDF – is new to most IT people.  You’ll need open-minded, creative people ready to learn.</p>
+
+					<p>You’ll also need the support of key stakeholders in your institution.  Typically the provost, the vice president for research and the library director are involved in governance, championing and possibly leading your implementation.</p>
+
+					<p>All these issues get discussed at the annual VIVO Implementation Fest.  The Fest brings project managers, planners, technical staff and stakeholders together for a couple of days of sharing and discussing issues related to VIVO implementation.  There’s no registration fee.  This year’s Fest will be at Duke University March 18-19, details on <a href="http://vivoweb.org/blog/2014/02/2014-vivo-implementation-fest">vivoweb.org</a>.</p>
+
+					<p>So if you have champions, staff and data, you’re all set for a straightforward implementation.  Otherwise, more effort and time will be needed.  So “it depends.”</p>
+
+
+					
+				</div><!-- End Post -->
+				
+				<p class="blog-post-meta"><a href="1402.html">Previous Posts</a></p>
+			
+			</div><!-- End the blog-main -->
+			
+			<div class="col-md-3">
+				<div class="sidebar-module sidebar-module-inset">
+					<h4>About VIVO</h4>
+					<p>VIVO is an open source, semantic web application for organizing information.  
+					VIVO is often used by academic institutions to represent the scholarly work
+					of their faculty, staff and students. See <a href="http://vivoweb.org" class="btn
+					btn-xs btn-info">the 
+					VIVO Project Web Site</a> for more info.</p>
+				</div>
+				<div class="sidebar-module">
+					<h4>Archives</h4>
+					<ol class="list-unstyled">
+					  <li><a href="1402.html">February 2014</a></li>
+					</ol>
+				</div>
+				<div class="sidebar-module">
+					<h4>Elsewhere</h4>
+					<ol class="list-unstyled">
+					  <li><a href="https://github.com/mconlon17">GitHub</a></li>
+					  <li><a href="http://twitter.com/mconlon17">Twitter</a></li>
+					  <li><a href="http://facebook.com/mconlon">Facebook</a></li>
+					  <li><a href="http://vivo.ufl.edu/individual/mconlon">VIVO</a></li>
+					</ol>
+				</div>
+			</div><!-- /.blog-sidebar -->
+			
+		</div><!-- End blog row -->
+		</div><!-- End blog container -->
+
+		<hr>
+
+		<footer>
+		<p><a href="http://vivo.ufl.edu/individual/mconlon">Mike Conlon</a>, 
+		<a href="http://www.ufl.edu">University of Florida</a> 2014. Licensed under <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share Alike 3.0 Unported License</a>.</br>
+		VIVO is an incubated project of <a href="http://duraspace.org">Duraspace</a>. 
+		Visit the <a href="http://vivoweb.org">The VIVO Project Web Site</a> and <a href="https://wiki.duraspace.org/display/VIVO/VIVO+Main+Page">The Duraspace VIVO Wiki</a>
+		</footer>
+
+	</div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
