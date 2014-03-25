@@ -1,0 +1,10 @@
+
+# Find all the orgs in VIVO that have an ISNI 
+
+SELECT ?uri ?isni ?label
+WHERE {
+  ?uri ufVivo:isni ?isni .
+  ?uri a foaf:Organization .
+  ?uri rdfs:label ?label .
+}
+ORDER BY ?label
