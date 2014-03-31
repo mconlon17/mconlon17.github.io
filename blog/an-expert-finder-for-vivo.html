@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="VIVO, data, information, software, tools, blog, python, D3, Conlon, Florida">
+	<meta name="description" content="Some VIVO Things is a web site by Mike Conlon of the University of Florida
+		that describes software and tools such as python and D3, for getting data into VIVO and for getting 
+		information out. A blog describes experiences with VIVO.">
+    <meta name="author" content="Mike Conlon">
+	<link rel="shortcut icon" type="image/x-icon" href="/assets/ico/favicon.ico">  
+	<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/assets/css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="/assets/css/blog.css" rel="stylesheet">
+
+    <title>Some VIVO Things Blog</title>
+	
+	<style>
+	body {
+		padding-top: 70px;
+		padding-bottom: 30px;
+		}
+
+	.theme-dropdown .dropdown-menu {
+		display: block;
+		position: static;
+		margin-bottom: 20px;
+		}
+
+	.theme-showcase > p > .btn {
+		margin: 5px 0;
+		}
+	</style>
+	
+  </head>
+
+  <body role="document">
+  
+  <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Some VIVO Things</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="/data">Data In</a></li>
+            <li><a href="/info">Info Out</a></li>
+            <li class="active"><a href="/blog">The Blog</a></li>
+			<li><a href="/about">About</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">More <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="http://www.amazon.com/VIVO-Scholarly-Networking-Discovery-Synthesis/dp/1608459934/ref=sr_1_1?ie=UTF8&qid=1391973550&sr=8-1&keywords=vivo+conlon">The VIVO Book</a></li>
+                <li><a href="http://www.amazon.com/Semantic-Working-Ontologist-Second-Edition/dp/0123859654/ref=sr_1_1?ie=UTF8&qid=1391973643&sr=8-1&keywords=semantic+web+for+the+working+ontologist">The Semantic Web for the Working Ontologist</a></li>
+				<li class="divider"></li>
+                <li class="dropdown-header">Some VIVO sites</li>                
+				<li><a href="http://vivo.ufl.edu">University of Florida VIVO</a></li>
+				<li><a href="http://research-hub.griffith.edu.au/">Griffith University Research Hub</a></li>
+				<li class="divider"></li>
+                <li class="dropdown-header">Related CTSA projects</li>
+                <li><a href="http://research.icts.uiowa.edu/polyglot/">CTSAsearch</a></li>
+                <li><a href="http://ctsaconnect.org/">CTSAconnect</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+	
+	<div class="container theme-showcase" role="main">
+  
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+	<div class="jumbotron">
+        <h1>Some VIVO Things Blog</h1>
+		<p class="lead">Musings on the community, software, data, use, and whatever else comes to mind.</p>
+    </div>
+	
+	<!-- Here's the blog -->
+	
+	<div class="container">
+	
+		<div class="row">
+		
+			<div class="col-md-9 blog-main">
+			
+				<div class="blog-post">
+					<h2 class="blog-post-title">An Expert Finder for VIVO</h2>
+					<p class="blog-post-meta">March 30, 2014 by <a href="http://vivo.ufl.edu/individual/mconlon">Mike</a></p>
+
+					<p>VIVO stores information about scholarship.  Can that information be used to find "experts?"  Journalists might want to find experts for interviews or to corroborate facts for stories.  Science agencies might want to find experts to serve on review panels.  Citizens groups might want to find experts to help with advocacy.  People in academic training, graduate students, post docs and junior faculty, may be looking for experts to consult or work with them.  And other experts may be looking for experts to join teams of scholars on efforts to create new knowledge.</p>
+
+					<p>But what is an expert, actually?  Perhaps there are two criteria.  First, an expert knows something about a subject, an idea, a concept.  The expert knows "more" about the subject, or has a deeper understanding, or can explain the idea and it's relationship to other ideas.  Second, the expert has generated a record of that knowledge by creating scholarly works.  The works may be data sets, or peer reviewed publications, artistic works, software, books, lectures, or invited presentations.  Other indicators may be grant awards. An award is typically a sign that the expert has written a proposal deemed worthy of funding by a peer review mechanism.  The expert may have served on advisory panels, won awards, or otherwise received recognition from his or her profession.  All these indicators are typically stored in VIVO are are available as data.</p>
+
+					<p>If we had this data for a collection of people, we could imagine using it to find experts on particularly topics.  Does VIVO provide tools ready to be used for expert finding?  Not exactly.  Think of VIVO as a book store store or library.  If you ask the right questions and spend some time with VIVO you will come to some conclusions regarding the expertise of various people and their records regarding knowledge of concepts of interest.  This may well be sufficient for some inquiries and for some learning and scholarship styles.</p>
+
+					<p>Others may want something more immediate, more compelling, more interactive and more perhaps more obvious.  An expert finder tool using VIVO data could put the searcher in direct contact with desired concepts, as well as concepts highly related to the desired concept and people related to each.</p>
+
+					<p>Suppose one was interested in finding experts regarding pulmonary hypertension.  The searcher selects pulmonary hypertension from a list of concepts known to VIVO.  VIVO at UF has information on more than 18,000 concepts, so perhaps the searcher does not pick from a list.  Auto-complete search boxes are currently popular mechanisms for supporting selection from a large, but discrete and finite collection of alternatives.</p>
+
+					<p>Having selected the concept of interest, the tool could display people highly associated with the selected concept, and display other concepts highly associated with the selected concept, and people associated with those associated concepts.  But wait, what does "highly associated" mean?  People highly associated with a concept are people whose works are evidence for expertise about the concept.  The simplest measure might be a count of peer reviewed papers regarding the concept.  This measure works well in scientific disciplines, but may be quite misleading in other disciplines.  We can consider many alternate measures of expertise based on scholarly works.  A measure will take a collection of works for a person, and a concept, and determine a "score" for the person on that concept.  High score indicates high expertise.  For the "count papers" measure, if you have published five papers on pulmonary hypertension, your score is five.  If you have published 300 papers and 100 of them are on pulmonary hypertension, your score is 100.  Such scoring is new and controversial and will likely evolve and mature as expert finders are built and used.</p>
+
+					<p>Let's presume we can score expertise of a person regarding a concept. For any concept we can find the people with the highest scores for that concept.  These will be our experts.  Concepts can be connected to other concepts by co-occurrence in papers and other scholarly works.  Concepts can also be connected to other concepts based based on "inclusion" -- the concept medicine includes the concept pharmaceuticals, for example.</p>
+
+					<p>Now we are ready to have a tool.  Given a concept we can find associated concepts.  Given concepts, we can find people highly associated with each concept.  The links between concepts can be examined for the evidence of linkage -- lists of papers with co-occurrence of the two concepts, for example.  Links between people and concepts can be examined for the evidence of the linkage -- lists of scholarly works with the person as an author and the concept as the topic of the work.  The concepts, people and their links can be displayed as a force directed bi-modal graph.  Such displays are compelling, readily accessible and provide a simple interface for drilling down to people and works as represented in VIVO.</p>
+
+					<p>An expert finder using VIVO data which displays a bi-modal graph and can be manipulated and examined by one searching for experts related to topics can be constructed using the ideas presented here.  We hope to construct such a tool.  It might compliment the more traditional methods of using VIVO as one would use a book store or library, and the even more traditional method of asking one's friends and colleagues.</p>
+					
+				</div><!-- End Post -->
+				
+				<p class="blog-post-meta"><a href="what-would-you-do-if-you-had-data.html">Previous Posts</a></p>
+			
+			</div><!-- End the blog-main -->
+			
+			<div class="col-md-3">
+				<div class="sidebar-module sidebar-module-inset">
+					<h4>About VIVO</h4>
+					<p>VIVO is an open source, semantic web application for organizing information.  
+					VIVO is often used by academic institutions to represent the scholarly work
+					of their faculty, staff and students. See <a href="http://vivoweb.org" class="btn
+					btn-xs btn-info">the 
+					VIVO Project Web Site</a> for more info.</p>
+				</div>
+				<div class="sidebar-module">
+					<h4>Archives</h4>
+					<ol class="list-unstyled">
+					  <li><a href="#">March 2014</a></li>
+					  <li><a href="ctsa-social-network-analysis-at-sunbelt-xxxiv.html">February 2014</a></li>
+					</ol>
+				</div>
+				<div class="sidebar-module">
+					<h4>Elsewhere</h4>
+					<ol class="list-unstyled">
+					  <li><a href="https://github.com/mconlon17">GitHub</a></li>
+					  <li><a href="http://twitter.com/mconlon17">Twitter</a></li>
+					  <li><a href="http://facebook.com/mconlon">Facebook</a></li>
+					  <li><a href="http://vivo.ufl.edu/individual/mconlon">VIVO</a></li>
+					</ol>
+				</div>
+			</div><!-- /.blog-sidebar -->
+			
+		</div><!-- End blog row -->
+		</div><!-- End blog container -->
+
+		<hr>
+
+		<footer>
+		<p><a href="http://vivo.ufl.edu/individual/mconlon">Mike Conlon</a>, 
+		<a href="http://www.ufl.edu">University of Florida</a> 2014. Licensed under <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share Alike 3.0 Unported License</a>.</br>
+		VIVO is an incubated project of <a href="http://duraspace.org">Duraspace</a>. 
+		Visit the <a href="http://vivoweb.org">The VIVO Project Web Site</a> and <a href="https://wiki.duraspace.org/display/VIVO/VIVO+Main+Page">The Duraspace VIVO Wiki</a>
+		</footer>
+
+	</div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
