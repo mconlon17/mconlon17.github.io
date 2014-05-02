@@ -43,6 +43,8 @@ def make_conc(debug=False):
     keyed by concept uri.  Data for the concept includes the concet name and
     all concepts co-occuring withthe concept and the count of the co-occurances
     """
+    conc = shelve.open("conc2")
+    print >>log_file, datetime.now(), conc.keys()
     query = """
     SELECT ?uri ?name
     WHERE {
@@ -61,7 +63,7 @@ def make_conc(debug=False):
             print rows[0],rows[1]
         elif len(rows) == 1:
             print rows[0]
-    conc = shelve.open("conc2")
+
     i = 0
     for row in rows:
         name = row['name']['value']
@@ -99,16 +101,16 @@ def make_conc(debug=False):
             conc[curi1] = entry
         i = i + 1
         print i
-        if i > 1000:
+        if i > 2:
             break
     return conc
 
 log_file = sys.stdout
 print >>log_file, datetime.now(), "Start"
-print >>log_file, "VIVO Tools version", vt.__version__
+print >>log_file, datetime.now(), "VIVO Tools version", vt.__version__
 conc = make_conc(debug=True)
 for key,stuff in conc.items():
-    print key
-    print json.dumps(stuff, indent = 4)
-print "conc has ", len(conc)," concepts"
+    print >>log_file, datetime.now(), key
+    print >>log_file, datetime.now(), json.dumps(stuff, indent = 4)
+print >>log_file, datetime.now(), "conc has ", len(conc)," concepts"
 print >>log_file, datetime.now(), "Finish"

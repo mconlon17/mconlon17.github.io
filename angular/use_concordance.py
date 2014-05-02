@@ -31,7 +31,7 @@ from datetime import datetime
 
 log_file = sys.stdout
 print >>log_file, datetime.now(), "Start"
-concordance = shelve.open("concordance")
+concordance = shelve.open("conc2")
 print "Concordance has ", len(concordance)," concepts"
 for uri, name in concordance.items():
     print uri, name
