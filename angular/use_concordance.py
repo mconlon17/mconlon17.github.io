@@ -31,11 +31,11 @@ from datetime import datetime
 
 log_file = sys.stdout
 print >>log_file, datetime.now(), "Start"
-concordance = shelve.open("conc2")
+concordance = shelve.open("conc")
 print "Concordance has ", len(concordance)," concepts"
 for uri, stuff in concordance.items():
-    print "\nConcept", uri, stuff['name']
-    print "People", len(stuff['people'])
-    print "Pubs", len(stuff['pubs'])
-    print "Concepts", len(stuff['concepts'])
+    print "\nConcept", uri, stuff['concept_name']
+    print "People", len(stuff['author_uris'])
+    print "Pubs", len(stuff['pub_uris'])
+    print "Concepts", len(stuff['concept_pairs'])
 print >>log_file, datetime.now(), "Finish"

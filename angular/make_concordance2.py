@@ -37,88 +37,90 @@ import json
 
 from datetime import datetime
 
-def make_conc(conc, debug=False):
+def make_conc(conc, data, debug=False):
     """
-    Extract all the concepts in VIVO and organize them into a dictionary
-    keyed by concept uri.  Data for the concept includes the concet name and
-    all concepts co-occuring withthe concept and the count of the co-occurances
-    """
+    Given concordance, conc, and a json data structure, data, return an
+    updated concordance.
 
-    query = """
-    SELECT ?uri ?name
-    WHERE {
-        ?uri a bibo:AcademicArticle .
-        ?uri rdfs:label ?name .
+    The json object is a list of co-occurrences of paper, concept and author.
+    For each co-occurrence, the json object has the uri and label of the paper,
+    concept and author.  Sample list item:
+
+    {
+    "pub": { "type": "uri" , "value":
+        "http://vivo.ufl.edu/individual/n1003284293" } ,
+    "pub_name": { "type": "literal" , "value":
+        "Influence of Sea Level Rise On Iron Diagenesis in An East ..." } ,
+    "concept": { "type": "uri" , "value":
+        "http://vivo.ufl.edu/individual/n7781020701" } ,
+    "concept_name": { "type": "literal" , "value": "Chemokine CCL2" } ,
+    "author": { "type": "uri" , "value":
+        "http://vivo.ufl.edu/individual/n2422490614" } ,
+    "author_name": { "type": "literal" , "value": "Smith, Christopher G." }
     }
-    LIMIT 1000"""
-    result = vivo_sparql_query(query)
-
-    if 'results' in result and 'bindings' in result['results']:
-        rows = result["results"]["bindings"]
-    else:
-        return conc
-    if debug:
-        print query
-        if len(rows) >= 2:
-            print rows[0], rows[1]
-        elif len(rows) == 1:
-            print rows[0]
+    """
 
     i = 0
-    for row in rows:
-        name = row['name']['value']
-        pub_uri = str(row['uri']['value'])
-        publication = get_publication(pub_uri, get_authors = True)
-        curis = []
-        for curi in publication['concept_uris']:
-            curis.append(str(curi))
-        auris = []
-        for auri in publication['author_uris']:
-            auris.append(str(auri))
-        for curi1 in curis:
-            cname1 = get_vivo_value(curi1,'rdfs:label')
-            if curi1 not in conc:
-                entry = {'name' : cname1,
-                    'people' : auris,
-                    'pubs' : [pub_uri],
-                    'concepts' : {}}
-            else:
-                entry = conc[curi1]
-                print "Add to concept"
-                if pub_uri not in entry['pubs']:
-                    entry['pubs'].append(pub_uri)
-                for auri in auris:
-                    if auri not in entry['people']:
-                        entry['people'].append(auri)
-            for curi2 in curis:
-                cname2 = get_vivo_value(curi2,'rdfs:label')
-                if curi1 != curi2:
-                    if curi2 not in entry['concepts']:
-                        entry['concepts'][curi2]= {'name': cname2,
-                         'pubs':[pub_uri],
-                         'people':auris}
-                    else:
-                        print "Augment"
-                        if pub_uri not in entry['concepts'][curi2]['pubs']:
-                           entry['concepts'][curi2]['pubs'].append(pub_uri)
-                        for auri in auris:
-                           if auri not in entry['concepts'][curi2]['people']:
-                               entry['concepts'][curi2]['people'].append(auri)
-            conc[curi1] = entry
-        i = i + 1
-        print i
-        if i > 100:
-            break
+    pubs = {}
+    authors = {}
+    for item in data:
+        pub_uri = str(item['pub']['value'])
+        pub_name = item['pub_name']['value']
+        concept_uri = str(item['concept']['value'])
+        concept_name = item['concept_name']['value']
+        author_uri = str(item['author']['value'])
+        author_name = item['author_name']['value']
+        
+        if pub_uri not in pubs:
+            pubs[pub_uri] = {'pub_name': pub_name,
+                'author_uris' : [author_uri],
+                'concept_uris' : [concept_uri]}
+        if concept_uri not in pubs[pub_uri]['concept_uris']:
+            pubs[pub_uri]['concept_uris'].append(concept_uri)
+        if author_uri not in pubs[pub_uri]['author_uris']:
+            pubs[pub_uri]['author_uris'].append(author_uri)
+
+        if author_uri not in authors:
+            authors[author_uri] = {'author_name': author_name,
+                'pub_uris' : [pub_uri],
+                'concept_uris' : [concept_uri]}
+        if concept_uri not in authors[author_uri]['concept_uris']:
+            authors[author_uri]['concept_uris'].append(concept_uri)
+        if pub_uri not in authors[author_uri]['pub_uris']:
+            authors[author_uri]['pub_uris'].append(pub_uri)
+            
+        if concept_uri in conc:
+            entry = conc[concept_uri]
+            if author_uri not in entry['author_uris']:
+                entry['author_uris'].append(author_uri)
+            if pub_uri not in entry['pub_uris']:
+                entry['pub_uris'].append(pub_uri)
+        else:
+            entry = {
+                'concept_name': concept_name,
+                'author_uris' : [author_uri],
+                'pub_uris': [pub_uri],
+                'concept_pairs' : {}
+            }
+        conc[concept_uri] = entry
+    print "Pubs", len(pubs)
+    print json.dumps(pubs, indent=4)
+    print "Authors", len(authors)
+    print json.dumps(authors, indent=4)
     return conc
 
 log_file = sys.stdout
 print >>log_file, datetime.now(), "Start"
-conc = shelve.open("conc2", writeback=True)
 print >>log_file, datetime.now(), "VIVO Tools version", vt.__version__
-conc = make_conc(conc, debug=True)
-for key,stuff in conc.items():
-    print >>log_file, datetime.now(), key
-    print >>log_file, datetime.now(), json.dumps(stuff, indent = 4)
+print >>log_file, datetime.now(), "Reading concordance data"
+data = json.load(open("concordance_data.json"))['results']['bindings']
+print >>log_file, datetime.now(), "Concordance data has", len(data), \
+      "co-occurances of concept, author and paper"
+conc = shelve.open("conc", writeback=True)
+conc = make_conc(conc, data, debug=True)
+##for key,stuff in conc.items():
+##    print >>log_file, datetime.now(), key
+##    print >>log_file, datetime.now(), json.dumps(stuff, indent = 4)
 print >>log_file, datetime.now(), "conc has ", len(conc)," concepts"
 conc.close()
 print >>log_file, datetime.now(), "Finish"
