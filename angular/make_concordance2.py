@@ -47,14 +47,14 @@ def make_conc(conc, data, debug=False):
     concept and author.  Sample list item:
 
     {
-    "pub": { "type": "uri" , "value":
+    "pub_uri": { "type": "uri" , "value":
         "http://vivo.ufl.edu/individual/n1003284293" } ,
     "pub_name": { "type": "literal" , "value":
         "Influence of Sea Level Rise On Iron Diagenesis in An East ..." } ,
-    "concept": { "type": "uri" , "value":
+    "concept_uri": { "type": "uri" , "value":
         "http://vivo.ufl.edu/individual/n7781020701" } ,
     "concept_name": { "type": "literal" , "value": "Chemokine CCL2" } ,
-    "author": { "type": "uri" , "value":
+    "author_uri": { "type": "uri" , "value":
         "http://vivo.ufl.edu/individual/n2422490614" } ,
     "author_name": { "type": "literal" , "value": "Smith, Christopher G." }
     }
@@ -64,11 +64,11 @@ def make_conc(conc, data, debug=False):
     pubs = {}
     authors = {}
     for item in data:
-        pub_uri = str(item['pub']['value'])
+        pub_uri = str(item['pub_uri']['value'])
         pub_name = item['pub_name']['value']
-        concept_uri = str(item['concept']['value'])
+        concept_uri = str(item['concept_uri']['value'])
         concept_name = item['concept_name']['value']
-        author_uri = str(item['author']['value'])
+        author_uri = str(item['author_uri']['value'])
         author_name = item['author_name']['value']
         
         if pub_uri not in pubs:
@@ -100,13 +100,33 @@ def make_conc(conc, data, debug=False):
                 'concept_name': concept_name,
                 'author_uris' : [author_uri],
                 'pub_uris': [pub_uri],
-                'concept_pairs' : {}
+                'pairs' : {}
             }
         conc[concept_uri] = entry
-    print "Pubs", len(pubs)
-    print json.dumps(pubs, indent=4)
-    print "Authors", len(authors)
-    print json.dumps(authors, indent=4)
+
+    for pub_uri, pub in pubs.items():
+        for concept1 in pub['concept_uris']:
+            entry = conc[concept1]
+            for concept2 in pub['concept_uris']:
+                if concept1 != concept2:
+                    if concept2 in entry['pairs']:
+                        if pub_uri not in \
+                            entry['pairs'][concept2]['pub_uris']:
+                            entry['pairs'][concept2]['pub_uris'].append(pub_uri)
+                            for author_uri in pub['author_uris']:
+                                if author_uri not in \
+                                    entry['pairs'][concept2]['author_uris']:
+                                    entry['pairs'][concept2]\
+                                        ['author_uris'].append(author_uri)
+                            
+                    else:
+                        entry['pairs'][concept2] = {
+                            'concept_uris' : [concept2],
+                            'pub_uris': [pub_uri],
+                            'author_uris': pub['author_uris']
+                            }
+            conc[concept1] = entry
+                                                          
     return conc
 
 log_file = sys.stdout

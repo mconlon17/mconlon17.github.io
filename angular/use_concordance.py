@@ -37,5 +37,5 @@ for uri, stuff in concordance.items():
     print "\nConcept", uri, stuff['concept_name']
     print "People", len(stuff['author_uris'])
     print "Pubs", len(stuff['pub_uris'])
-    print "Concepts", len(stuff['concept_pairs'])
+    print "Concepts", len(stuff['pairs'])
 print >>log_file, datetime.now(), "Finish"
