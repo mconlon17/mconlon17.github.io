@@ -21,15 +21,6 @@ __copyright__ = "Copyright 2014, University of Florida"
 __license__ = "BSD 3-Clause license"
 __version__ = "0.0"
 
-from vivotools import vivo_sparql_query
-from vivotools import get_vivo_uri
-from vivotools import assert_resource_property
-from vivotools import assert_data_property
-from vivotools import update_data_property
-from vivotools import get_vivo_value
-from vivotools import get_triples
-from vivotools import get_publication
-import vivotools as vt
 import os
 import sys
 import shelve
@@ -131,7 +122,6 @@ def make_conc(conc, data, debug=False):
 
 log_file = sys.stdout
 print >>log_file, datetime.now(), "Start"
-print >>log_file, datetime.now(), "VIVO Tools version", vt.__version__
 print >>log_file, datetime.now(), "Reading concordance data"
 data = json.load(open("concordance_data.json"))['results']['bindings']
 print >>log_file, datetime.now(), "Concordance data has", len(data), \
