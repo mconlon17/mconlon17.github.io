@@ -63,7 +63,7 @@ def update_conc(conc, concept_uri, debug=False):
     result = vivo_sparql_query(query)
     if 'results' in result and 'bindings' in result['results']:
         rows = result['results']['bindings']
-        print len(rows)
+        print 'concept',len(rows)
 
         # Replace concept content with current content
 
@@ -77,7 +77,45 @@ def update_conc(conc, concept_uri, debug=False):
         entry['concepts'] = concept_dict
           
     #   Second we get the concordant authors
-    
+
+        query = """
+    #
+    #   For a specified concept, find all the current UF authors that co-occur with the
+    #   specified concept in one or more academic articles.  For each
+    #   co-occuring author, return the name, uri and count of papers in which
+    #   the author and the specified concept co-occur
+    #
+    SELECT ?author_uri (MIN(DISTINCT ?xauthor_name) AS ?author_name)
+        (COUNT(DISTINCT ?pub_uri) AS ?count)
+    WHERE {
+        ?pub_uri vivo:hasSubjectArea
+            <http://vivo.ufl.edu/individual/n9272944689> .
+        ?pub_uri a bibo:AcademicArticle .
+        ?pub_uri vivo:informationResourceInAuthorship ?a .
+        ?a vivo:linkedAuthor ?author_uri .
+        ?author_uri a ufVivo:UFCurrentEntity .
+        ?author_uri rdfs:label ?xauthor_name .
+    }
+    GROUP BY ?author_uri
+    ORDER BY DESC(?count)
+    """
+    result = vivo_sparql_query(query)
+    if 'results' in result and 'bindings' in result['results']:
+        rows = result['results']['bindings']
+        print 'author',len(rows)
+
+        # Replace concept content with current content
+
+        author_dict = {}
+        for row in rows:
+            author_name = row['author_name']['value']
+            author_dict[author_name] = {'author_uri':
+                                          row['author_uri']['value'],
+                                          'count':
+                                          row['count']['value']}
+        entry['authors'] = author_dict
+       
+ 
     conc[concept_uri] = entry
     return conc
 
