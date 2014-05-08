@@ -25,15 +25,19 @@ from vivotools import vivo_sparql_query
 
 from datetime import datetime
 
-def update_conc(conc, concept_uri, debug=False):
+def update_conc(conc, concept, debug=False):
     """
     for a concept, update the entry in the concordance for the concept
     or create a new entry if one does not exist.
     """
+    concept_uri = str(concept['uri']['value'])
+    concept_name = concept['concept_name']['value']
+    npubs = concept['npub']['value']
     if concept_uri in conc:
         entry = conc[concept_uri]
     else:
-        entry = {'name' : get_vivo_value(concept_uri,'rdfs:label'),
+        entry = {'name' : concept_name,
+                 'npubs' : npubs,
                  'concepts' : {},
                  'authors': {}}
 
@@ -49,17 +53,17 @@ def update_conc(conc, concept_uri, debug=False):
     SELECT ?concept_uri (MIN(DISTINCT ?xconcept_name) AS ?concept_name)
         (COUNT(DISTINCT ?pub_uri) AS ?count)
     WHERE {
-        ?pub_uri vivo:hasSubjectArea
-            <http://vivo.ufl.edu/individual/n9272944689> .
+        ?pub_uri vivo:hasSubjectArea <{uri}> .
         ?pub_uri a bibo:AcademicArticle .
         ?pub_uri vivo:hasSubjectArea ?concept_uri .
         ?concept_uri rdfs:label ?xconcept_name .
         FILTER(str(?concept_uri) !=
-            "http://vivo.ufl.edu/individual/n9272944689")
+            "{uri}")
     }
     GROUP BY ?concept_uri
     ORDER BY DESC(?count)
     """
+    query = query.replace("{uri}", concept_uri)
     result = vivo_sparql_query(query)
     if 'results' in result and 'bindings' in result['results']:
         rows = result['results']['bindings']
@@ -88,8 +92,7 @@ def update_conc(conc, concept_uri, debug=False):
     SELECT ?author_uri (MIN(DISTINCT ?xauthor_name) AS ?author_name)
         (COUNT(DISTINCT ?pub_uri) AS ?count)
     WHERE {
-        ?pub_uri vivo:hasSubjectArea
-            <http://vivo.ufl.edu/individual/n9272944689> .
+        ?pub_uri vivo:hasSubjectArea <{uri}> .
         ?pub_uri a bibo:AcademicArticle .
         ?pub_uri vivo:informationResourceInAuthorship ?a .
         ?a vivo:linkedAuthor ?author_uri .
@@ -99,6 +102,7 @@ def update_conc(conc, concept_uri, debug=False):
     GROUP BY ?author_uri
     ORDER BY DESC(?count)
     """
+    query = query.replace("{uri}", concept_uri)
     result = vivo_sparql_query(query)
     if 'results' in result and 'bindings' in result['results']:
         rows = result['results']['bindings']
@@ -121,11 +125,21 @@ def update_conc(conc, concept_uri, debug=False):
 
 log_file = sys.stdout
 print >>log_file, datetime.now(), "Start"
+concepts = json.load(open("concepts.json"))["results"]["bindings"]
 conc = shelve.open("conc", writeback=True)
-conc = update_conc(conc, "http://vivo.ufl.edu/individual/n9272944689",
-                   debug=True)
-print >>log_file, datetime.now(), "conc has ", len(conc)," concepts"
-entry = conc["http://vivo.ufl.edu/individual/n9272944689"]
+i = 0
+for concept in concepts:
+    i = i +1
+    if i < 501:
+        continue
+    print i, concept['concept_name']['value']
+    conc = update_conc(conc, concept, debug=True)
+    if i >= 510:
+        break
+print >>log_file, datetime.now(), "conc has", len(conc),"concepts"
+keys = conc.keys()
+entry = conc[keys[4]]
+print keys[4]
 print json.dumps(entry, indent=4)
 conc.close()
 print >>log_file, datetime.now(), "Finish"

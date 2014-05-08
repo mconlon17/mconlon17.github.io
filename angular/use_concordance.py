@@ -34,8 +34,7 @@ print >>log_file, datetime.now(), "Start"
 concordance = shelve.open("conc")
 print "Concordance has ", len(concordance)," concepts"
 for uri, stuff in concordance.items():
-    print "\nConcept", uri, stuff['concept_name']
-    print "People", len(stuff['author_uris'])
-    print "Pubs", len(stuff['pub_uris'])
-    print "Concepts", len(stuff['pairs'])
+    print "\nConcept", uri, stuff['name']
+    print "Authors", len(stuff['authors'])
+    print "Concepts", len(stuff['concepts'])
 print >>log_file, datetime.now(), "Finish"
