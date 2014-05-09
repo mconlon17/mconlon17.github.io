@@ -5,16 +5,14 @@
 
     Version 0.0 MC 2014-05-07
     --  Just getting started
-
-    To Do
-    --  Add an out loop for processing all concepts
-
+    Version 0.1 MC 2014-05-08
+    --  Works as expected
 """
 
 __author__ = "Michael Conlon"
 __copyright__ = "Copyright 2014, University of Florida"
 __license__ = "BSD 3-Clause license"
-__version__ = "0.0"
+__version__ = "0.1"
 
 import os
 import sys
@@ -65,7 +63,9 @@ def update_conc(conc, concept, debug=False):
     """
     query = query.replace("{uri}", concept_uri)
     result = vivo_sparql_query(query)
-    if 'results' in result and 'bindings' in result['results']:
+    if 'results' in result and 'bindings' in result['results'] and \
+       'count' in result['results']['bindings'][0] and \
+       int(result['results']['bindings'][0]['count']['value']) != 0:
         rows = result['results']['bindings']
         print 'concept',len(rows)
 
@@ -104,7 +104,9 @@ def update_conc(conc, concept, debug=False):
     """
     query = query.replace("{uri}", concept_uri)
     result = vivo_sparql_query(query)
-    if 'results' in result and 'bindings' in result['results']:
+    if 'results' in result and 'bindings' in result['results'] and \
+       'count' in result['results']['bindings'][0] and \
+       int(result['results']['bindings'][0]['count']['value']) != 0:
         rows = result['results']['bindings']
         print 'author',len(rows)
 
@@ -130,11 +132,11 @@ conc = shelve.open("conc", writeback=True)
 i = 0
 for concept in concepts:
     i = i +1
-    if i < 501:
+    if i < 2001:
         continue
     print i, concept['concept_name']['value']
     conc = update_conc(conc, concept, debug=True)
-    if i >= 510:
+    if i >= 8000:
         break
 print >>log_file, datetime.now(), "conc has", len(conc),"concepts"
 keys = conc.keys()
