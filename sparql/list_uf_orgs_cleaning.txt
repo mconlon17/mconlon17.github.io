@@ -1,0 +1,23 @@
+# List UF Orgs for data cleaning and checking
+
+SELECT (COUNT(DISTINCT ?label) AS ?clabel)  (SAMPLE(DISTINCT ?label) AS ?slabel) 
+       (COUNT(DISTINCT ?type) AS ?ctype)  (MAX(DISTINCT ?type) AS ?stype) 
+	   (COUNT(DISTINCT ?parent) AS ?parent)  (SAMPLE(DISTINCT ?parent) AS ?sparent) 
+	   (COUNT(DISTINCT ?image) AS ?cimage)  (SAMPLE(DISTINCT ?image) AS ?simage) 
+	   (COUNT(DISTINCT ?webpage) AS ?cwebpage)  (SAMPLE(DISTINCT ?webpage) AS ?swebpage) 
+	   (COUNT(DISTINCT ?sponsor) AS ?csponsor)  (SAMPLE(DISTINCT ?sponsor) AS ?ssponsor)
+	   (COUNT(DISTINCT ?deptid) AS ?cdeptid)  (MIN(DISTINCT ?deptid) AS ?sdeptid) ?org_uri
+WHERE {
+?org_uri a foaf:Organization .
+?org_uri a ufVivo:UFEntity .
+OPTIONAL {?org_uri vitro1:mostSpecificType ?type .}
+OPTIONAL {?org_uri vivo:subOrganizationWithin ?parent .}
+OPTIONAL {?org_uri vitro2:mainImage ?image . }
+OPTIONAL {?org_uri rdfs:label ?label .}
+OPTIONAL {?org_uri vivo:webpage ?webpage .}
+OPTIONAL {?org_uri ufVivo:sponsorID ?sponsor .}
+OPTIONAL {?org_uri ufVivo:deptID ?deptid .}
+OPTIONAL {?org_uri vivo:hasSuccessorOrganization ?successor .}
+FILTER (!bound(?successor))
+}
+GROUP BY ?org_uri
