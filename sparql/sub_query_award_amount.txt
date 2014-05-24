@@ -1,0 +1,21 @@
+#
+# Select the duplicated award amounts to sub from VIVO
+#
+CONSTRUCT {?uri vivo:totalAwardAmount ?amount}
+WHERE {
+    {
+        SELECT ?uri ?amount
+        WHERE {
+            ?uri vivo:totalAwardAmount ?amount .
+        }
+        GROUP BY ?uri
+    }
+    {
+        SELECT ?uri (COUNT(?amount) AS ?count)
+        WHERE {
+            ?uri vivo:totalAwardAmount ?amount .
+        }
+        GROUP BY ?uri
+        HAVING (?count > 1)
+    }
+}

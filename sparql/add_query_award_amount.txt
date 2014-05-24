@@ -1,0 +1,21 @@
+#
+# Select one of the dup[licated award amopunts to add back to VIVO
+#
+CONSTRUCT {?uri vivo:totalAwardAmount ?amount}
+WHERE {
+    {
+        SELECT ?uri (SAMPLE(?xamount) AS ?amount)
+        WHERE {
+            ?uri vivo:totalAwardAmount ?xamount .
+        }
+        GROUP BY ?uri
+    }
+    {
+        SELECT ?uri (COUNT(?amount) AS ?count)
+        WHERE {
+            ?uri vivo:totalAwardAmount ?amount .
+        }
+        GROUP BY ?uri
+        HAVING (?count > 1)
+    }
+}
