@@ -1,0 +1,14 @@
+#
+# Find academic departments that do not have web pages
+# We limit the search to UF units that do not have successors
+#
+SELECT ?uri ?label
+WHERE {
+    ?uri a vivo:AcademicDepartment .
+    ?uri a ufVivo:UFEntity .
+    ?uri rdfs:label ?label .
+    FILTER NOT EXISTS { ?uri vivo:webpage ?w . }
+    OPTIONAL { ?uri vivo:hasSuccessorOrganization ?o }
+    FILTER(!bound(?o))
+}
+ORDER BY ?label
