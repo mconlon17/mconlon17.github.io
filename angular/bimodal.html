@@ -24,9 +24,9 @@ var svg = d3.select("body").append("svg")
     .attr("height", height);
 
 var force = d3.layout.force()
-    .gravity(.2)
+    .gravity(.1)
     .distance(height/2)
-    .charge(-120)
+    .charge(-80)
     .size([width, height]);
 
 d3.json("graph.json", function(error, json) {
@@ -47,7 +47,7 @@ d3.json("graph.json", function(error, json) {
       .call(force.drag);
 
   node.append("image")
-      .attr("xlink:href", function(d) { if (d.group == "1") { return "https://github.com/favicon.ico";} else {return "/assets/ico/favicon.ico";}})
+      .attr("xlink:href", function(d) { if (d.group == 1) { return "https://github.com/favicon.ico";} else {return "/assets/ico/favicon.ico";}})
       .attr("x", -8)
       .attr("y", -8)
       .attr("width", 16)
