@@ -42,7 +42,7 @@ entry = conc[concept_uri]
 graph = {"nodes":[], "links":[], "concept": {"name": entry["name"],
                                              "npubs": entry["npubs"],
                                              "uri": concept_uri}}
-graph["nodes"].append({"name":entry["name"],"group":"concept",
+graph["nodes"].append({"name":entry["name"],"group":1,
                      "npubs":entry["npubs"],
                      "uri":concept_uri})
 k = 0

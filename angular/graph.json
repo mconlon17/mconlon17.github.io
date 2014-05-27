@@ -2,7 +2,7 @@
     "nodes": [
         {
             "uri": "http://vivo.ufl.edu/individual/n8300635913", 
-            "group": "concept", 
+            "group": 1, 
             "name": "Hypertension, Pulmonary", 
             "npubs": "29"
         }, 
