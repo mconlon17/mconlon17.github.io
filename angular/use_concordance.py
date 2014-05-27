@@ -22,19 +22,44 @@ from vivotools import assert_data_property
 from vivotools import update_data_property
 from vivotools import get_vivo_value
 from vivotools import get_triples
+from random import randint
 import os
 import sys
 import shelve
+import json
+import operator
 
 from datetime import datetime
 
-
+cutoff = 50
 log_file = sys.stdout
 print >>log_file, datetime.now(), "Start"
-concordance = shelve.open("conc")
-print "Concordance has ", len(concordance)," concepts"
-for uri, stuff in concordance.items():
-    print "\nConcept", uri, stuff['name']
-    print "Authors", len(stuff['authors'])
-    print "Concepts", len(stuff['concepts'])
+subset = shelve.open("subset")
+##print "Concordance has ", len(concordance)," concepts"
+##subset = shelve.open("subset")
+##entries = dict((name,val) for name,val in concordance.items()\
+##                      if int(val['npubs']) > cutoff and \
+##               len(val['authors']) > cutoff and len(val['concepts']) > cutoff)
+##print len(entries), "concepts with more than", cutoff, \
+##      "pubs, authors, and co-occuring concepts"
+##for key, val in entries.items():
+##    subset[key] = val
+##uri = subset.keys()[randint(0,len(subset))]
+##stuff = subset[uri]
+##print "\nConcept", uri, stuff['name']
+##print "Authors", stuff['authors']
+##print "Concepts", stuff['concepts']
+##subset.close()
+for concept, stuff in sorted(subset.items(), reverse=True,
+                             key = lambda x: int(x[1]['npubs'])):
+    print concept, stuff['name'], stuff['npubs']
+for concept, stuff in sorted(subset.items(), reverse=True,
+                             key = lambda x: len(x[1]['authors'])):
+    print concept, stuff['name'], len(stuff['authors'])
+d = {}
+for concept, value in subset.items():
+  d[concept] = value
+json_file = open('subset.json', "w")
+print >>json_file, json.dumps(d, indent=4)
+json_file.close()
 print >>log_file, datetime.now(), "Finish"

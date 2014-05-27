@@ -132,7 +132,7 @@ conc = shelve.open("conc", writeback=True)
 i = 0
 for concept in concepts:
     i = i +1
-    if i < 2001:
+    if i < 7001:
         continue
     print i, concept['concept_name']['value']
     conc = update_conc(conc, concept, debug=True)
