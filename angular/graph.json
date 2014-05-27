@@ -1,226 +1,352 @@
 {
     "nodes": [
         {
-            "uri": "http://vivo.ufl.edu/individual/n8300635913", 
+            "uri": "http://vivo.ufl.edu/individual/n2480637734", 
             "group": 1, 
-            "name": "Hypertension, Pulmonary", 
-            "npubs": "29"
+            "name": "Attention Deficit Disorder with Hyperactivity", 
+            "npubs": "55"
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n1602337984", 
+            "uri": "http://vivo.ufl.edu/individual/n1158477806", 
             "group": 1, 
-            "name": "Muscle, Smooth, Vascular", 
-            "npubs": "3"
-        }, 
-        {
-            "uri": "http://vivo.ufl.edu/individual/n4257432191", 
-            "group": 1, 
-            "name": "Exercise Tolerance", 
-            "npubs": "2"
-        }, 
-        {
-            "uri": "http://vivo.ufl.edu/individual/n8217850413", 
-            "group": 1, 
-            "name": "Pulmonary Wedge Pressure", 
-            "npubs": "2"
-        }, 
-        {
-            "uri": "http://vivo.ufl.edu/individual/n4965251688", 
-            "group": 1, 
-            "name": "Dose-Response Relationship, Drug", 
-            "npubs": "2"
-        }, 
-        {
-            "uri": "http://vivo.ufl.edu/individual/n3744815821", 
-            "group": 1, 
-            "name": "Mice, Knockout", 
-            "npubs": "2"
-        }, 
-        {
-            "uri": "http://vivo.ufl.edu/individual/n1646159603", 
-            "group": 1, 
-            "name": "Pulmonary Artery", 
-            "npubs": "6"
-        }, 
-        {
-            "uri": "http://vivo.ufl.edu/individual/n5902164971", 
-            "group": 1, 
-            "name": "Follow-Up Studies", 
-            "npubs": "4"
-        }, 
-        {
-            "uri": "http://vivo.ufl.edu/individual/n7374380145", 
-            "group": 1, 
-            "name": "Prognosis", 
-            "npubs": "3"
-        }, 
-        {
-            "uri": "http://vivo.ufl.edu/individual/n2876096603", 
-            "group": 1, 
-            "name": "Monocrotaline", 
-            "npubs": "2"
-        }, 
-        {
-            "uri": "http://vivo.ufl.edu/individual/n360537643", 
-            "group": 1, 
-            "name": "Peptide Fragments", 
-            "npubs": "2"
-        }, 
-        {
-            "uri": "http://vivo.ufl.edu/individual/n7807943011", 
-            "group": 1, 
-            "name": "Piperazines", 
-            "npubs": "2"
-        }, 
-        {
-            "uri": "http://vivo.ufl.edu/individual/n7773107016", 
-            "group": 1, 
-            "name": "Cells, Cultured", 
-            "npubs": "2"
-        }, 
-        {
-            "uri": "http://vivo.ufl.edu/individual/n695181455", 
-            "group": 1, 
-            "name": "Endothelial Cells", 
-            "npubs": "4"
-        }, 
-        {
-            "uri": "http://vivo.ufl.edu/individual/n1833105781", 
-            "group": 1, 
-            "name": "Vascular Resistance", 
-            "npubs": "2"
-        }, 
-        {
-            "uri": "http://vivo.ufl.edu/individual/n6012442421", 
-            "group": 1, 
-            "name": "Antihypertensive Agents", 
-            "npubs": "4"
-        }, 
-        {
-            "uri": "http://vivo.ufl.edu/individual/n1212854032", 
-            "group": 1, 
-            "name": "Endothelium, Vascular", 
-            "npubs": "3"
-        }, 
-        {
-            "uri": "http://vivo.ufl.edu/individual/n2427436668", 
-            "group": 1, 
-            "name": "Signal Transduction", 
-            "npubs": "2"
-        }, 
-        {
-            "uri": "http://vivo.ufl.edu/individual/n8452138032", 
-            "group": 1, 
-            "name": "Vasodilator Agents", 
-            "npubs": "2"
-        }, 
-        {
-            "uri": "http://vivo.ufl.edu/individual/n4699795406", 
-            "group": 1, 
-            "name": "Mice, Inbred C57BL", 
-            "npubs": "2"
-        }, 
-        {
-            "uri": "http://vivo.ufl.edu/individual/n5014501180", 
-            "group": 1, 
-            "name": "Lung Diseases", 
-            "npubs": "2"
-        }, 
-        {
-            "uri": "http://vivo.ufl.edu/individual/n3737341229", 
-            "group": 1, 
-            "name": "Epoprostenol", 
-            "npubs": "4"
-        }, 
-        {
-            "uri": "http://vivo.ufl.edu/individual/n89069", 
-            "group": 1, 
-            "name": "Oxidative Stress", 
-            "npubs": "2"
-        }, 
-        {
-            "uri": "http://vivo.ufl.edu/individual/n674264844", 
-            "group": 1, 
-            "name": "Adult", 
-            "npubs": "8"
-        }, 
-        {
-            "uri": "http://vivo.ufl.edu/individual/n4367439391", 
-            "group": 1, 
-            "name": "Disease Models, Animal", 
+            "name": "Diagnostic and Statistical Manual of Mental Disorders", 
             "npubs": "5"
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n6729049434", 
+            "uri": "http://vivo.ufl.edu/individual/n9515373319", 
             "group": 1, 
-            "name": "Renin-Angiotensin System", 
+            "name": "Time Factors", 
+            "npubs": "2"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n4737006262", 
+            "group": 1, 
+            "name": "Parents", 
+            "npubs": "10"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n1688799460", 
+            "group": 1, 
+            "name": "Reference Values", 
+            "npubs": "3"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n929362756", 
+            "group": 1, 
+            "name": "Health Services Needs and Demand", 
+            "npubs": "2"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n8383088127", 
+            "group": 1, 
+            "name": "Cardiovascular Diseases", 
+            "npubs": "3"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n4227127566", 
+            "group": 1, 
+            "name": "Antipsychotic Agents", 
+            "npubs": "4"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n3046093382", 
+            "group": 1, 
+            "name": "Caregivers", 
+            "npubs": "3"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n9662108568", 
+            "group": 1, 
+            "name": "Central Nervous System Stimulants", 
+            "npubs": "11"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n5402990581", 
+            "group": 1, 
+            "name": "Social Control, Informal", 
+            "npubs": "2"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n991946122", 
+            "group": 1, 
+            "name": "Mental Disorders", 
+            "npubs": "3"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n9738284600", 
+            "group": 1, 
+            "name": "Child Behavior Disorders", 
+            "npubs": "4"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n5535171420", 
+            "group": 1, 
+            "name": "Psychiatric Status Rating Scales", 
+            "npubs": "2"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n5617306974", 
+            "group": 1, 
+            "name": "European Continental Ancestry Group", 
+            "npubs": "3"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n1454207385", 
+            "group": 1, 
+            "name": "Questionnaires", 
+            "npubs": "7"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n4995411068", 
+            "group": 1, 
+            "name": "Drug Therapy, Combination", 
+            "npubs": "2"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n8583274875", 
+            "group": 1, 
+            "name": "Child Behavior", 
+            "npubs": "2"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n6115400771", 
+            "group": 1, 
+            "name": "Stress, Psychological", 
             "npubs": "5"
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n103251", 
+            "uri": "http://vivo.ufl.edu/individual/n8143652130", 
             "group": 1, 
-            "name": "Lung Transplantation", 
+            "name": "Socioeconomic Factors", 
             "npubs": "2"
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n6432545863", 
+            "uri": "http://vivo.ufl.edu/individual/n3987799173", 
             "group": 1, 
-            "name": "Sulfones", 
+            "name": "Interpersonal Relations", 
             "npubs": "2"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n3972456050", 
+            "group": 1, 
+            "name": "Female", 
+            "npubs": "42"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n5369825678", 
+            "group": 1, 
+            "name": "Psychotropic Drugs", 
+            "npubs": "3"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n5620221079", 
+            "group": 1, 
+            "name": "Risk Factors", 
+            "npubs": "4"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n1863886842", 
+            "group": 1, 
+            "name": "Sex Factors", 
+            "npubs": "3"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n4145292286", 
+            "group": 1, 
+            "name": "Interviews as Topic", 
+            "npubs": "2"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n9030809027", 
+            "group": 1, 
+            "name": "Child, Preschool", 
+            "npubs": "17"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n1293769604", 
+            "group": 1, 
+            "name": "Physicians", 
+            "npubs": "2"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n581983096", 
+            "group": 1, 
+            "name": "Case-Control Studies", 
+            "npubs": "2"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n8169345794", 
+            "group": 1, 
+            "name": "Parent-Child Relations", 
+            "npubs": "4"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n1073995553", 
+            "group": 1, 
+            "name": "Risk Assessment", 
+            "npubs": "2"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n9374380708", 
+            "group": 1, 
+            "name": "Methylphenidate", 
+            "npubs": "3"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n223335381", 
+            "group": 1, 
+            "name": "Mental Health Services", 
+            "npubs": "4"
         }, 
         {
             "uri": "http://vivo.ufl.edu/individual/n1092518831", 
             "group": 1, 
             "name": "Mice", 
+            "npubs": "2"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n2313658752", 
+            "group": 1, 
+            "name": "Cognition Disorders", 
+            "npubs": "2"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n6624354999", 
+            "group": 1, 
+            "name": "Behavior Therapy", 
+            "npubs": "4"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n3400563126", 
+            "group": 1, 
+            "name": "Age Factors", 
+            "npubs": "3"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n5253580033", 
+            "group": 1, 
+            "name": "Florida", 
+            "npubs": "3"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n8363128177", 
+            "group": 1, 
+            "name": "United States", 
+            "npubs": "14"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n2888118495", 
+            "group": 1, 
+            "name": "Adrenergic Uptake Inhibitors", 
+            "npubs": "2"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n4133338307", 
+            "group": 1, 
+            "name": "Male", 
+            "npubs": "44"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n9950961913", 
+            "group": 1, 
+            "name": "Continental Population Groups", 
+            "npubs": "2"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n6651445156", 
+            "group": 1, 
+            "name": "Neuropsychological Tests", 
+            "npubs": "3"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n444857", 
+            "group": 1, 
+            "name": "Social Behavior", 
+            "npubs": "3"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n5881051594", 
+            "group": 1, 
+            "name": "Cross-Sectional Studies", 
             "npubs": "5"
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n1306930683", 
+            "uri": "http://vivo.ufl.edu/individual/n9432679431", 
             "group": 1, 
-            "name": "Cell Hypoxia", 
+            "name": "Young Adult", 
+            "npubs": "7"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n6398140245", 
+            "group": 1, 
+            "name": "Health Knowledge, Attitudes, Practice", 
             "npubs": "3"
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n2216640123", 
+            "uri": "http://vivo.ufl.edu/individual/n1822340538", 
             "group": 1, 
-            "name": "Retrospective Studies", 
-            "npubs": "4"
-        }, 
-        {
-            "uri": "http://vivo.ufl.edu/individual/n6712501891", 
-            "group": 1, 
-            "name": "Phosphodiesterase 5 Inhibitors", 
-            "npubs": "3"
-        }, 
-        {
-            "uri": "http://vivo.ufl.edu/individual/n5916138817", 
-            "group": 1, 
-            "name": "Mice, Transgenic", 
+            "name": "Social Adjustment", 
             "npubs": "2"
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n2894680762", 
+            "uri": "http://vivo.ufl.edu/individual/n4701805452", 
             "group": 1, 
-            "name": "Acute Disease", 
+            "name": "Epidemiologic Methods", 
             "npubs": "2"
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n1135556988", 
+            "uri": "http://vivo.ufl.edu/individual/n449095758", 
             "group": 1, 
-            "name": "Animals", 
-            "npubs": "12"
+            "name": "Depressive Disorder, Major", 
+            "npubs": "2"
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n3216633323", 
+            "uri": "http://vivo.ufl.edu/individual/n8001035706", 
             "group": 1, 
-            "name": "Hypertrophy, Right Ventricular", 
+            "name": "Attitude to Health", 
+            "npubs": "4"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n2133828773", 
+            "group": 1, 
+            "name": "Quality of Health Care", 
+            "npubs": "2"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n2713418977", 
+            "group": 1, 
+            "name": "Students", 
+            "npubs": "4"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n2323186955", 
+            "group": 1, 
+            "name": "Middle Aged", 
             "npubs": "3"
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n1158627407", 
+            "uri": "http://vivo.ufl.edu/individual/n9721045031", 
             "group": 1, 
-            "name": "Cardiac Catheterization", 
+            "name": "Propylamines", 
+            "npubs": "3"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n9188556575", 
+            "group": 1, 
+            "name": "Medicaid", 
             "npubs": "4"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n674264844", 
+            "group": 1, 
+            "name": "Adult", 
+            "npubs": "10"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n6379850245", 
+            "group": 1, 
+            "name": "Temperament", 
+            "npubs": "2"
         }, 
         {
             "uri": "http://vivo.ufl.edu/individual/n110884", 
@@ -229,232 +355,328 @@
             "npubs": "2"
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n1621478274", 
+            "uri": "http://vivo.ufl.edu/individual/n9156251149", 
             "group": 1, 
-            "name": "Pulmonary Disease, Chronic Obstructive", 
-            "npubs": "2"
-        }, 
-        {
-            "uri": "http://vivo.ufl.edu/individual/n6535963957", 
-            "group": 1, 
-            "name": "Nitric Oxide", 
+            "name": "Patient Acceptance of Health Care", 
             "npubs": "4"
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n4133338307", 
+            "uri": "http://vivo.ufl.edu/individual/n7171576883", 
             "group": 1, 
-            "name": "Male", 
-            "npubs": "15"
-        }, 
-        {
-            "uri": "http://vivo.ufl.edu/individual/n4073999516", 
-            "group": 1, 
-            "name": "Peptidyl-Dipeptidase A", 
-            "npubs": "5"
-        }, 
-        {
-            "uri": "http://vivo.ufl.edu/individual/n1341352455", 
-            "group": 1, 
-            "name": "Purines", 
-            "npubs": "2"
-        }, 
-        {
-            "uri": "http://vivo.ufl.edu/individual/n8993545481", 
-            "group": 1, 
-            "name": "Angiotensin-Converting Enzyme Inhibitors", 
-            "npubs": "2"
-        }, 
-        {
-            "uri": "http://vivo.ufl.edu/individual/n1146869772", 
-            "group": 1, 
-            "name": "Sensitivity and Specificity", 
+            "name": "Mass Screening", 
             "npubs": "3"
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n9745277173", 
+            "uri": "http://vivo.ufl.edu/individual/n1135556988", 
             "group": 1, 
-            "name": "Administration, Inhalation", 
+            "name": "Animals", 
             "npubs": "2"
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n9214919238", 
+            "uri": "http://vivo.ufl.edu/individual/n2130667037", 
             "group": 1, 
-            "name": "Rats", 
+            "name": "Child", 
+            "npubs": "43"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n5229438041", 
+            "group": 1, 
+            "name": "African Americans", 
             "npubs": "4"
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n9663931404", 
+            "uri": "http://vivo.ufl.edu/individual/n5136027011", 
             "group": 1, 
-            "name": "Bone Morphogenetic Protein Receptors, Type II", 
+            "name": "Odds Ratio", 
             "npubs": "2"
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n419593967", 
+            "uri": "http://vivo.ufl.edu/individual/n6693991569", 
             "group": 1, 
-            "name": "Blood Pressure", 
+            "name": "Peer Group", 
+            "npubs": "2"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n87117098", 
+            "group": 1, 
+            "name": "Severity of Illness Index", 
+            "npubs": "9"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n3350680036", 
+            "group": 1, 
+            "name": "Arousal", 
+            "npubs": "2"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n364871757", 
+            "group": 1, 
+            "name": "Aggression", 
+            "npubs": "2"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n1592403314", 
+            "group": 1, 
+            "name": "Psychological Tests", 
+            "npubs": "2"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n3137901258", 
+            "group": 1, 
+            "name": "Executive Function", 
+            "npubs": "2"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n1954152559", 
+            "group": 1, 
+            "name": "Physician's Practice Patterns", 
+            "npubs": "3"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n3269476313", 
+            "group": 1, 
+            "name": "Adolescent", 
+            "npubs": "30"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n5639114801", 
+            "group": 1, 
+            "name": "Comorbidity", 
+            "npubs": "11"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n7530107817", 
+            "group": 1, 
+            "name": "Child Health Services", 
+            "npubs": "2"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n920119868", 
+            "group": 1, 
+            "name": "Autistic Disorder", 
+            "npubs": "3"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n7902781276", 
+            "group": 1, 
+            "name": "Psychometrics", 
+            "npubs": "6"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n9345895206", 
+            "group": 1, 
+            "name": "Logistic Models", 
+            "npubs": "2"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n8670906152", 
+            "group": 1, 
+            "name": "Personality Inventory", 
+            "npubs": "2"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n5023404855", 
+            "group": 1, 
+            "name": "Longitudinal Studies", 
+            "npubs": "9"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n7784673046", 
+            "group": 1, 
+            "name": "Cohort Studies", 
+            "npubs": "7"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n7423780422", 
+            "group": 1, 
+            "name": "Attention", 
             "npubs": "5"
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n8746573748", 
+            "uri": "http://vivo.ufl.edu/individual/n6813522115", 
             "group": 1, 
-            "name": "Cell Proliferation", 
+            "name": "Reproducibility of Results", 
             "npubs": "4"
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n7062241175", 
+            "uri": "http://vivo.ufl.edu/individual/n6805621225", 
             "group": 1, 
-            "name": "Rats, Sprague-Dawley", 
+            "name": "Attention Deficit and Disruptive Behavior Disorders", 
+            "npubs": "5"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n8051134156", 
+            "group": 1, 
+            "name": "Drug-Related Side Effects and Adverse Reactions", 
+            "npubs": "2"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n997108095", 
+            "group": 1, 
+            "name": "Faculty", 
+            "npubs": "2"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n2216640123", 
+            "group": 1, 
+            "name": "Retrospective Studies", 
+            "npubs": "6"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n9657589168", 
+            "group": 1, 
+            "name": "Achievement", 
+            "npubs": "2"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n76572", 
+            "group": 1, 
+            "name": "Quality of Life", 
+            "npubs": "2"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n5855830885", 
+            "group": 1, 
+            "name": "Demography", 
+            "npubs": "2"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n9692032645", 
+            "group": 1, 
+            "name": "Obsessive-Compulsive Disorder", 
+            "npubs": "3"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n5902164971", 
+            "group": 1, 
+            "name": "Follow-Up Studies", 
+            "npubs": "4"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n3668767962", 
+            "group": 1, 
+            "name": "Prevalence", 
             "npubs": "4"
         }, 
         {
             "uri": "http://vivo.ufl.edu/individual/n8256773015", 
             "group": 1, 
             "name": "Humans", 
-            "npubs": "20"
+            "npubs": "54"
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n2390083865", 
+            "uri": "http://vivo.ufl.edu/individual/n9843141475", 
             "group": 1, 
-            "name": "Anemia, Sickle Cell", 
+            "name": "Adaptation, Psychological", 
             "npubs": "2"
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n2726171545", 
+            "uri": "http://vivo.ufl.edu/individual/n6341272831", 
             "group": 1, 
-            "name": "Lung", 
+            "name": "Heart Diseases", 
+            "npubs": "2"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n18066", 
+            "group": 2, 
+            "name": "Heaton, Shelley C", 
             "npubs": "3"
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n3972456050", 
-            "group": 1, 
-            "name": "Female", 
+            "uri": "http://vivo.ufl.edu/individual/n58788", 
+            "group": 2, 
+            "name": "Geffken, Gary R", 
+            "npubs": "7"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n8166", 
+            "group": 2, 
+            "name": "Mason, Dana Marie", 
+            "npubs": "8"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n30781896", 
+            "group": 2, 
+            "name": "Reid, Adam M", 
+            "npubs": "2"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n2823", 
+            "group": 2, 
+            "name": "Xu, Xiaohui", 
+            "npubs": "2"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n19142", 
+            "group": 2, 
+            "name": "Mcnamara, Joseph Patrick Hill", 
+            "npubs": "4"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n2799", 
+            "group": 2, 
+            "name": "Greene, Lisa Merlo", 
+            "npubs": "2"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n96912", 
+            "group": 2, 
+            "name": "Shuster, Jonathan J", 
+            "npubs": "4"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n20567", 
+            "group": 2, 
+            "name": "Garvan, Cyndi", 
+            "npubs": "14"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n4968", 
+            "group": 2, 
+            "name": "Koro-Ljungberg, Mirka Elina", 
+            "npubs": "4"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n4559", 
+            "group": 2, 
+            "name": "Liu, Yijun", 
+            "npubs": "2"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n23204", 
+            "group": 2, 
+            "name": "Eyberg, Sheila M", 
+            "npubs": "3"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n13565", 
+            "group": 2, 
+            "name": "Bussing, Regina", 
+            "npubs": "19"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n7725", 
+            "group": 2, 
+            "name": "Winterstein, Almut Gertrud", 
             "npubs": "11"
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n4641027064", 
-            "group": 1, 
-            "name": "Phosphodiesterase Inhibitors", 
-            "npubs": "2"
-        }, 
-        {
-            "uri": "http://vivo.ufl.edu/individual/n7557868680", 
-            "group": 1, 
-            "name": "Infusions, Subcutaneous", 
-            "npubs": "2"
-        }, 
-        {
-            "uri": "http://vivo.ufl.edu/individual/n9344784100", 
-            "group": 1, 
-            "name": "Aged", 
-            "npubs": "4"
-        }, 
-        {
-            "uri": "http://vivo.ufl.edu/individual/n2323186955", 
-            "group": 1, 
-            "name": "Middle Aged", 
-            "npubs": "8"
-        }, 
-        {
-            "uri": "http://vivo.ufl.edu/individual/n6267975833", 
-            "group": 1, 
-            "name": "Prostaglandins", 
-            "npubs": "2"
-        }, 
-        {
-            "uri": "http://vivo.ufl.edu/individual/n167804543", 
+            "uri": "http://vivo.ufl.edu/individual/n13695", 
             "group": 2, 
-            "name": "Qi, Yanfei", 
-            "npubs": "3"
-        }, 
-        {
-            "uri": "http://vivo.ufl.edu/individual/n7500", 
-            "group": 2, 
-            "name": "Carrie, Robin D", 
-            "npubs": "4"
-        }, 
-        {
-            "uri": "http://vivo.ufl.edu/individual/n57637", 
-            "group": 2, 
-            "name": "Yuan, Lihui", 
-            "npubs": "2"
-        }, 
-        {
-            "uri": "http://vivo.ufl.edu/individual/n20864", 
-            "group": 2, 
-            "name": "Patel, J M", 
+            "name": "Saidi, Arwa", 
             "npubs": "5"
-        }, 
-        {
-            "uri": "http://vivo.ufl.edu/individual/n14266", 
-            "group": 2, 
-            "name": "Ferreira, Anderson Jose", 
-            "npubs": "4"
-        }, 
-        {
-            "uri": "http://vivo.ufl.edu/individual/n2144", 
-            "group": 2, 
-            "name": "Raizada, Mohan K", 
-            "npubs": "8"
-        }, 
-        {
-            "uri": "http://vivo.ufl.edu/individual/n123761", 
-            "group": 2, 
-            "name": "Klodell, Charles T Jr", 
-            "npubs": "2"
-        }, 
-        {
-            "uri": "http://vivo.ufl.edu/individual/n5551", 
-            "group": 2, 
-            "name": "Oh, S Paul", 
-            "npubs": "4"
-        }, 
-        {
-            "uri": "http://vivo.ufl.edu/individual/n2891", 
-            "group": 2, 
-            "name": "Alnuaimat, Hassan Mari", 
-            "npubs": "4"
-        }, 
-        {
-            "uri": "http://vivo.ufl.edu/individual/n15838", 
-            "group": 2, 
-            "name": "Beaver, Thomas M", 
-            "npubs": "3"
-        }, 
-        {
-            "uri": "http://vivo.ufl.edu/individual/n5455", 
-            "group": 2, 
-            "name": "Katovich, Michael J", 
-            "npubs": "5"
-        }, 
-        {
-            "uri": "http://vivo.ufl.edu/individual/n599221998", 
-            "group": 2, 
-            "name": "Han, Chul", 
-            "npubs": "2"
-        }, 
-        {
-            "uri": "http://vivo.ufl.edu/individual/n934416248", 
-            "group": 2, 
-            "name": "Shenoy Katapadikar, Vinayak", 
-            "npubs": "5"
-        }, 
-        {
-            "uri": "http://vivo.ufl.edu/individual/n25051", 
-            "group": 2, 
-            "name": "Hu, Hanbo", 
-            "npubs": "2"
         }
     ], 
     "concept": {
-        "uri": "http://vivo.ufl.edu/individual/n8300635913", 
-        "name": "Hypertension, Pulmonary", 
-        "npubs": "29"
+        "uri": "http://vivo.ufl.edu/individual/n2480637734", 
+        "name": "Attention Deficit Disorder with Hyperactivity", 
+        "npubs": "55"
     }, 
     "links": [
         {
             "source": 0, 
             "target": 1, 
-            "value": "3"
+            "value": "5"
         }, 
         {
             "source": 0, 
@@ -464,12 +686,12 @@
         {
             "source": 0, 
             "target": 3, 
-            "value": "2"
+            "value": "10"
         }, 
         {
             "source": 0, 
             "target": 4, 
-            "value": "2"
+            "value": "3"
         }, 
         {
             "source": 0, 
@@ -479,7 +701,7 @@
         {
             "source": 0, 
             "target": 6, 
-            "value": "6"
+            "value": "3"
         }, 
         {
             "source": 0, 
@@ -494,7 +716,7 @@
         {
             "source": 0, 
             "target": 9, 
-            "value": "2"
+            "value": "11"
         }, 
         {
             "source": 0, 
@@ -504,32 +726,32 @@
         {
             "source": 0, 
             "target": 11, 
-            "value": "2"
+            "value": "3"
         }, 
         {
             "source": 0, 
             "target": 12, 
-            "value": "2"
+            "value": "4"
         }, 
         {
             "source": 0, 
             "target": 13, 
-            "value": "4"
-        }, 
-        {
-            "source": 0, 
-            "target": 14, 
             "value": "2"
         }, 
         {
             "source": 0, 
+            "target": 14, 
+            "value": "3"
+        }, 
+        {
+            "source": 0, 
             "target": 15, 
-            "value": "4"
+            "value": "7"
         }, 
         {
             "source": 0, 
             "target": 16, 
-            "value": "3"
+            "value": "2"
         }, 
         {
             "source": 0, 
@@ -539,7 +761,7 @@
         {
             "source": 0, 
             "target": 18, 
-            "value": "2"
+            "value": "5"
         }, 
         {
             "source": 0, 
@@ -554,32 +776,32 @@
         {
             "source": 0, 
             "target": 21, 
-            "value": "4"
+            "value": "42"
         }, 
         {
             "source": 0, 
             "target": 22, 
-            "value": "2"
+            "value": "3"
         }, 
         {
             "source": 0, 
             "target": 23, 
-            "value": "8"
+            "value": "4"
         }, 
         {
             "source": 0, 
             "target": 24, 
-            "value": "5"
+            "value": "3"
         }, 
         {
             "source": 0, 
             "target": 25, 
-            "value": "5"
+            "value": "2"
         }, 
         {
             "source": 0, 
             "target": 26, 
-            "value": "2"
+            "value": "17"
         }, 
         {
             "source": 0, 
@@ -589,17 +811,17 @@
         {
             "source": 0, 
             "target": 28, 
-            "value": "5"
+            "value": "2"
         }, 
         {
             "source": 0, 
             "target": 29, 
-            "value": "3"
+            "value": "4"
         }, 
         {
             "source": 0, 
             "target": 30, 
-            "value": "4"
+            "value": "2"
         }, 
         {
             "source": 0, 
@@ -609,7 +831,7 @@
         {
             "source": 0, 
             "target": 32, 
-            "value": "2"
+            "value": "4"
         }, 
         {
             "source": 0, 
@@ -619,67 +841,67 @@
         {
             "source": 0, 
             "target": 34, 
-            "value": "12"
+            "value": "2"
         }, 
         {
             "source": 0, 
             "target": 35, 
-            "value": "3"
+            "value": "4"
         }, 
         {
             "source": 0, 
             "target": 36, 
-            "value": "4"
-        }, 
-        {
-            "source": 0, 
-            "target": 37, 
-            "value": "2"
-        }, 
-        {
-            "source": 0, 
-            "target": 38, 
-            "value": "2"
-        }, 
-        {
-            "source": 0, 
-            "target": 39, 
-            "value": "4"
-        }, 
-        {
-            "source": 0, 
-            "target": 40, 
-            "value": "15"
-        }, 
-        {
-            "source": 0, 
-            "target": 41, 
-            "value": "5"
-        }, 
-        {
-            "source": 0, 
-            "target": 42, 
-            "value": "2"
-        }, 
-        {
-            "source": 0, 
-            "target": 43, 
-            "value": "2"
-        }, 
-        {
-            "source": 0, 
-            "target": 44, 
             "value": "3"
         }, 
         {
             "source": 0, 
-            "target": 45, 
+            "target": 37, 
+            "value": "3"
+        }, 
+        {
+            "source": 0, 
+            "target": 38, 
+            "value": "14"
+        }, 
+        {
+            "source": 0, 
+            "target": 39, 
             "value": "2"
         }, 
         {
             "source": 0, 
+            "target": 40, 
+            "value": "44"
+        }, 
+        {
+            "source": 0, 
+            "target": 41, 
+            "value": "2"
+        }, 
+        {
+            "source": 0, 
+            "target": 42, 
+            "value": "3"
+        }, 
+        {
+            "source": 0, 
+            "target": 43, 
+            "value": "3"
+        }, 
+        {
+            "source": 0, 
+            "target": 44, 
+            "value": "5"
+        }, 
+        {
+            "source": 0, 
+            "target": 45, 
+            "value": "7"
+        }, 
+        {
+            "source": 0, 
             "target": 46, 
-            "value": "4"
+            "value": "3"
         }, 
         {
             "source": 0, 
@@ -689,12 +911,12 @@
         {
             "source": 0, 
             "target": 48, 
-            "value": "5"
+            "value": "2"
         }, 
         {
             "source": 0, 
             "target": 49, 
-            "value": "4"
+            "value": "2"
         }, 
         {
             "source": 0, 
@@ -704,12 +926,12 @@
         {
             "source": 0, 
             "target": 51, 
-            "value": "20"
+            "value": "2"
         }, 
         {
             "source": 0, 
             "target": 52, 
-            "value": "2"
+            "value": "4"
         }, 
         {
             "source": 0, 
@@ -719,32 +941,32 @@
         {
             "source": 0, 
             "target": 54, 
-            "value": "11"
+            "value": "3"
         }, 
         {
             "source": 0, 
             "target": 55, 
-            "value": "2"
-        }, 
-        {
-            "source": 0, 
-            "target": 56, 
-            "value": "2"
-        }, 
-        {
-            "source": 0, 
-            "target": 57, 
             "value": "4"
         }, 
         {
             "source": 0, 
+            "target": 56, 
+            "value": "10"
+        }, 
+        {
+            "source": 0, 
+            "target": 57, 
+            "value": "2"
+        }, 
+        {
+            "source": 0, 
             "target": 58, 
-            "value": "8"
+            "value": "2"
         }, 
         {
             "source": 0, 
             "target": 59, 
-            "value": "2"
+            "value": "4"
         }, 
         {
             "source": 0, 
@@ -754,67 +976,252 @@
         {
             "source": 0, 
             "target": 61, 
-            "value": "4"
+            "value": "2"
         }, 
         {
             "source": 0, 
             "target": 62, 
-            "value": "2"
+            "value": "43"
         }, 
         {
             "source": 0, 
             "target": 63, 
-            "value": "5"
+            "value": "4"
         }, 
         {
             "source": 0, 
             "target": 64, 
-            "value": "4"
+            "value": "2"
         }, 
         {
             "source": 0, 
             "target": 65, 
-            "value": "8"
+            "value": "2"
         }, 
         {
             "source": 0, 
             "target": 66, 
-            "value": "2"
+            "value": "9"
         }, 
         {
             "source": 0, 
             "target": 67, 
-            "value": "4"
+            "value": "2"
         }, 
         {
             "source": 0, 
             "target": 68, 
-            "value": "4"
+            "value": "2"
         }, 
         {
             "source": 0, 
             "target": 69, 
-            "value": "3"
+            "value": "2"
         }, 
         {
             "source": 0, 
             "target": 70, 
-            "value": "5"
+            "value": "2"
         }, 
         {
             "source": 0, 
             "target": 71, 
-            "value": "2"
+            "value": "3"
         }, 
         {
             "source": 0, 
             "target": 72, 
-            "value": "5"
+            "value": "30"
         }, 
         {
             "source": 0, 
             "target": 73, 
+            "value": "11"
+        }, 
+        {
+            "source": 0, 
+            "target": 74, 
             "value": "2"
+        }, 
+        {
+            "source": 0, 
+            "target": 75, 
+            "value": "3"
+        }, 
+        {
+            "source": 0, 
+            "target": 76, 
+            "value": "6"
+        }, 
+        {
+            "source": 0, 
+            "target": 77, 
+            "value": "2"
+        }, 
+        {
+            "source": 0, 
+            "target": 78, 
+            "value": "2"
+        }, 
+        {
+            "source": 0, 
+            "target": 79, 
+            "value": "9"
+        }, 
+        {
+            "source": 0, 
+            "target": 80, 
+            "value": "7"
+        }, 
+        {
+            "source": 0, 
+            "target": 81, 
+            "value": "5"
+        }, 
+        {
+            "source": 0, 
+            "target": 82, 
+            "value": "4"
+        }, 
+        {
+            "source": 0, 
+            "target": 83, 
+            "value": "5"
+        }, 
+        {
+            "source": 0, 
+            "target": 84, 
+            "value": "2"
+        }, 
+        {
+            "source": 0, 
+            "target": 85, 
+            "value": "2"
+        }, 
+        {
+            "source": 0, 
+            "target": 86, 
+            "value": "6"
+        }, 
+        {
+            "source": 0, 
+            "target": 87, 
+            "value": "2"
+        }, 
+        {
+            "source": 0, 
+            "target": 88, 
+            "value": "2"
+        }, 
+        {
+            "source": 0, 
+            "target": 89, 
+            "value": "2"
+        }, 
+        {
+            "source": 0, 
+            "target": 90, 
+            "value": "3"
+        }, 
+        {
+            "source": 0, 
+            "target": 91, 
+            "value": "4"
+        }, 
+        {
+            "source": 0, 
+            "target": 92, 
+            "value": "4"
+        }, 
+        {
+            "source": 0, 
+            "target": 93, 
+            "value": "54"
+        }, 
+        {
+            "source": 0, 
+            "target": 94, 
+            "value": "2"
+        }, 
+        {
+            "source": 0, 
+            "target": 95, 
+            "value": "2"
+        }, 
+        {
+            "source": 0, 
+            "target": 96, 
+            "value": "3"
+        }, 
+        {
+            "source": 0, 
+            "target": 97, 
+            "value": "7"
+        }, 
+        {
+            "source": 0, 
+            "target": 98, 
+            "value": "8"
+        }, 
+        {
+            "source": 0, 
+            "target": 99, 
+            "value": "2"
+        }, 
+        {
+            "source": 0, 
+            "target": 100, 
+            "value": "2"
+        }, 
+        {
+            "source": 0, 
+            "target": 101, 
+            "value": "4"
+        }, 
+        {
+            "source": 0, 
+            "target": 102, 
+            "value": "2"
+        }, 
+        {
+            "source": 0, 
+            "target": 103, 
+            "value": "4"
+        }, 
+        {
+            "source": 0, 
+            "target": 104, 
+            "value": "14"
+        }, 
+        {
+            "source": 0, 
+            "target": 105, 
+            "value": "4"
+        }, 
+        {
+            "source": 0, 
+            "target": 106, 
+            "value": "2"
+        }, 
+        {
+            "source": 0, 
+            "target": 107, 
+            "value": "3"
+        }, 
+        {
+            "source": 0, 
+            "target": 108, 
+            "value": "19"
+        }, 
+        {
+            "source": 0, 
+            "target": 109, 
+            "value": "11"
+        }, 
+        {
+            "source": 0, 
+            "target": 110, 
+            "value": "5"
         }
     ]
 }
