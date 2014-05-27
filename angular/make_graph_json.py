@@ -39,8 +39,8 @@ print >>log_file, datetime.now(), "Start"
 conc = shelve.open("subset")
 
 concept_uri = "http://vivo.ufl.edu/individual/n8300635913" # Pulmonary hyper
-concept_uri = "http://vivo.ufl.edu/individual/n2567452217" # Great Britain
 concept_uri = "http://vivo.ufl.edu/individual/n2480637734" # ADD
+concept_uri = "http://vivo.ufl.edu/individual/n2284306921" # VA
 entry = conc[concept_uri]
 graph = {"nodes":[], "links":[], "concept": {"name": entry["name"],
                                              "npubs": entry["npubs"],
