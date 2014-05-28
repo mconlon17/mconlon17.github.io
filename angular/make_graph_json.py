@@ -83,6 +83,7 @@ for name,data in entry["concepts"].items():
     if concept_uri in conc:
         sub_entry = conc[concept_uri]
         s = 0
+        l = 0
         for name,data in sub_entry["concepts"].items():
             concept_uri = data["concept_uri"]
             j = find_uri(concept_uri)
@@ -102,12 +103,16 @@ for name,data in entry["concepts"].items():
                 graph["nodes"].append(node)
                 graph["links"].append(link)
             else:
+                l = l +1
+                if l > 3:
+                    continue
                 link = {"source":k0,
                         "target":j,
                         "value":data["count"]}
                 graph["links"].append(link)
 
         s = 0
+        l = 0
         for name,data in sub_entry["authors"].items():
             author_uri = data["author_uri"]
             j = find_uri(author_uri)
@@ -127,6 +132,9 @@ for name,data in entry["concepts"].items():
                 graph["nodes"].append(node)
                 graph["links"].append(link)
             else:
+                l = l + 1
+                if l > 3:
+                    continue
                 link = {"source":k0,
                         "target":j,
                         "value":data["count"]}
