@@ -46,18 +46,20 @@ graph = {"nodes":[], "links":[], "concept": {"name": entry["name"],
                                              "npubs": entry["npubs"],
                                              "uri": concept_uri}}
 graph["nodes"].append({"name":entry["name"],"group":1,
+                       "number": 0,
                      "npubs":entry["npubs"],
                      "uri":concept_uri})
 k = 0
 for name,data in entry["concepts"].items():
     k = k + 1
     node = {"name":name,
-              "group":1,
-              "npubs":data["count"],
-              "uri":data["concept_uri"]}
+            "number": k,
+            "group":1,
+            "npubs":data["count"],
+            "uri":data["concept_uri"]}
     link = {"source":0,
-              "target":k,
-              "value":data["count"]}
+            "target":k,
+            "value":data["count"]}
     graph["nodes"].append(node)
     graph["links"].append(link)
 
@@ -76,12 +78,13 @@ for name,data in entry["concepts"].items():
                 continue
             k = k + 1
             node = {"name":name,
-                      "group":1,
-                      "npubs":data["count"],
-                      "uri":data["concept_uri"]}
+                    "number":k,
+                    "group":1,
+                    "npubs":data["count"],
+                    "uri":data["concept_uri"]}
             link = {"source":k0,
-                      "target":k,
-                      "value":data["count"]}
+                    "target":k,
+                    "value":data["count"]}
             graph["nodes"].append(node)
             graph["links"].append(link)
         s = 0
@@ -91,24 +94,26 @@ for name,data in entry["concepts"].items():
                 continue
             k = k + 1
             node = {"name":name,
-                      "group":2,
-                      "npubs":data["count"],
-                      "uri":data["author_uri"]}
+                    "number":k,
+                    "group":2,
+                    "npubs":data["count"],
+                    "uri":data["author_uri"]}
             link = {"source":k0,
-                      "target":k,
-                      "value":data["count"]}
+                    "target":k,
+                    "value":data["count"]}
             graph["nodes"].append(node)
             graph["links"].append(link)
     
 for name,data in entry["authors"].items():
     k = k + 1
     node = {"name":name,
-              "group":2,
-              "npubs":data["count"],
-              "uri":data["author_uri"]}
+            "number":k,
+            "group":2,
+            "npubs":data["count"],
+            "uri":data["author_uri"]}
     link = {"source":0,
-              "target":k,
-              "value":data["count"]}
+            "target":k,
+            "value":data["count"]}
     graph["nodes"].append(node)
     graph["links"].append(link)
 json_file = open("graph.json", "w")

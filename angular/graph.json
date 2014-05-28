@@ -1,2386 +1,2783 @@
 {
     "nodes": [
         {
-            "uri": "http://vivo.ufl.edu/individual/n2284306921", 
+            "npubs": "15", 
             "group": 1, 
             "name": "United States Department of Veterans Affairs", 
-            "npubs": "15"
+            "uri": "http://vivo.ufl.edu/individual/n2284306921", 
+            "number": 0
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n6597421941", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Outcome Assessment (Health Care)", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n6597421941", 
+            "number": 1
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n7202642453", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Arthroplasty, Replacement, Knee", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n7202642453", 
+            "number": 2
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n1180243070", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Analgesics", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n1180243070", 
+            "number": 3
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n9515373319", 
+            "npubs": "5", 
             "group": 1, 
             "name": "Time Factors", 
-            "npubs": "5"
+            "uri": "http://vivo.ufl.edu/individual/n9515373319", 
+            "number": 4
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n5126885765", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Muscle, Skeletal", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n5126885765", 
+            "number": 5
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n8791270280", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Self Report", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n8791270280", 
+            "number": 6
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n12269", 
+            "npubs": "3", 
             "group": 2, 
             "name": "Pahor, Marco", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n12269", 
+            "number": 7
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n20883", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Komro, Kelli Ann", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n20883", 
+            "number": 8
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n15270", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Knapp, Caprice A", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n15270", 
+            "number": 9
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n24368", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Huang, I-Chan", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n24368", 
+            "number": 10
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n38368", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Daniels, Michael Joseph", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n38368", 
+            "number": 11
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n43307", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Telemedicine", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n43307", 
+            "number": 12
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n6597421941", 
+            "npubs": "3", 
             "group": 1, 
             "name": "Outcome Assessment (Health Care)", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n6597421941", 
+            "number": 13
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n3269476313", 
+            "npubs": "3", 
             "group": 1, 
             "name": "Adolescent", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n3269476313", 
+            "number": 14
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n3400563126", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Age Factors", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n3400563126", 
+            "number": 15
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n2284306921", 
+            "npubs": "2", 
             "group": 1, 
             "name": "United States Department of Veterans Affairs", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n2284306921", 
+            "number": 16
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n9977022174", 
+            "npubs": "5", 
             "group": 1, 
             "name": "Aged, 80 and over", 
-            "npubs": "5"
+            "uri": "http://vivo.ufl.edu/individual/n9977022174", 
+            "number": 17
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n20335", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Rose, Dorian K", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n20335", 
+            "number": 18
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n30905", 
+            "npubs": "3", 
             "group": 2, 
             "name": "Malasanos, Toree", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n30905", 
+            "number": 19
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n3022", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Wu, Samuel Shangwu", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n3022", 
+            "number": 20
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n3400563126", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Age Factors", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n3400563126", 
+            "number": 21
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n1158477806", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Diagnostic and Statistical Manual of Mental Disorders", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n1158477806", 
+            "number": 22
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n2375856516", 
+            "npubs": "3", 
             "group": 1, 
             "name": "Tissue Donors", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n2375856516", 
+            "number": 23
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n3970569063", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Insurance Coverage", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n3970569063", 
+            "number": 24
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n4737006262", 
+            "npubs": "3", 
             "group": 1, 
             "name": "Parents", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n4737006262", 
+            "number": 25
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n7585764867", 
+            "npubs": "3", 
             "group": 1, 
             "name": "Intracranial Aneurysm", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n7585764867", 
+            "number": 26
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n2383", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Stevenson, Amanda Seay", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n2383", 
+            "number": 27
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n102089", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Bishop, Mark Donald", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n102089", 
+            "number": 28
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n17567", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Cook, Robert L", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n17567", 
+            "number": 29
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n20567", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Garvan, Cyndi", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n20567", 
+            "number": 30
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n5712", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Bruijnzeel, Adriaan Willem", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n5712", 
+            "number": 31
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n9977022174", 
+            "npubs": "4", 
             "group": 1, 
             "name": "Aged, 80 and over", 
-            "npubs": "4"
+            "uri": "http://vivo.ufl.edu/individual/n9977022174", 
+            "number": 32
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n2375856516", 
+            "npubs": "4", 
             "group": 1, 
             "name": "Tissue Donors", 
-            "npubs": "4"
+            "uri": "http://vivo.ufl.edu/individual/n2375856516", 
+            "number": 33
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n7202642453", 
+            "npubs": "19", 
             "group": 1, 
             "name": "Arthroplasty, Replacement, Knee", 
-            "npubs": "19"
+            "uri": "http://vivo.ufl.edu/individual/n7202642453", 
+            "number": 34
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n5881087551", 
+            "npubs": "3", 
             "group": 1, 
             "name": "Kidney Transplantation", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n5881087551", 
+            "number": 35
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n4898486652", 
+            "npubs": "4", 
             "group": 1, 
             "name": "Sex Distribution", 
-            "npubs": "4"
+            "uri": "http://vivo.ufl.edu/individual/n4898486652", 
+            "number": 36
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n565758847", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Antibodies, Neoplasm", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n565758847", 
+            "number": 37
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n100702", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Miles, William Murrell", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n100702", 
+            "number": 38
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n22794", 
+            "npubs": "7", 
             "group": 2, 
             "name": "Li, Zuofeng", 
-            "npubs": "7"
+            "uri": "http://vivo.ufl.edu/individual/n22794", 
+            "number": 39
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n2383", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Stevenson, Amanda Seay", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n2383", 
+            "number": 40
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n14839", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Porvasnik, Stacy L", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n14839", 
+            "number": 41
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n102089", 
+            "npubs": "6", 
             "group": 2, 
             "name": "Bishop, Mark Donald", 
-            "npubs": "6"
+            "uri": "http://vivo.ufl.edu/individual/n102089", 
+            "number": 42
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n9345895206", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Logistic Models", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n9345895206", 
+            "number": 43
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n4919482658", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Universities", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n4919482658", 
+            "number": 44
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n6464952267", 
+            "npubs": "4", 
             "group": 1, 
             "name": "Acute Kidney Injury", 
-            "npubs": "4"
+            "uri": "http://vivo.ufl.edu/individual/n6464952267", 
+            "number": 45
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n2013751180", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Fresh Water", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n2013751180", 
+            "number": 46
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n2375856516", 
+            "npubs": "3", 
             "group": 1, 
             "name": "Tissue Donors", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n2375856516", 
+            "number": 47
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n2802612499", 
+            "npubs": "5", 
             "group": 1, 
             "name": "Insemination, Artificial", 
-            "npubs": "5"
+            "uri": "http://vivo.ufl.edu/individual/n2802612499", 
+            "number": 48
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n28486", 
+            "npubs": "3", 
             "group": 2, 
             "name": "Angiolillo, Dominick Joseph", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n28486", 
+            "number": 49
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n1624969366", 
+            "npubs": "3", 
             "group": 2, 
             "name": "Barry, Adam E", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n1624969366", 
+            "number": 50
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n157358", 
+            "npubs": "3", 
             "group": 2, 
             "name": "Weiler, Robert Matthew", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n157358", 
+            "number": 51
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n20883", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Komro, Kelli Ann", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n20883", 
+            "number": 52
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n58788", 
+            "npubs": "3", 
             "group": 2, 
             "name": "Geffken, Gary R", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n58788", 
+            "number": 53
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n3190008119", 
+            "npubs": "5", 
             "group": 1, 
             "name": "Veterans", 
-            "npubs": "5"
+            "uri": "http://vivo.ufl.edu/individual/n3190008119", 
+            "number": 54
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n143786", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Anxiety Disorders", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n143786", 
+            "number": 55
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n9432679431", 
+            "npubs": "3", 
             "group": 1, 
             "name": "Young Adult", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n9432679431", 
+            "number": 56
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n6597421941", 
+            "npubs": "4", 
             "group": 1, 
             "name": "Outcome Assessment (Health Care)", 
-            "npubs": "4"
+            "uri": "http://vivo.ufl.edu/individual/n6597421941", 
+            "number": 57
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n5639114801", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Comorbidity", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n5639114801", 
+            "number": 58
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n8117271058", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Amputees", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n8117271058", 
+            "number": 59
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n1624969366", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Barry, Adam E", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n1624969366", 
+            "number": 60
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n12173", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Cowper, Diane C", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n12173", 
+            "number": 61
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n116882", 
+            "npubs": "5", 
             "group": 2, 
             "name": "Vogel, W Bruce", 
-            "npubs": "5"
+            "uri": "http://vivo.ufl.edu/individual/n116882", 
+            "number": 62
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n3022", 
+            "npubs": "5", 
             "group": 2, 
             "name": "Wu, Samuel Shangwu", 
-            "npubs": "5"
+            "uri": "http://vivo.ufl.edu/individual/n3022", 
+            "number": 63
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n20335", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Rose, Dorian K", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n20335", 
+            "number": 64
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n1005733577", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Disability Evaluation", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n1005733577", 
+            "number": 65
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n1430278352", 
+            "npubs": "3", 
             "group": 1, 
             "name": "Postural Balance", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n1430278352", 
+            "number": 66
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n6315342882", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Exercise Test", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n6315342882", 
+            "number": 67
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n5711927465", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Back Pain", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n5711927465", 
+            "number": 68
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n9515373319", 
+            "npubs": "8", 
             "group": 1, 
             "name": "Time Factors", 
-            "npubs": "8"
+            "uri": "http://vivo.ufl.edu/individual/n9515373319", 
+            "number": 69
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n5126885765", 
+            "npubs": "5", 
             "group": 1, 
             "name": "Muscle, Skeletal", 
-            "npubs": "5"
+            "uri": "http://vivo.ufl.edu/individual/n5126885765", 
+            "number": 70
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n25625", 
+            "npubs": "3", 
             "group": 2, 
             "name": "Rodriguez, Ramon", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n25625", 
+            "number": 71
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n18066", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Heaton, Shelley C", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n18066", 
+            "number": 72
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n2383", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Stevenson, Amanda Seay", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n2383", 
+            "number": 73
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n102089", 
+            "npubs": "7", 
             "group": 2, 
             "name": "Bishop, Mark Donald", 
-            "npubs": "7"
+            "uri": "http://vivo.ufl.edu/individual/n102089", 
+            "number": 74
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n32468", 
+            "npubs": "3", 
             "group": 2, 
             "name": "Shechtman, Orit", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n32468", 
+            "number": 75
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n9545447318", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Self-Help Devices", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n9545447318", 
+            "number": 76
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n43204", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Aging", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n43204", 
+            "number": 77
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n5394769281", 
+            "npubs": "3", 
             "group": 1, 
             "name": "Activities of Daily Living", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n5394769281", 
+            "number": 78
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n4133338307", 
+            "npubs": "5", 
             "group": 1, 
             "name": "Male", 
-            "npubs": "5"
+            "uri": "http://vivo.ufl.edu/individual/n4133338307", 
+            "number": 79
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n7593810009", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Spinal Cord Injuries", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n7593810009", 
+            "number": 80
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n2323186955", 
+            "npubs": "4", 
             "group": 1, 
             "name": "Middle Aged", 
-            "npubs": "4"
+            "uri": "http://vivo.ufl.edu/individual/n2323186955", 
+            "number": 81
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n63718", 
+            "npubs": "4", 
             "group": 2, 
             "name": "Mann, William C", 
-            "npubs": "4"
+            "uri": "http://vivo.ufl.edu/individual/n63718", 
+            "number": 82
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n3022", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Wu, Samuel Shangwu", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n3022", 
+            "number": 83
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n116882", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Vogel, W Bruce", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n116882", 
+            "number": 84
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n4979779767", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Drug Prescriptions", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n4979779767", 
+            "number": 85
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n65237", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Pharmacoepidemiology", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n65237", 
+            "number": 86
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n4995411068", 
+            "npubs": "3", 
             "group": 1, 
             "name": "Drug Therapy, Combination", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n4995411068", 
+            "number": 87
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n9432679431", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Young Adult", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n9432679431", 
+            "number": 88
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n6433214839", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Asthma", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n6433214839", 
+            "number": 89
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n3269476313", 
+            "npubs": "6", 
             "group": 1, 
             "name": "Adolescent", 
-            "npubs": "6"
+            "uri": "http://vivo.ufl.edu/individual/n3269476313", 
+            "number": 90
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n925513634", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Reisfield, Gary M", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n925513634", 
+            "number": 91
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n8707", 
+            "npubs": "3", 
             "group": 2, 
             "name": "Hartzema, Abraham G", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n8707", 
+            "number": 92
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n9946", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Harman, Jeffrey Scott", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n9946", 
+            "number": 93
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n2799", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Greene, Lisa Merlo", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n2799", 
+            "number": 94
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n22563", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Zineh, Issam", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n22563", 
+            "number": 95
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n85370", 
+            "npubs": "3", 
             "group": 1, 
             "name": "Multivariate Analysis", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n85370", 
+            "number": 96
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n2375856516", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Tissue Donors", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n2375856516", 
+            "number": 97
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n4898486652", 
+            "npubs": "4", 
             "group": 1, 
             "name": "Sex Distribution", 
-            "npubs": "4"
+            "uri": "http://vivo.ufl.edu/individual/n4898486652", 
+            "number": 98
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n8595517308", 
+            "npubs": "3", 
             "group": 1, 
             "name": "Dose Fractionation", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n8595517308", 
+            "number": 99
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n4737006262", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Parents", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n4737006262", 
+            "number": 100
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n1738637939", 
+            "npubs": "6", 
             "group": 1, 
             "name": "HIV Infections", 
-            "npubs": "6"
+            "uri": "http://vivo.ufl.edu/individual/n1738637939", 
+            "number": 101
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n28486", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Angiolillo, Dominick Joseph", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n28486", 
+            "number": 102
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n15270", 
+            "npubs": "5", 
             "group": 2, 
             "name": "Knapp, Caprice A", 
-            "npubs": "5"
+            "uri": "http://vivo.ufl.edu/individual/n15270", 
+            "number": 103
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n1908", 
+            "npubs": "4", 
             "group": 2, 
             "name": "Muller, Keith E", 
-            "npubs": "4"
+            "uri": "http://vivo.ufl.edu/individual/n1908", 
+            "number": 104
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n18664", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Borum, Peggy L", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n18664", 
+            "number": 105
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n20883", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Komro, Kelli Ann", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n20883", 
+            "number": 106
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n2323186955", 
+            "npubs": "11", 
             "group": 1, 
             "name": "Middle Aged", 
-            "npubs": "11"
+            "uri": "http://vivo.ufl.edu/individual/n2323186955", 
+            "number": 107
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n1686791813", 
+            "npubs": "10", 
             "group": 1, 
             "name": "Lupus Erythematosus, Systemic", 
-            "npubs": "10"
+            "uri": "http://vivo.ufl.edu/individual/n1686791813", 
+            "number": 108
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n2375856516", 
+            "npubs": "35", 
             "group": 1, 
             "name": "Tissue Donors", 
-            "npubs": "35"
+            "uri": "http://vivo.ufl.edu/individual/n2375856516", 
+            "number": 109
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n9716059110", 
+            "npubs": "3", 
             "group": 1, 
             "name": "Macula Lutea", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n9716059110", 
+            "number": 110
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n3970569063", 
+            "npubs": "6", 
             "group": 1, 
             "name": "Insurance Coverage", 
-            "npubs": "6"
+            "uri": "http://vivo.ufl.edu/individual/n3970569063", 
+            "number": 111
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n394254436", 
+            "npubs": "4", 
             "group": 1, 
             "name": "Patient Preference", 
-            "npubs": "4"
+            "uri": "http://vivo.ufl.edu/individual/n394254436", 
+            "number": 112
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n100702", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Miles, William Murrell", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n100702", 
+            "number": 113
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n42231", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Geller, Brian Scott", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n42231", 
+            "number": 114
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n102089", 
+            "npubs": "8", 
             "group": 2, 
             "name": "Bishop, Mark Donald", 
-            "npubs": "8"
+            "uri": "http://vivo.ufl.edu/individual/n102089", 
+            "number": 115
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n2923", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Tester, Nicole J", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n2923", 
+            "number": 116
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n14679", 
+            "npubs": "15", 
             "group": 2, 
             "name": "Gums, John G", 
-            "npubs": "15"
+            "uri": "http://vivo.ufl.edu/individual/n14679", 
+            "number": 117
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n7784673046", 
+            "npubs": "4", 
             "group": 1, 
             "name": "Cohort Studies", 
-            "npubs": "4"
+            "uri": "http://vivo.ufl.edu/individual/n7784673046", 
+            "number": 118
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n2375856516", 
+            "npubs": "4", 
             "group": 1, 
             "name": "Tissue Donors", 
-            "npubs": "4"
+            "uri": "http://vivo.ufl.edu/individual/n2375856516", 
+            "number": 119
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n4898486652", 
+            "npubs": "3", 
             "group": 1, 
             "name": "Sex Distribution", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n4898486652", 
+            "number": 120
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n8595517308", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Dose Fractionation", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n8595517308", 
+            "number": 121
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n218472", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Quality Improvement", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n218472", 
+            "number": 122
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n7585764867", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Intracranial Aneurysm", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n7585764867", 
+            "number": 123
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n2383", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Stevenson, Amanda Seay", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n2383", 
+            "number": 124
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n7327", 
+            "npubs": "6", 
             "group": 2, 
             "name": "Bihorac, Azra", 
-            "npubs": "6"
+            "uri": "http://vivo.ufl.edu/individual/n7327", 
+            "number": 125
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n14679", 
+            "npubs": "3", 
             "group": 2, 
             "name": "Gums, John G", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n14679", 
+            "number": 126
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n2710", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Bhandare, Niranjan S", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n2710", 
+            "number": 127
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n20567", 
+            "npubs": "6", 
             "group": 2, 
             "name": "Garvan, Cyndi", 
-            "npubs": "6"
+            "uri": "http://vivo.ufl.edu/individual/n20567", 
+            "number": 128
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n107821", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Schizophrenia", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n107821", 
+            "number": 129
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n4133338307", 
+            "npubs": "23", 
             "group": 1, 
             "name": "Male", 
-            "npubs": "23"
+            "uri": "http://vivo.ufl.edu/individual/n4133338307", 
+            "number": 130
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n592842531", 
+            "npubs": "3", 
             "group": 1, 
             "name": "History, 21st Century", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n592842531", 
+            "number": 131
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n3784736305", 
+            "npubs": "9", 
             "group": 1, 
             "name": "Schizophrenic Psychology", 
-            "npubs": "9"
+            "uri": "http://vivo.ufl.edu/individual/n3784736305", 
+            "number": 132
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n6823372745", 
+            "npubs": "4", 
             "group": 1, 
             "name": "Genotype", 
-            "npubs": "4"
+            "uri": "http://vivo.ufl.edu/individual/n6823372745", 
+            "number": 133
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n3269476313", 
+            "npubs": "4", 
             "group": 1, 
             "name": "Adolescent", 
-            "npubs": "4"
+            "uri": "http://vivo.ufl.edu/individual/n3269476313", 
+            "number": 134
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n1198", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Keil, Andreas", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n1198", 
+            "number": 135
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n11753", 
+            "npubs": "11", 
             "group": 2, 
             "name": "Tandon, Rajiv", 
-            "npubs": "11"
+            "uri": "http://vivo.ufl.edu/individual/n11753", 
+            "number": 136
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n6843", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Kem, William R", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n6843", 
+            "number": 137
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n674264844", 
+            "npubs": "7", 
             "group": 1, 
             "name": "Adult", 
-            "npubs": "7"
+            "uri": "http://vivo.ufl.edu/individual/n674264844", 
+            "number": 138
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n1686791813", 
+            "npubs": "11", 
             "group": 1, 
             "name": "Lupus Erythematosus, Systemic", 
-            "npubs": "11"
+            "uri": "http://vivo.ufl.edu/individual/n1686791813", 
+            "number": 139
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n2375856516", 
+            "npubs": "35", 
             "group": 1, 
             "name": "Tissue Donors", 
-            "npubs": "35"
+            "uri": "http://vivo.ufl.edu/individual/n2375856516", 
+            "number": 140
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n5485398289", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Transcription Factor AP-2", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n5485398289", 
+            "number": 141
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n9716059110", 
+            "npubs": "4", 
             "group": 1, 
             "name": "Macula Lutea", 
-            "npubs": "4"
+            "uri": "http://vivo.ufl.edu/individual/n9716059110", 
+            "number": 142
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n3775009288", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Electrophoresis", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n3775009288", 
+            "number": 143
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n100702", 
+            "npubs": "4", 
             "group": 2, 
             "name": "Miles, William Murrell", 
-            "npubs": "4"
+            "uri": "http://vivo.ufl.edu/individual/n100702", 
+            "number": 144
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n42231", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Geller, Brian Scott", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n42231", 
+            "number": 145
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n102089", 
+            "npubs": "17", 
             "group": 2, 
             "name": "Bishop, Mark Donald", 
-            "npubs": "17"
+            "uri": "http://vivo.ufl.edu/individual/n102089", 
+            "number": 146
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n21179", 
+            "npubs": "3", 
             "group": 2, 
             "name": "Flotte, Terence Robin", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n21179", 
+            "number": 147
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n14679", 
+            "npubs": "11", 
             "group": 2, 
             "name": "Gums, John G", 
-            "npubs": "11"
+            "uri": "http://vivo.ufl.edu/individual/n14679", 
+            "number": 148
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n110884", 
+            "npubs": "3", 
             "group": 1, 
             "name": "Treatment Outcome", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n110884", 
+            "number": 149
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n2375856516", 
+            "npubs": "16", 
             "group": 1, 
             "name": "Tissue Donors", 
-            "npubs": "16"
+            "uri": "http://vivo.ufl.edu/individual/n2375856516", 
+            "number": 150
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n8989304043", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Blood Chemical Analysis", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n8989304043", 
+            "number": 151
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n9971047197", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Thoracostomy", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n9971047197", 
+            "number": 152
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n5869737403", 
+            "npubs": "13", 
             "group": 1, 
             "name": "Atenolol", 
-            "npubs": "13"
+            "uri": "http://vivo.ufl.edu/individual/n5869737403", 
+            "number": 153
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n6429738472", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Translational Medical Research", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n6429738472", 
+            "number": 154
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n100702", 
+            "npubs": "3", 
             "group": 2, 
             "name": "Miles, William Murrell", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n100702", 
+            "number": 155
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n102089", 
+            "npubs": "5", 
             "group": 2, 
             "name": "Bishop, Mark Donald", 
-            "npubs": "5"
+            "uri": "http://vivo.ufl.edu/individual/n102089", 
+            "number": 156
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n14679", 
+            "npubs": "7", 
             "group": 2, 
             "name": "Gums, John G", 
-            "npubs": "7"
+            "uri": "http://vivo.ufl.edu/individual/n14679", 
+            "number": 157
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n1336", 
+            "npubs": "4", 
             "group": 2, 
             "name": "Rathore, Mobeen H", 
-            "npubs": "4"
+            "uri": "http://vivo.ufl.edu/individual/n1336", 
+            "number": 158
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n24984", 
+            "npubs": "3", 
             "group": 2, 
             "name": "Abernathy, Corinne R", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n24984", 
+            "number": 159
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n7622937487", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Chi-Square Distribution", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n7622937487", 
+            "number": 160
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n7202642453", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Arthroplasty, Replacement, Knee", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n7202642453", 
+            "number": 161
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n2306061886", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Catheterization, Central Venous", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n2306061886", 
+            "number": 162
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n7423780422", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Attention", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n7423780422", 
+            "number": 163
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n136464934", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Utah", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n136464934", 
+            "number": 164
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n9515373319", 
+            "npubs": "26", 
             "group": 1, 
             "name": "Time Factors", 
-            "npubs": "26"
+            "uri": "http://vivo.ufl.edu/individual/n9515373319", 
+            "number": 165
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n28486", 
+            "npubs": "5", 
             "group": 2, 
             "name": "Angiolillo, Dominick Joseph", 
-            "npubs": "5"
+            "uri": "http://vivo.ufl.edu/individual/n28486", 
+            "number": 166
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n13310", 
+            "npubs": "5", 
             "group": 2, 
             "name": "George, Steven", 
-            "npubs": "5"
+            "uri": "http://vivo.ufl.edu/individual/n13310", 
+            "number": 167
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n16157", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Guzman, Luis Alberto", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n16157", 
+            "number": 168
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n26213", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Yoon, Saun-Joo", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n26213", 
+            "number": 169
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n61673", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Lang, Peter J", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n61673", 
+            "number": 170
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n2216640123", 
+            "npubs": "7", 
             "group": 1, 
             "name": "Retrospective Studies", 
-            "npubs": "7"
+            "uri": "http://vivo.ufl.edu/individual/n2216640123", 
+            "number": 171
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n2306061886", 
+            "npubs": "3", 
             "group": 1, 
             "name": "Catheterization, Central Venous", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n2306061886", 
+            "number": 172
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n2375856516", 
+            "npubs": "12", 
             "group": 1, 
             "name": "Tissue Donors", 
-            "npubs": "12"
+            "uri": "http://vivo.ufl.edu/individual/n2375856516", 
+            "number": 173
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n6816971010", 
+            "npubs": "3", 
             "group": 1, 
             "name": "Acidosis", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n6816971010", 
+            "number": 174
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n4898486652", 
+            "npubs": "4", 
             "group": 1, 
             "name": "Sex Distribution", 
-            "npubs": "4"
+            "uri": "http://vivo.ufl.edu/individual/n4898486652", 
+            "number": 175
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n3970569063", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Insurance Coverage", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n3970569063", 
+            "number": 176
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n22794", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Li, Zuofeng", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n22794", 
+            "number": 177
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n518118", 
+            "npubs": "5", 
             "group": 2, 
             "name": "Cuenca, Alex Gervacio", 
-            "npubs": "5"
+            "uri": "http://vivo.ufl.edu/individual/n518118", 
+            "number": 178
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n2383", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Stevenson, Amanda Seay", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n2383", 
+            "number": 179
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n102089", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Bishop, Mark Donald", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n102089", 
+            "number": 180
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n7327", 
+            "npubs": "6", 
             "group": 2, 
             "name": "Bihorac, Azra", 
-            "npubs": "6"
+            "uri": "http://vivo.ufl.edu/individual/n7327", 
+            "number": 181
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n27653", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Survival Analysis", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n27653", 
+            "number": 182
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n8484127850", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Resin Cements", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n8484127850", 
+            "number": 183
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n2375856516", 
+            "npubs": "4", 
             "group": 1, 
             "name": "Tissue Donors", 
-            "npubs": "4"
+            "uri": "http://vivo.ufl.edu/individual/n2375856516", 
+            "number": 184
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n576982406", 
+            "npubs": "8", 
             "group": 1, 
             "name": "Injury Severity Score", 
-            "npubs": "8"
+            "uri": "http://vivo.ufl.edu/individual/n576982406", 
+            "number": 185
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n9359117548", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Transplantation, Autologous", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n9359117548", 
+            "number": 186
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n8903745417", 
+            "npubs": "9", 
             "group": 1, 
             "name": "Graft vs Host Disease", 
-            "npubs": "9"
+            "uri": "http://vivo.ufl.edu/individual/n8903745417", 
+            "number": 187
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n63912", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Borchelt, David Ralph", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n63912", 
+            "number": 188
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n518118", 
+            "npubs": "3", 
             "group": 2, 
             "name": "Cuenca, Alex Gervacio", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n518118", 
+            "number": 189
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n12269", 
+            "npubs": "3", 
             "group": 2, 
             "name": "Pahor, Marco", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n12269", 
+            "number": 190
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n38118", 
+            "npubs": "3", 
             "group": 2, 
             "name": "Liu, Chen", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n38118", 
+            "number": 191
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n31131", 
+            "npubs": "4", 
             "group": 2, 
             "name": "Keyhani, Nematollah", 
-            "npubs": "4"
+            "uri": "http://vivo.ufl.edu/individual/n31131", 
+            "number": 192
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n5394769281", 
+            "npubs": "3", 
             "group": 1, 
             "name": "Activities of Daily Living", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n5394769281", 
+            "number": 193
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n7202642453", 
+            "npubs": "4", 
             "group": 1, 
             "name": "Arthroplasty, Replacement, Knee", 
-            "npubs": "4"
+            "uri": "http://vivo.ufl.edu/individual/n7202642453", 
+            "number": 194
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n1430278352", 
+            "npubs": "4", 
             "group": 1, 
             "name": "Postural Balance", 
-            "npubs": "4"
+            "uri": "http://vivo.ufl.edu/individual/n1430278352", 
+            "number": 195
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n6315342882", 
+            "npubs": "4", 
             "group": 1, 
             "name": "Exercise Test", 
-            "npubs": "4"
+            "uri": "http://vivo.ufl.edu/individual/n6315342882", 
+            "number": 196
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n9515373319", 
+            "npubs": "12", 
             "group": 1, 
             "name": "Time Factors", 
-            "npubs": "12"
+            "uri": "http://vivo.ufl.edu/individual/n9515373319", 
+            "number": 197
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n5126885765", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Muscle, Skeletal", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n5126885765", 
+            "number": 198
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n25625", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Rodriguez, Ramon", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n25625", 
+            "number": 199
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n2006208245", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Knaggs, Jeffrey Dillon", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n2006208245", 
+            "number": 200
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n61437", 
+            "npubs": "3", 
             "group": 2, 
             "name": "Jacobson, Charles E,Iv", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n61437", 
+            "number": 201
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n1046600179", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Nayfield, Susan G", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n1046600179", 
+            "number": 202
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n1139", 
+            "npubs": "6", 
             "group": 2, 
             "name": "Vincent, Kevin R", 
-            "npubs": "6"
+            "uri": "http://vivo.ufl.edu/individual/n1139", 
+            "number": 203
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n1109106290", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Home Care Services", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n1109106290", 
+            "number": 204
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n3269476313", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Adolescent", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n3269476313", 
+            "number": 205
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n5639114801", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Comorbidity", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n5639114801", 
+            "number": 206
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n87233647", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Rehabilitation Centers", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n87233647", 
+            "number": 207
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n43307", 
+            "npubs": "4", 
             "group": 1, 
             "name": "Telemedicine", 
-            "npubs": "4"
+            "uri": "http://vivo.ufl.edu/individual/n43307", 
+            "number": 208
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n2284306921", 
+            "npubs": "2", 
             "group": 1, 
             "name": "United States Department of Veterans Affairs", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n2284306921", 
+            "number": 209
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n63718", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Mann, William C", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n63718", 
+            "number": 210
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n5253580033", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Florida", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n5253580033", 
+            "number": 211
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n2375856516", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Tissue Donors", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n2375856516", 
+            "number": 212
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n587903898", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Lead", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n587903898", 
+            "number": 213
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n5881087551", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Kidney Transplantation", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n5881087551", 
+            "number": 214
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n4898486652", 
+            "npubs": "5", 
             "group": 1, 
             "name": "Sex Distribution", 
-            "npubs": "5"
+            "uri": "http://vivo.ufl.edu/individual/n4898486652", 
+            "number": 215
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n4156583160", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Caffeine", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n4156583160", 
+            "number": 216
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n1520996069", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Martin, Julien", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n1520996069", 
+            "number": 217
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n518118", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Cuenca, Alex Gervacio", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n518118", 
+            "number": 218
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n19641", 
+            "npubs": "2", 
             "group": 2, 
             "name": "He, Zhenli", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n19641", 
+            "number": 219
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n24003", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Roth, Jeffrey", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n24003", 
+            "number": 220
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n20351", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Lang, Timothy Albert", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n20351", 
+            "number": 221
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n8363128177", 
+            "npubs": "15", 
             "group": 1, 
             "name": "United States", 
-            "npubs": "15"
+            "uri": "http://vivo.ufl.edu/individual/n8363128177", 
+            "number": 222
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n5320163831", 
+            "npubs": "15", 
             "group": 1, 
             "name": "Canada", 
-            "npubs": "15"
+            "uri": "http://vivo.ufl.edu/individual/n5320163831", 
+            "number": 223
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n592842531", 
+            "npubs": "9", 
             "group": 1, 
             "name": "History, 21st Century", 
-            "npubs": "9"
+            "uri": "http://vivo.ufl.edu/individual/n592842531", 
+            "number": 224
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n2375856516", 
+            "npubs": "10", 
             "group": 1, 
             "name": "Tissue Donors", 
-            "npubs": "10"
+            "uri": "http://vivo.ufl.edu/individual/n2375856516", 
+            "number": 225
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n1159305576", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Communicable Disease Control", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n1159305576", 
+            "number": 226
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n5881087551", 
+            "npubs": "22", 
             "group": 1, 
             "name": "Kidney Transplantation", 
-            "npubs": "22"
+            "uri": "http://vivo.ufl.edu/individual/n5881087551", 
+            "number": 227
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n1624969366", 
+            "npubs": "3", 
             "group": 2, 
             "name": "Barry, Adam E", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n1624969366", 
+            "number": 228
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n20567", 
+            "npubs": "5", 
             "group": 2, 
             "name": "Garvan, Cyndi", 
-            "npubs": "5"
+            "uri": "http://vivo.ufl.edu/individual/n20567", 
+            "number": 229
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n6442", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Kairalla, John Andrew", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n6442", 
+            "number": 230
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n59945", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Huber, Thomas Stuart", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n59945", 
+            "number": 231
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n33817", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Pereira, Deidre B", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n33817", 
+            "number": 232
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n1454207385", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Questionnaires", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n1454207385", 
+            "number": 233
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n5320163831", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Canada", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n5320163831", 
+            "number": 234
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n1158477806", 
+            "npubs": "3", 
             "group": 1, 
             "name": "Diagnostic and Statistical Manual of Mental Disorders", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n1158477806", 
+            "number": 235
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n2184737988", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Transillumination", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n2184737988", 
+            "number": 236
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n4898486652", 
+            "npubs": "4", 
             "group": 1, 
             "name": "Sex Distribution", 
-            "npubs": "4"
+            "uri": "http://vivo.ufl.edu/individual/n4898486652", 
+            "number": 237
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n4730040948", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Immunoassay", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n4730040948", 
+            "number": 238
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n102089", 
+            "npubs": "4", 
             "group": 2, 
             "name": "Bishop, Mark Donald", 
-            "npubs": "4"
+            "uri": "http://vivo.ufl.edu/individual/n102089", 
+            "number": 239
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n1624969366", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Barry, Adam E", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n1624969366", 
+            "number": 240
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n11156", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Deeb, Larry C", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n11156", 
+            "number": 241
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n20567", 
+            "npubs": "8", 
             "group": 2, 
             "name": "Garvan, Cyndi", 
-            "npubs": "8"
+            "uri": "http://vivo.ufl.edu/individual/n20567", 
+            "number": 242
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n15536", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Hagen, Melanie Gross", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n15536", 
+            "number": 243
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n9037457263", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Health Status", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n9037457263", 
+            "number": 244
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n8961334075", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Managed Care Programs", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n8961334075", 
+            "number": 245
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n9515373319", 
+            "npubs": "6", 
             "group": 1, 
             "name": "Time Factors", 
-            "npubs": "6"
+            "uri": "http://vivo.ufl.edu/individual/n9515373319", 
+            "number": 246
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n4737006262", 
+            "npubs": "8", 
             "group": 1, 
             "name": "Parents", 
-            "npubs": "8"
+            "uri": "http://vivo.ufl.edu/individual/n4737006262", 
+            "number": 247
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n8486404517", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Locomotion", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n8486404517", 
+            "number": 248
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n1720528005", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Income", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n1720528005", 
+            "number": 249
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n20357", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Thompson, Lindsay Acheson", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n20357", 
+            "number": 250
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n12269", 
+            "npubs": "8", 
             "group": 2, 
             "name": "Pahor, Marco", 
-            "npubs": "8"
+            "uri": "http://vivo.ufl.edu/individual/n12269", 
+            "number": 251
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n14724", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Pardalos, Panayote M", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n14724", 
+            "number": 252
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n76597", 
+            "npubs": "3", 
             "group": 2, 
             "name": "Revicki, Dennis", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n76597", 
+            "number": 253
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n22629", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Wood, David Lee", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n22629", 
+            "number": 254
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n1359286161", 
+            "npubs": "5", 
             "group": 1, 
             "name": "Hospitals, Veterans", 
-            "npubs": "5"
+            "uri": "http://vivo.ufl.edu/individual/n1359286161", 
+            "number": 255
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n6597421941", 
+            "npubs": "3", 
             "group": 1, 
             "name": "Outcome Assessment (Health Care)", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n6597421941", 
+            "number": 256
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n9515373319", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Time Factors", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n9515373319", 
+            "number": 257
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n2284306921", 
+            "npubs": "5", 
             "group": 1, 
             "name": "United States Department of Veterans Affairs", 
-            "npubs": "5"
+            "uri": "http://vivo.ufl.edu/individual/n2284306921", 
+            "number": 258
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n9977022174", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Aged, 80 and over", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n9977022174", 
+            "number": 259
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n3190008119", 
+            "npubs": "5", 
             "group": 1, 
             "name": "Veterans", 
-            "npubs": "5"
+            "uri": "http://vivo.ufl.edu/individual/n3190008119", 
+            "number": 260
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n116882", 
+            "npubs": "3", 
             "group": 2, 
             "name": "Vogel, W Bruce", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n116882", 
+            "number": 261
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n4133338307", 
+            "npubs": "13", 
             "group": 1, 
             "name": "Male", 
-            "npubs": "13"
+            "uri": "http://vivo.ufl.edu/individual/n4133338307", 
+            "number": 262
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n5485398289", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Transcription Factor AP-2", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n5485398289", 
+            "number": 263
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n6855632240", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Transcription Factor AP-1", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n6855632240", 
+            "number": 264
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n9716059110", 
+            "npubs": "4", 
             "group": 1, 
             "name": "Macula Lutea", 
-            "npubs": "4"
+            "uri": "http://vivo.ufl.edu/individual/n9716059110", 
+            "number": 265
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n7115397471", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Antigens, Nuclear", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n7115397471", 
+            "number": 266
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n515960952", 
+            "npubs": "4", 
             "group": 1, 
             "name": "Injections, Spinal", 
-            "npubs": "4"
+            "uri": "http://vivo.ufl.edu/individual/n515960952", 
+            "number": 267
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n100702", 
+            "npubs": "3", 
             "group": 2, 
             "name": "Miles, William Murrell", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n100702", 
+            "number": 268
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n11466", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Monteiro, Carmela B", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n11466", 
+            "number": 269
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n42231", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Geller, Brian Scott", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n42231", 
+            "number": 270
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n16926", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Garrison, Robert Donald Md", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n16926", 
+            "number": 271
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n102089", 
+            "npubs": "31", 
             "group": 2, 
             "name": "Bishop, Mark Donald", 
-            "npubs": "31"
+            "uri": "http://vivo.ufl.edu/individual/n102089", 
+            "number": 272
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n5902164971", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Follow-Up Studies", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n5902164971", 
+            "number": 273
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n1158477806", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Diagnostic and Statistical Manual of Mental Disorders", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n1158477806", 
+            "number": 274
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n2375856516", 
+            "npubs": "6", 
             "group": 1, 
             "name": "Tissue Donors", 
-            "npubs": "6"
+            "uri": "http://vivo.ufl.edu/individual/n2375856516", 
+            "number": 275
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n4898486652", 
+            "npubs": "7", 
             "group": 1, 
             "name": "Sex Distribution", 
-            "npubs": "7"
+            "uri": "http://vivo.ufl.edu/individual/n4898486652", 
+            "number": 276
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n8595517308", 
+            "npubs": "6", 
             "group": 1, 
             "name": "Dose Fractionation", 
-            "npubs": "6"
+            "uri": "http://vivo.ufl.edu/individual/n8595517308", 
+            "number": 277
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n4868774339", 
+            "npubs": "9", 
             "group": 1, 
             "name": "Parkinson Disease", 
-            "npubs": "9"
+            "uri": "http://vivo.ufl.edu/individual/n4868774339", 
+            "number": 278
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n22794", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Li, Zuofeng", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n22794", 
+            "number": 279
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n710738702", 
+            "npubs": "4", 
             "group": 2, 
             "name": "Smith, Kristy Breuhl", 
-            "npubs": "4"
+            "uri": "http://vivo.ufl.edu/individual/n710738702", 
+            "number": 280
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n1770591886", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Oyama, Genko", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n1770591886", 
+            "number": 281
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n21693", 
+            "npubs": "3", 
             "group": 2, 
             "name": "Hoppe, Bradford", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n21693", 
+            "number": 282
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n47453", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Rout, William Robert", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n47453", 
+            "number": 283
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n8775283483", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Disabled Persons", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n8775283483", 
+            "number": 284
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n5394769281", 
+            "npubs": "13", 
             "group": 1, 
             "name": "Activities of Daily Living", 
-            "npubs": "13"
+            "uri": "http://vivo.ufl.edu/individual/n5394769281", 
+            "number": 285
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n43204", 
+            "npubs": "7", 
             "group": 1, 
             "name": "Aging", 
-            "npubs": "7"
+            "uri": "http://vivo.ufl.edu/individual/n43204", 
+            "number": 286
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n9432679431", 
+            "npubs": "3", 
             "group": 1, 
             "name": "Young Adult", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n9432679431", 
+            "number": 287
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n108555", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Qualitative Research", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n108555", 
+            "number": 288
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n3269476313", 
+            "npubs": "7", 
             "group": 1, 
             "name": "Adolescent", 
-            "npubs": "7"
+            "uri": "http://vivo.ufl.edu/individual/n3269476313", 
+            "number": 289
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n13310", 
+            "npubs": "4", 
             "group": 2, 
             "name": "George, Steven", 
-            "npubs": "4"
+            "uri": "http://vivo.ufl.edu/individual/n13310", 
+            "number": 290
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n63718", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Mann, William C", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n63718", 
+            "number": 291
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n4883", 
+            "npubs": "3", 
             "group": 2, 
             "name": "Brumback, Babette", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n4883", 
+            "number": 292
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n22635", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Levy, Charles Edward", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n22635", 
+            "number": 293
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n144202", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Marsiske, Michael", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n144202", 
+            "number": 294
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n5993764383", 
+            "npubs": "3", 
             "group": 1, 
             "name": "Prospective Studies", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n5993764383", 
+            "number": 295
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n3795110923", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Vitamins", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n3795110923", 
+            "number": 296
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n8559663792", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Dimethyl Sulfoxide", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n8559663792", 
+            "number": 297
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n6816971010", 
+            "npubs": "3", 
             "group": 1, 
             "name": "Acidosis", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n6816971010", 
+            "number": 298
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n4898486652", 
+            "npubs": "4", 
             "group": 1, 
             "name": "Sex Distribution", 
-            "npubs": "4"
+            "uri": "http://vivo.ufl.edu/individual/n4898486652", 
+            "number": 299
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n9716059110", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Macula Lutea", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n9716059110", 
+            "number": 300
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n22794", 
+            "npubs": "3", 
             "group": 2, 
             "name": "Li, Zuofeng", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n22794", 
+            "number": 301
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n31030", 
+            "npubs": "3", 
             "group": 2, 
             "name": "Ojano-Dirain, Carolyn P", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n31030", 
+            "number": 302
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n2383", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Stevenson, Amanda Seay", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n2383", 
+            "number": 303
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n6216", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Pablo, Luisito S", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n6216", 
+            "number": 304
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n16926", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Garrison, Robert Donald Md", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n16926", 
+            "number": 305
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n3668767962", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Prevalence", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n3668767962", 
+            "number": 306
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n4177223933", 
+            "npubs": "3", 
             "group": 1, 
             "name": "Mexican Americans", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n4177223933", 
+            "number": 307
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n1158477806", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Diagnostic and Statistical Manual of Mental Disorders", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n1158477806", 
+            "number": 308
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n3728587771", 
+            "npubs": "4", 
             "group": 1, 
             "name": "Pedigree", 
-            "npubs": "4"
+            "uri": "http://vivo.ufl.edu/individual/n3728587771", 
+            "number": 309
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n5050813966", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Escherichia coli Infections", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n5050813966", 
+            "number": 310
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n3854471016", 
+            "npubs": "2", 
             "group": 1, 
             "name": "DNA, Bacterial", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n3854471016", 
+            "number": 311
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n25625", 
+            "npubs": "3", 
             "group": 2, 
             "name": "Rodriguez, Ramon", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n25625", 
+            "number": 312
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n28486", 
+            "npubs": "3", 
             "group": 2, 
             "name": "Angiolillo, Dominick Joseph", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n28486", 
+            "number": 313
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n547365713", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Go, Criscely Lanzuela", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n547365713", 
+            "number": 314
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n12269", 
+            "npubs": "3", 
             "group": 2, 
             "name": "Pahor, Marco", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n12269", 
+            "number": 315
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n61437", 
+            "npubs": "4", 
             "group": 2, 
             "name": "Jacobson, Charles E,Iv", 
-            "npubs": "4"
+            "uri": "http://vivo.ufl.edu/individual/n61437", 
+            "number": 316
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n8256773015", 
+            "npubs": "15", 
             "group": 1, 
             "name": "Humans", 
-            "npubs": "15"
+            "uri": "http://vivo.ufl.edu/individual/n8256773015", 
+            "number": 317
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n592842531", 
+            "npubs": "30", 
             "group": 1, 
             "name": "History, 21st Century", 
-            "npubs": "30"
+            "uri": "http://vivo.ufl.edu/individual/n592842531", 
+            "number": 318
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n5485398289", 
+            "npubs": "4", 
             "group": 1, 
             "name": "Transcription Factor AP-2", 
-            "npubs": "4"
+            "uri": "http://vivo.ufl.edu/individual/n5485398289", 
+            "number": 319
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n6855632240", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Transcription Factor AP-1", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n6855632240", 
+            "number": 320
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n9716059110", 
+            "npubs": "5", 
             "group": 1, 
             "name": "Macula Lutea", 
-            "npubs": "5"
+            "uri": "http://vivo.ufl.edu/individual/n9716059110", 
+            "number": 321
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n7115397471", 
+            "npubs": "3", 
             "group": 1, 
             "name": "Antigens, Nuclear", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n7115397471", 
+            "number": 322
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n6305", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Batz, Michael", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n6305", 
+            "number": 323
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n28133", 
+            "npubs": "3", 
             "group": 2, 
             "name": "Sims, Charles A", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n28133", 
+            "number": 324
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n11466", 
+            "npubs": "4", 
             "group": 2, 
             "name": "Monteiro, Carmela B", 
-            "npubs": "4"
+            "uri": "http://vivo.ufl.edu/individual/n11466", 
+            "number": 325
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n42231", 
+            "npubs": "3", 
             "group": 2, 
             "name": "Geller, Brian Scott", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n42231", 
+            "number": 326
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n25129", 
+            "npubs": "3", 
             "group": 2, 
             "name": "Lyons, Thomas John", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n25129", 
+            "number": 327
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n87117098", 
+            "npubs": "4", 
             "group": 1, 
             "name": "Severity of Illness Index", 
-            "npubs": "4"
+            "uri": "http://vivo.ufl.edu/individual/n87117098", 
+            "number": 328
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n1158477806", 
+            "npubs": "9", 
             "group": 1, 
             "name": "Diagnostic and Statistical Manual of Mental Disorders", 
-            "npubs": "9"
+            "uri": "http://vivo.ufl.edu/individual/n1158477806", 
+            "number": 329
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n1686791813", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Lupus Erythematosus, Systemic", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n1686791813", 
+            "number": 330
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n4898486652", 
+            "npubs": "4", 
             "group": 1, 
             "name": "Sex Distribution", 
-            "npubs": "4"
+            "uri": "http://vivo.ufl.edu/individual/n4898486652", 
+            "number": 331
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n4737006262", 
+            "npubs": "9", 
             "group": 1, 
             "name": "Parents", 
-            "npubs": "9"
+            "uri": "http://vivo.ufl.edu/individual/n4737006262", 
+            "number": 332
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n1738637939", 
+            "npubs": "4", 
             "group": 1, 
             "name": "HIV Infections", 
-            "npubs": "4"
+            "uri": "http://vivo.ufl.edu/individual/n1738637939", 
+            "number": 333
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n102089", 
+            "npubs": "4", 
             "group": 2, 
             "name": "Bishop, Mark Donald", 
-            "npubs": "4"
+            "uri": "http://vivo.ufl.edu/individual/n102089", 
+            "number": 334
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n20567", 
+            "npubs": "4", 
             "group": 2, 
             "name": "Garvan, Cyndi", 
-            "npubs": "4"
+            "uri": "http://vivo.ufl.edu/individual/n20567", 
+            "number": 335
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n447864296", 
+            "npubs": "5", 
             "group": 2, 
             "name": "Edwards, N L", 
-            "npubs": "5"
+            "uri": "http://vivo.ufl.edu/individual/n447864296", 
+            "number": 336
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n6144", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Zeilman, Pamela Rose", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n6144", 
+            "number": 337
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n1865", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Wingate, Judith Maige", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n1865", 
+            "number": 338
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n128756", 
+            "npubs": "6", 
             "group": 1, 
             "name": "Stroke", 
-            "npubs": "6"
+            "uri": "http://vivo.ufl.edu/individual/n128756", 
+            "number": 339
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n1455219438", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Medical Records", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n1455219438", 
+            "number": 340
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n7423780422", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Attention", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n7423780422", 
+            "number": 341
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n1430278352", 
+            "npubs": "4", 
             "group": 1, 
             "name": "Postural Balance", 
-            "npubs": "4"
+            "uri": "http://vivo.ufl.edu/individual/n1430278352", 
+            "number": 342
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n7736846771", 
+            "npubs": "4", 
             "group": 1, 
             "name": "Thrombolytic Therapy", 
-            "npubs": "4"
+            "uri": "http://vivo.ufl.edu/individual/n7736846771", 
+            "number": 343
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n6315342882", 
+            "npubs": "3", 
             "group": 1, 
             "name": "Exercise Test", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n6315342882", 
+            "number": 344
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n3292", 
+            "npubs": "11", 
             "group": 2, 
             "name": "Mocco, J Duffy", 
-            "npubs": "11"
+            "uri": "http://vivo.ufl.edu/individual/n3292", 
+            "number": 345
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n28486", 
+            "npubs": "9", 
             "group": 2, 
             "name": "Angiolillo, Dominick Joseph", 
-            "npubs": "9"
+            "uri": "http://vivo.ufl.edu/individual/n28486", 
+            "number": 346
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n99204", 
+            "npubs": "7", 
             "group": 2, 
             "name": "Coombes, Stephen Andrew", 
-            "npubs": "7"
+            "uri": "http://vivo.ufl.edu/individual/n99204", 
+            "number": 347
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n15942", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Kleim, Jeffrey A", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n15942", 
+            "number": 348
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n26400", 
+            "npubs": "3", 
             "group": 2, 
             "name": "Davis, Sandra Boston", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n26400", 
+            "number": 349
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n5881051594", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Cross-Sectional Studies", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n5881051594", 
+            "number": 350
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n1158477806", 
+            "npubs": "3", 
             "group": 1, 
             "name": "Diagnostic and Statistical Manual of Mental Disorders", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n1158477806", 
+            "number": 351
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n4898486652", 
+            "npubs": "7", 
             "group": 1, 
             "name": "Sex Distribution", 
-            "npubs": "7"
+            "uri": "http://vivo.ufl.edu/individual/n4898486652", 
+            "number": 352
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n3970569063", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Insurance Coverage", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n3970569063", 
+            "number": 353
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n4737006262", 
+            "npubs": "10", 
             "group": 1, 
             "name": "Parents", 
-            "npubs": "10"
+            "uri": "http://vivo.ufl.edu/individual/n4737006262", 
+            "number": 354
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n1738637939", 
+            "npubs": "12", 
             "group": 1, 
             "name": "HIV Infections", 
-            "npubs": "12"
+            "uri": "http://vivo.ufl.edu/individual/n1738637939", 
+            "number": 355
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n25625", 
+            "npubs": "3", 
             "group": 2, 
             "name": "Rodriguez, Ramon", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n25625", 
+            "number": 356
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n28486", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Angiolillo, Dominick Joseph", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n28486", 
+            "number": 357
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n95855", 
+            "npubs": "3", 
             "group": 2, 
             "name": "Harrell, Heather Elizabeth", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n95855", 
+            "number": 358
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n15270", 
+            "npubs": "9", 
             "group": 2, 
             "name": "Knapp, Caprice A", 
-            "npubs": "9"
+            "uri": "http://vivo.ufl.edu/individual/n15270", 
+            "number": 359
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n102089", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Bishop, Mark Donald", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n102089", 
+            "number": 360
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n3972456050", 
+            "npubs": "12", 
             "group": 1, 
             "name": "Female", 
-            "npubs": "12"
+            "uri": "http://vivo.ufl.edu/individual/n3972456050", 
+            "number": 361
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n5485398289", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Transcription Factor AP-2", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n5485398289", 
+            "number": 362
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n6855632240", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Transcription Factor AP-1", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n6855632240", 
+            "number": 363
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n9716059110", 
+            "npubs": "3", 
             "group": 1, 
             "name": "Macula Lutea", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n9716059110", 
+            "number": 364
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n5487864342", 
+            "npubs": "3", 
             "group": 1, 
             "name": "Immediate Dental Implant Loading", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n5487864342", 
+            "number": 365
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n1812968891", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Granuloma", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n1812968891", 
+            "number": 366
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n11466", 
+            "npubs": "3", 
             "group": 2, 
             "name": "Monteiro, Carmela B", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n11466", 
+            "number": 367
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n6216", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Pablo, Luisito S", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n6216", 
+            "number": 368
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n42231", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Geller, Brian Scott", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n42231", 
+            "number": 369
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n14679", 
+            "npubs": "15", 
             "group": 2, 
             "name": "Gums, John G", 
-            "npubs": "15"
+            "uri": "http://vivo.ufl.edu/individual/n14679", 
+            "number": 370
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n31048", 
+            "npubs": "15", 
             "group": 2, 
             "name": "Denslow, Nancy D", 
-            "npubs": "15"
+            "uri": "http://vivo.ufl.edu/individual/n31048", 
+            "number": 371
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n9344784100", 
+            "npubs": "7", 
             "group": 1, 
             "name": "Aged", 
-            "npubs": "7"
+            "uri": "http://vivo.ufl.edu/individual/n9344784100", 
+            "number": 372
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n1686791813", 
+            "npubs": "4", 
             "group": 1, 
             "name": "Lupus Erythematosus, Systemic", 
-            "npubs": "4"
+            "uri": "http://vivo.ufl.edu/individual/n1686791813", 
+            "number": 373
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n2375856516", 
+            "npubs": "18", 
             "group": 1, 
             "name": "Tissue Donors", 
-            "npubs": "18"
+            "uri": "http://vivo.ufl.edu/individual/n2375856516", 
+            "number": 374
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n9716059110", 
+            "npubs": "3", 
             "group": 1, 
             "name": "Macula Lutea", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n9716059110", 
+            "number": 375
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n3970569063", 
+            "npubs": "4", 
             "group": 1, 
             "name": "Insurance Coverage", 
-            "npubs": "4"
+            "uri": "http://vivo.ufl.edu/individual/n3970569063", 
+            "number": 376
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n5869737403", 
+            "npubs": "20", 
             "group": 1, 
             "name": "Atenolol", 
-            "npubs": "20"
+            "uri": "http://vivo.ufl.edu/individual/n5869737403", 
+            "number": 377
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n100702", 
+            "npubs": "3", 
             "group": 2, 
             "name": "Miles, William Murrell", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n100702", 
+            "number": 378
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n42231", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Geller, Brian Scott", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n42231", 
+            "number": 379
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n102089", 
+            "npubs": "12", 
             "group": 2, 
             "name": "Bishop, Mark Donald", 
-            "npubs": "12"
+            "uri": "http://vivo.ufl.edu/individual/n102089", 
+            "number": 380
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n14679", 
+            "npubs": "6", 
             "group": 2, 
             "name": "Gums, John G", 
-            "npubs": "6"
+            "uri": "http://vivo.ufl.edu/individual/n14679", 
+            "number": 381
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n1802", 
+            "npubs": "8", 
             "group": 2, 
             "name": "Altmann, Lori J", 
-            "npubs": "8"
+            "uri": "http://vivo.ufl.edu/individual/n1802", 
+            "number": 382
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n5620221079", 
+            "npubs": "3", 
             "group": 1, 
             "name": "Risk Factors", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n5620221079", 
+            "number": 383
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n5320163831", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Canada", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n5320163831", 
+            "number": 384
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n2375856516", 
+            "npubs": "14", 
             "group": 1, 
             "name": "Tissue Donors", 
-            "npubs": "14"
+            "uri": "http://vivo.ufl.edu/individual/n2375856516", 
+            "number": 385
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n1159305576", 
+            "npubs": "2", 
             "group": 1, 
             "name": "Communicable Disease Control", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n1159305576", 
+            "number": 386
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n4898486652", 
+            "npubs": "13", 
             "group": 1, 
             "name": "Sex Distribution", 
-            "npubs": "13"
+            "uri": "http://vivo.ufl.edu/individual/n4898486652", 
+            "number": 387
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n3970569063", 
+            "npubs": "4", 
             "group": 1, 
             "name": "Insurance Coverage", 
-            "npubs": "4"
+            "uri": "http://vivo.ufl.edu/individual/n3970569063", 
+            "number": 388
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n22794", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Li, Zuofeng", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n22794", 
+            "number": 389
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n35212", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Leprell, Colleen G", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n35212", 
+            "number": 390
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n31746", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Winter, William E", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n31746", 
+            "number": 391
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n16926", 
+            "npubs": "2", 
             "group": 2, 
             "name": "Garrison, Robert Donald Md", 
-            "npubs": "2"
+            "uri": "http://vivo.ufl.edu/individual/n16926", 
+            "number": 392
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n24003", 
+            "npubs": "3", 
             "group": 2, 
             "name": "Roth, Jeffrey", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n24003", 
+            "number": 393
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n63718", 
+            "npubs": "3", 
             "group": 2, 
             "name": "Mann, William C", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n63718", 
+            "number": 394
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n3022", 
+            "npubs": "3", 
             "group": 2, 
             "name": "Wu, Samuel Shangwu", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n3022", 
+            "number": 395
         }, 
         {
-            "uri": "http://vivo.ufl.edu/individual/n116882", 
+            "npubs": "3", 
             "group": 2, 
             "name": "Vogel, W Bruce", 
-            "npubs": "3"
+            "uri": "http://vivo.ufl.edu/individual/n116882", 
+            "number": 396
         }
     ], 
     "concept": {
