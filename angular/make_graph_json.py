@@ -33,7 +33,17 @@ import operator
 
 from datetime import datetime
 
-cutoff = 50
+graph = {}
+def find_uri(uri):
+    """
+    Find the uri in the graph.  Return node number if found, -1 if not found
+    """
+    result = next((node for node in graph["nodes"] if node["uri"] == uri),None)
+    if result is None:
+        return -1
+    else:
+        return result["number"]
+
 log_file = sys.stdout
 print >>log_file, datetime.now(), "Start"
 conc = shelve.open("subset")
@@ -63,9 +73,10 @@ for name,data in entry["concepts"].items():
     graph["nodes"].append(node)
     graph["links"].append(link)
 
-    # Add secondary concepts, yes this could be recursive, but we are stopping
-    # at distance 2 for everyone's sanity.  Hmm.  This is quick and dirty.  We
-    # really need to look up each new concept and author and connect accordingly
+    # Add secondary concepts, yes this could/should be recursive, but we are
+    # stopping at distance 2 for everyone's sanity.  Hmm.  This is quick and
+    # dirty.  We really need to look up each new concept and author and
+    # connect accordingly
 
     k0 = k
     concept_uri = str(data["concept_uri"])
@@ -73,36 +84,54 @@ for name,data in entry["concepts"].items():
         sub_entry = conc[concept_uri]
         s = 0
         for name,data in sub_entry["concepts"].items():
-            s = s + 1
-            if s > 5:
-                continue
-            k = k + 1
-            node = {"name":name,
-                    "number":k,
-                    "group":1,
-                    "npubs":data["count"],
-                    "uri":data["concept_uri"]}
-            link = {"source":k0,
-                    "target":k,
-                    "value":data["count"]}
-            graph["nodes"].append(node)
-            graph["links"].append(link)
+            concept_uri = data["concept_uri"]
+            j = find_uri(concept_uri)
+            if j < 0:
+                s = s + 1
+                if s > 3:
+                    continue
+                k = k + 1
+                node = {"name":name,
+                        "number":k,
+                        "group":1,
+                        "npubs":data["count"],
+                        "uri":data["concept_uri"]}
+                link = {"source":k0,
+                        "target":k,
+                        "value":data["count"]}
+                graph["nodes"].append(node)
+                graph["links"].append(link)
+            else:
+                link = {"source":k0,
+                        "target":j,
+                        "value":data["count"]}
+                graph["links"].append(link)
+
         s = 0
         for name,data in sub_entry["authors"].items():
-            s = s + 1
-            if s > 5:
-                continue
-            k = k + 1
-            node = {"name":name,
-                    "number":k,
-                    "group":2,
-                    "npubs":data["count"],
-                    "uri":data["author_uri"]}
-            link = {"source":k0,
-                    "target":k,
-                    "value":data["count"]}
-            graph["nodes"].append(node)
-            graph["links"].append(link)
+            author_uri = data["author_uri"]
+            j = find_uri(author_uri)
+            if j < 0:
+                s = s + 1
+                if s > 3:
+                    continue
+                k = k + 1
+                node = {"name":name,
+                        "number":k,
+                        "group":2,
+                        "npubs":data["count"],
+                        "uri":data["author_uri"]}
+                link = {"source":k0,
+                        "target":k,
+                        "value":data["count"]}
+                graph["nodes"].append(node)
+                graph["links"].append(link)
+            else:
+                link = {"source":k0,
+                        "target":j,
+                        "value":data["count"]}
+                graph["links"].append(link)
+
     
 for name,data in entry["authors"].items():
     k = k + 1
