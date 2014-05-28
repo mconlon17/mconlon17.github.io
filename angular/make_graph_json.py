@@ -60,6 +60,38 @@ for name,data in entry["concepts"].items():
               "value":data["count"]}
     graph["nodes"].append(node)
     graph["links"].append(link)
+
+    # Add secondary concepts, yes this could be recursive, but we are stopping
+    # at distance 2 for everyone's sanity.  Hmm.  This is quick and dirty.  We
+    # really need to look up each new concept and author and connect accordingly
+
+    k0 = k
+    concept_uri = str(data["concept_uri"])
+    if concept_uri in conc:
+        sub_entry = conc[concept_uri]
+        for name,data in sub_entry["concepts"].items():
+            k = k + 1
+            node = {"name":name,
+                      "group":1,
+                      "npubs":data["count"],
+                      "uri":data["concept_uri"]}
+            link = {"source":k0,
+                      "target":k,
+                      "value":data["count"]}
+            graph["nodes"].append(node)
+            graph["links"].append(link)
+        for name,data in sub_entry["authors"].items():
+            k = k + 1
+            node = {"name":name,
+                      "group":2,
+                      "npubs":data["count"],
+                      "uri":data["author_uri"]}
+            link = {"source":k0,
+                      "target":k,
+                      "value":data["count"]}
+            graph["nodes"].append(node)
+            graph["links"].append(link)
+    
 for name,data in entry["authors"].items():
     k = k + 1
     node = {"name":name,

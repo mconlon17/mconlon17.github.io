@@ -1,0 +1,457 @@
+{
+    "nodes": [
+        {
+            "uri": "http://vivo.ufl.edu/individual/n2284306921", 
+            "group": 1, 
+            "name": "United States Department of Veterans Affairs", 
+            "npubs": "15"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n6597421941", 
+            "group": 1, 
+            "name": "Outcome Assessment (Health Care)", 
+            "npubs": "2"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n43307", 
+            "group": 1, 
+            "name": "Telemedicine", 
+            "npubs": "2"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n3400563126", 
+            "group": 1, 
+            "name": "Age Factors", 
+            "npubs": "2"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n9977022174", 
+            "group": 1, 
+            "name": "Aged, 80 and over", 
+            "npubs": "4"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n9345895206", 
+            "group": 1, 
+            "name": "Logistic Models", 
+            "npubs": "2"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n3190008119", 
+            "group": 1, 
+            "name": "Veterans", 
+            "npubs": "5"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n1005733577", 
+            "group": 1, 
+            "name": "Disability Evaluation", 
+            "npubs": "2"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n9545447318", 
+            "group": 1, 
+            "name": "Self-Help Devices", 
+            "npubs": "2"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n4979779767", 
+            "group": 1, 
+            "name": "Drug Prescriptions", 
+            "npubs": "2"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n85370", 
+            "group": 1, 
+            "name": "Multivariate Analysis", 
+            "npubs": "3"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n2323186955", 
+            "group": 1, 
+            "name": "Middle Aged", 
+            "npubs": "11"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n7784673046", 
+            "group": 1, 
+            "name": "Cohort Studies", 
+            "npubs": "4"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n107821", 
+            "group": 1, 
+            "name": "Schizophrenia", 
+            "npubs": "2"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n674264844", 
+            "group": 1, 
+            "name": "Adult", 
+            "npubs": "7"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n110884", 
+            "group": 1, 
+            "name": "Treatment Outcome", 
+            "npubs": "3"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n7622937487", 
+            "group": 1, 
+            "name": "Chi-Square Distribution", 
+            "npubs": "2"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n2216640123", 
+            "group": 1, 
+            "name": "Retrospective Studies", 
+            "npubs": "7"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n27653", 
+            "group": 1, 
+            "name": "Survival Analysis", 
+            "npubs": "2"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n5394769281", 
+            "group": 1, 
+            "name": "Activities of Daily Living", 
+            "npubs": "3"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n1109106290", 
+            "group": 1, 
+            "name": "Home Care Services", 
+            "npubs": "2"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n5253580033", 
+            "group": 1, 
+            "name": "Florida", 
+            "npubs": "2"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n8363128177", 
+            "group": 1, 
+            "name": "United States", 
+            "npubs": "15"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n1454207385", 
+            "group": 1, 
+            "name": "Questionnaires", 
+            "npubs": "2"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n9037457263", 
+            "group": 1, 
+            "name": "Health Status", 
+            "npubs": "2"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n1359286161", 
+            "group": 1, 
+            "name": "Hospitals, Veterans", 
+            "npubs": "5"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n4133338307", 
+            "group": 1, 
+            "name": "Male", 
+            "npubs": "13"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n5902164971", 
+            "group": 1, 
+            "name": "Follow-Up Studies", 
+            "npubs": "2"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n8775283483", 
+            "group": 1, 
+            "name": "Disabled Persons", 
+            "npubs": "2"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n5993764383", 
+            "group": 1, 
+            "name": "Prospective Studies", 
+            "npubs": "3"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n3668767962", 
+            "group": 1, 
+            "name": "Prevalence", 
+            "npubs": "2"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n8256773015", 
+            "group": 1, 
+            "name": "Humans", 
+            "npubs": "15"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n87117098", 
+            "group": 1, 
+            "name": "Severity of Illness Index", 
+            "npubs": "4"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n128756", 
+            "group": 1, 
+            "name": "Stroke", 
+            "npubs": "6"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n5881051594", 
+            "group": 1, 
+            "name": "Cross-Sectional Studies", 
+            "npubs": "2"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n3972456050", 
+            "group": 1, 
+            "name": "Female", 
+            "npubs": "12"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n9344784100", 
+            "group": 1, 
+            "name": "Aged", 
+            "npubs": "7"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n5620221079", 
+            "group": 1, 
+            "name": "Risk Factors", 
+            "npubs": "3"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n63718", 
+            "group": 2, 
+            "name": "Mann, William C", 
+            "npubs": "3"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n3022", 
+            "group": 2, 
+            "name": "Wu, Samuel Shangwu", 
+            "npubs": "3"
+        }, 
+        {
+            "uri": "http://vivo.ufl.edu/individual/n116882", 
+            "group": 2, 
+            "name": "Vogel, W Bruce", 
+            "npubs": "3"
+        }
+    ], 
+    "concept": {
+        "uri": "http://vivo.ufl.edu/individual/n2284306921", 
+        "name": "United States Department of Veterans Affairs", 
+        "npubs": "15"
+    }, 
+    "links": [
+        {
+            "source": 0, 
+            "target": 1, 
+            "value": "2"
+        }, 
+        {
+            "source": 0, 
+            "target": 2, 
+            "value": "2"
+        }, 
+        {
+            "source": 0, 
+            "target": 3, 
+            "value": "2"
+        }, 
+        {
+            "source": 0, 
+            "target": 4, 
+            "value": "4"
+        }, 
+        {
+            "source": 0, 
+            "target": 5, 
+            "value": "2"
+        }, 
+        {
+            "source": 0, 
+            "target": 6, 
+            "value": "5"
+        }, 
+        {
+            "source": 0, 
+            "target": 7, 
+            "value": "2"
+        }, 
+        {
+            "source": 0, 
+            "target": 8, 
+            "value": "2"
+        }, 
+        {
+            "source": 0, 
+            "target": 9, 
+            "value": "2"
+        }, 
+        {
+            "source": 0, 
+            "target": 10, 
+            "value": "3"
+        }, 
+        {
+            "source": 0, 
+            "target": 11, 
+            "value": "11"
+        }, 
+        {
+            "source": 0, 
+            "target": 12, 
+            "value": "4"
+        }, 
+        {
+            "source": 0, 
+            "target": 13, 
+            "value": "2"
+        }, 
+        {
+            "source": 0, 
+            "target": 14, 
+            "value": "7"
+        }, 
+        {
+            "source": 0, 
+            "target": 15, 
+            "value": "3"
+        }, 
+        {
+            "source": 0, 
+            "target": 16, 
+            "value": "2"
+        }, 
+        {
+            "source": 0, 
+            "target": 17, 
+            "value": "7"
+        }, 
+        {
+            "source": 0, 
+            "target": 18, 
+            "value": "2"
+        }, 
+        {
+            "source": 0, 
+            "target": 19, 
+            "value": "3"
+        }, 
+        {
+            "source": 0, 
+            "target": 20, 
+            "value": "2"
+        }, 
+        {
+            "source": 0, 
+            "target": 21, 
+            "value": "2"
+        }, 
+        {
+            "source": 0, 
+            "target": 22, 
+            "value": "15"
+        }, 
+        {
+            "source": 0, 
+            "target": 23, 
+            "value": "2"
+        }, 
+        {
+            "source": 0, 
+            "target": 24, 
+            "value": "2"
+        }, 
+        {
+            "source": 0, 
+            "target": 25, 
+            "value": "5"
+        }, 
+        {
+            "source": 0, 
+            "target": 26, 
+            "value": "13"
+        }, 
+        {
+            "source": 0, 
+            "target": 27, 
+            "value": "2"
+        }, 
+        {
+            "source": 0, 
+            "target": 28, 
+            "value": "2"
+        }, 
+        {
+            "source": 0, 
+            "target": 29, 
+            "value": "3"
+        }, 
+        {
+            "source": 0, 
+            "target": 30, 
+            "value": "2"
+        }, 
+        {
+            "source": 0, 
+            "target": 31, 
+            "value": "15"
+        }, 
+        {
+            "source": 0, 
+            "target": 32, 
+            "value": "4"
+        }, 
+        {
+            "source": 0, 
+            "target": 33, 
+            "value": "6"
+        }, 
+        {
+            "source": 0, 
+            "target": 34, 
+            "value": "2"
+        }, 
+        {
+            "source": 0, 
+            "target": 35, 
+            "value": "12"
+        }, 
+        {
+            "source": 0, 
+            "target": 36, 
+            "value": "7"
+        }, 
+        {
+            "source": 0, 
+            "target": 37, 
+            "value": "3"
+        }, 
+        {
+            "source": 0, 
+            "target": 38, 
+            "value": "3"
+        }, 
+        {
+            "source": 0, 
+            "target": 39, 
+            "value": "3"
+        }, 
+        {
+            "source": 0, 
+            "target": 40, 
+            "value": "3"
+        }
+    ]
+}
