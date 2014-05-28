@@ -69,8 +69,12 @@ for name,data in entry["concepts"].items():
     concept_uri = str(data["concept_uri"])
     if concept_uri in conc:
         sub_entry = conc[concept_uri]
+        s = 0
         for name,data in sub_entry["concepts"].items():
             k = k + 1
+            s = s + 1
+            if s > 5:
+                continue
             node = {"name":name,
                       "group":1,
                       "npubs":data["count"],
@@ -80,8 +84,12 @@ for name,data in entry["concepts"].items():
                       "value":data["count"]}
             graph["nodes"].append(node)
             graph["links"].append(link)
+        s = 0
         for name,data in sub_entry["authors"].items():
             k = k + 1
+            s = s + 1
+            if s > 5:
+                continue
             node = {"name":name,
                       "group":2,
                       "npubs":data["count"],
