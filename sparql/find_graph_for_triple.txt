@@ -1,0 +1,7 @@
+SELECT ?g
+WHERE
+{
+  GRAPH ?g {
+<http://vivo.ufl.edu/individual/n693742921> <http://vivoweb.org/ontology/core#contributingRole> <http://vivo.ufl.edu/individual/n865671122> .
+  }
+}
