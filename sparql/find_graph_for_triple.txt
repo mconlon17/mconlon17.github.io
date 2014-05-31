@@ -1,3 +1,5 @@
+# Find the graph that contains the specified triple
+
 SELECT ?g
 WHERE
 {
