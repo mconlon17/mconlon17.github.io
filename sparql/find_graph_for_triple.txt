@@ -4,6 +4,6 @@ SELECT ?g
 WHERE
 {
   GRAPH ?g {
-<http://vivo.ufl.edu/individual/n693742921> <http://vivoweb.org/ontology/core#contributingRole> <http://vivo.ufl.edu/individual/n865671122> .
+<http://vivo.ufl.edu/individual/n448932216> <http://vivoweb.org/ontology/core#contributingRole> <http://vivo.ufl.edu/individual/n1110472100> .
   }
 }

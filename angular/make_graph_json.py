@@ -4,18 +4,14 @@
     make a json map file ready for display in D3 as a force directed
     graph
 
-    Version 0.0 MC 2014-05-12
-    --  Getting started
-
-    To Do
-    --  Everything
-
+    Version 0.1 MC 2014-05-12
+    --  Works as expected
 """
 
 __author__ = "Michael Conlon"
 __copyright__ = "Copyright 2014, University of Florida"
 __license__ = "BSD 3-Clause license"
-__version__ = "0.0"
+__version__ = "0.1"
 
 from vivotools import vivo_sparql_query
 from vivotools import get_vivo_uri
@@ -74,9 +70,7 @@ for name,data in entry["concepts"].items():
     graph["links"].append(link)
 
     # Add secondary concepts, yes this could/should be recursive, but we are
-    # stopping at distance 2 for everyone's sanity.  Hmm.  This is quick and
-    # dirty.  We really need to look up each new concept and author and
-    # connect accordingly
+    # stopping at distance 2 for everyone's sanity.
 
     k0 = k
     concept_uri = str(data["concept_uri"])
@@ -139,8 +133,7 @@ for name,data in entry["concepts"].items():
                         "target":j,
                         "value":data["count"]}
                 graph["links"].append(link)
-
-    
+   
 for name,data in entry["authors"].items():
     k = k + 1
     node = {"name":name,

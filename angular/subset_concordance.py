@@ -65,8 +65,6 @@ for concept, stuff in sorted(subset.items(), reverse=True,
                              key = lambda x: len(x[1]['authors'])):
     print concept, stuff['name'], len(stuff['authors'])
 
-
-
 # Write json for subset
 
 d = {}

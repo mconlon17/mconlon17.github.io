@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="simple.css">
+
+<script>
+
+// Bar Chart
+
+function draw(data) {
+	d3.select("#container")
+	.append("div")
+		.attr("class","chart")
+	.selectAll("div.line")
+	.data(data.results.bindings)
+	.enter()
+	.append("div")
+		.attr("class","line")
+		
+	d3.selectAll("div.line")
+		.append("div")
+		.attr("class","label")
+		.text(function(d) { return d.type.value })
+		
+	d3.selectAll("div.line")
+		.append("div")
+			.attr("class","bar")
+			.style("width",function(d){return d.count.value/15 + "px"})
+			.text(function(d){return d.count.value})
+}
+</script>
+<script>
+
+// SPARQL Call
+
+    var format = 'format=application%2Fsparql-results%2Bjson%0A';
+    var endpointURL = 'http://sparql.vivo.ufl.edu:3030/VIVO/sparql?default-graph=&save=display&fname=&timeout=7000&should-sponge=soft&debug=on';
+    var query = "%0A++++PREFIX+rdf%3A+++++%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0A++++PREFIX+rdfs%3A++++%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0A++++PREFIX+xsd%3A+++++%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%0A++++PREFIX+owl%3A+++++%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0A++++PREFIX+swrl%3A++++%3Chttp%3A%2F%2Fwww.w3.org%2F2003%2F11%2Fswrl%23%3E%0A++++PREFIX+swrlb%3A+++%3Chttp%3A%2F%2Fwww.w3.org%2F2003%2F11%2Fswrlb%23%3E%0A++++PREFIX+vitro%3A+++%3Chttp%3A%2F%2Fvitro.mannlib.cornell.edu%2Fns%2Fvitro%2F0.7%23%3E%0A++++PREFIX+bibo%3A++++%3Chttp%3A%2F%2Fpurl.org%2Fontology%2Fbibo%2F%3E%0A++++PREFIX+dcelem%3A++%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2F%3E%0A++++PREFIX+dcterms%3A+%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0A++++PREFIX+event%3A+++%3Chttp%3A%2F%2Fpurl.org%2FNET%2Fc4dm%2Fevent.owl%23%3E%0A++++PREFIX+foaf%3A++++%3Chttp%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2F%3E%0A++++PREFIX+geo%3A+++++%3Chttp%3A%2F%2Faims.fao.org%2Faos%2Fgeopolitical.owl%23%3E%0A++++PREFIX+pvs%3A+++++%3Chttp%3A%2F%2Fvivoweb.org%2Fontology%2Fprovenance-support%23%3E%0A++++PREFIX+ero%3A+++++%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2F%3E%0A++++PREFIX+scires%3A++%3Chttp%3A%2F%2Fvivoweb.org%2Fontology%2Fscientific-research%23%3E%0A++++PREFIX+skos%3A++++%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0A++++PREFIX+ufVivo%3A++%3Chttp%3A%2F%2Fvivo.ufl.edu%2Fontology%2Fvivo-ufl%2F%3E%0A++++PREFIX+vitro%3A+++%3Chttp%3A%2F%2Fvitro.mannlib.cornell.edu%2Fns%2Fvitro%2Fpublic%23%3E%0A++++PREFIX+vivo%3A++++%3Chttp%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23%3E%0A++++PREFIX+core%3A++++%3Chttp%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23%3E%0A++++%0APREFIX+rdf%3A+++%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX+foaf%3A+%3Chttp%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2F%3E%0A%0ASELECT+%3Ftype+%28COUNT+%28DISTINCT+%3Furi%29+as+%3Fcount%29%0AWHERE+%7B%0A++%3Furi+a+foaf%3AOrganization+.%0A++%3Furi+a+%3Ftype%0A%7D%0AGROUP+by+%3Ftype%0AORDER+BY+DESC%28%3Fcount%29%0A&format=application%2Fsparql-results%2Bjson"
+    var querystring = endpointURL + '&query=' + query + '&' + format;
+	$.getJSON(querystring, function(data) {	draw(data); });
+</script>
+</head>
+<body>
+	<div id="container"></div>
+</body>
+</html>
