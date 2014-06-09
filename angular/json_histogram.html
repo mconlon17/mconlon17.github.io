@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/assets/css/simple.css">
+
+<script>
+
+// Bar Chart
+
+function draw(data) {
+	d3.select("#container")
+	.append("div")
+		.attr("class","chart")
+	.selectAll("div.line")
+	.data(data.results.bindings)
+	.enter()
+	.append("div")
+		.attr("class","line")
+		
+	d3.selectAll("div.line")
+		.append("div")
+		.attr("class","label")
+		.text(function(d) { return d.label.value})
+		
+	d3.selectAll("div.line")
+		.append("div")
+			.attr("class","bar")
+			.style("width",function(d){return d.count.value/15 + "px"})
+			.text(function(d){return d.count.value})
+}
+</script>
+<script>
+	d3.json("freq.json", function(data) {draw(data);});
+</script>
+</head>
+<body>
+	<div id="container"></div>
+</body>
+</html>
