@@ -21,7 +21,7 @@ var width = 900,
 	margin = 20
 	
 var orange = d3.rgb(255,74,0);
-var blue = d3.rgb(0,433,165);
+var blue = d3.rgb(0,33,165);
 
 var svg = d3.select("body").append("svg")
     .attr("width", width)
@@ -29,7 +29,7 @@ var svg = d3.select("body").append("svg")
 
 var force = d3.layout.force()
     .gravity(.1)
-    .linkDistance(30)
+    .linkDistance(60)
     .charge(-120)
     .size([width -2*margin, height-2*margin]);
 
