@@ -1,0 +1,15 @@
+# create sets of concept, author, publication
+
+SELECT ?pub_uri ?pub_name ?concept_uri ?concept_name ?author_uri ?author_name
+WHERE {
+    ?pub_uri a bibo:AcademicArticle .
+    ?pub_uri rdfs:label ?pub_name .
+    ?pub_uri vivo:hasSubjectArea ?concept_uri .
+    ?concept_uri rdfs:label ?concept_name .
+    ?pub_uri vivo:informationResourceInAuthorship ?a .
+    ?a vivo:linkedAuthor ?author_uri .
+    ?author_uri rdfs:label ?author_name .
+}
+ORDER BY ?pub_uri ?concept_uri ?author_uri
+OFFSET 10000
+LIMIT 10000
