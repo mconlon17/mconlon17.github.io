@@ -36,7 +36,7 @@ function draw(data) {
 	.append("div")
 		.attr("class","line")
 	
-	var maxcount = d3.max(data.results.bindings, function(d) { return d.count.value; } );
+	var maxcount = d3.max(data.results.bindings, function(d) { return parseInt(d.count.value); } );
 		
 	d3.selectAll("div.line")
 		.append("div")
@@ -46,7 +46,7 @@ function draw(data) {
 	d3.selectAll("div.line")
 		.append("div")
 			.attr("class","bar")
-			.style("width",function(d){return width*(d.count.value/maxcount) + "px"})
+			.style("width",function(d){return width*(parseInt(d.count.value)/maxcount) + "px"})
 			.text(function(d){return d.count.value+' '+maxcount})
 }
 </script>
