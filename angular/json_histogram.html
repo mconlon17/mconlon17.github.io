@@ -8,6 +8,22 @@
 
 <script>
 
+function getQueryParams(qs) {
+    qs = qs.split("+").join(" ");
+
+    var params = {}, tokens,
+        re = /[?&]?([^=]+)=([^&]*)/g;
+
+    while (tokens = re.exec(qs)) {
+        params[decodeURIComponent(tokens[1])]
+            = decodeURIComponent(tokens[2]);
+    }
+
+    return params;
+}
+
+var width = 900;
+
 // Bar Chart
 
 function draw(data) {
@@ -19,6 +35,8 @@ function draw(data) {
 	.enter()
 	.append("div")
 		.attr("class","line")
+	
+	var maxcount = d3.max(data, function(d) { return d.count.value; } );
 		
 	d3.selectAll("div.line")
 		.append("div")
@@ -28,12 +46,13 @@ function draw(data) {
 	d3.selectAll("div.line")
 		.append("div")
 			.attr("class","bar")
-			.style("width",function(d){return d.count.value/15 + "px"})
+			.style("width",function(d){return d.count.value/(maxcount/width) + "px"})
 			.text(function(d){return d.count.value})
 }
 </script>
 <script>
-	d3.json("freq.json", function(data) {draw(data);});
+    var params = getQueryParams(document.location.search);
+	d3.json(params.data, function(data) {draw(data);});
 </script>
 </head>
 <body>
