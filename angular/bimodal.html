@@ -19,6 +19,9 @@
 var width = 900,
     height = 900,
 	margin = 20
+	
+var orange = d3.rgb(255,74,0);
+var blue = d3.rgb(0,433,165);
 
 var svg = d3.select("body").append("svg")
     .attr("width", width)
@@ -26,8 +29,8 @@ var svg = d3.select("body").append("svg")
 
 var force = d3.layout.force()
     .gravity(.1)
-    .distance((height-2*margin)/4)
-    .charge(-80)
+    .linkDistance(30)
+    .charge(-120)
     .size([width -2*margin, height-2*margin]);
 
 d3.json("graph.json", function(error, json) {
@@ -38,21 +41,19 @@ d3.json("graph.json", function(error, json) {
 
   var link = svg.selectAll(".link")
       .data(json.links)
-    .enter().append("line")
+	  .enter().append("line")
       .attr("class", "link");
 
   var node = svg.selectAll(".node")
       .data(json.nodes)
-    .enter().append("g")
+      .enter().append("g")
       .attr("class", "node")
       .call(force.drag);
 
-  node.append("image")
-      .attr("xlink:href", function(d) { if (d.group == 1) { return "https://github.com/favicon.ico";} else {return "/assets/ico/favicon.ico";}})
-      .attr("x", -8)
-      .attr("y", -8)
-      .attr("width", 16)
-      .attr("height", 16);
+  node.append("circle")
+	  .attr("r",5)
+      .style("fill", function(d) { if (d.group == 1) { return orange;} else {return blue;}})
+      .call(force.drag);
 
   node.append("text")
       .attr("dx", 12)
