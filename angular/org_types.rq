@@ -3,6 +3,7 @@
 SELECT ?label (COUNT(DISTINCT ?uri) AS ?count)
 WHERE {
   ?uri a foaf:Organization .
+  ?uri a ufVivo:UFEntity .
   ?uri rdf:type ?label .
 }
 GROUP BY ?label

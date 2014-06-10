@@ -1,0 +1,173 @@
+{
+  "head": {
+    "vars": [ "label" , "count" ]
+  } ,
+  "results": {
+    "bindings": [
+      {
+        "label": { "type": "uri" , "value": "http://vivo.ufl.edu/ontology/vivo-ufl/UFEntity" } ,
+        "count": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "903" }
+      } ,
+      {
+        "label": { "type": "uri" , "value": "http://www.w3.org/2002/07/owl#Thing" } ,
+        "count": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "903" }
+      } ,
+      {
+        "label": { "type": "uri" , "value": "http://xmlns.com/foaf/0.1/Agent" } ,
+        "count": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "903" }
+      } ,
+      {
+        "label": { "type": "uri" , "value": "http://xmlns.com/foaf/0.1/Organization" } ,
+        "count": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "903" }
+      } ,
+      {
+        "label": { "type": "uri" , "value": "http://vivoweb.org/ontology/core#Department" } ,
+        "count": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "232" }
+      } ,
+      {
+        "label": { "type": "uri" , "value": "http://vivoweb.org/ontology/core#Center" } ,
+        "count": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "205" }
+      } ,
+      {
+        "label": { "type": "uri" , "value": "http://vivoweb.org/ontology/core#AcademicDepartment" } ,
+        "count": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "133" }
+      } ,
+      {
+        "label": { "type": "uri" , "value": "http://vivoweb.org/ontology/core#Program" } ,
+        "count": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "90" }
+      } ,
+      {
+        "label": { "type": "uri" , "value": "http://vivoweb.org/ontology/core#ExtensionUnit" } ,
+        "count": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "72" }
+      } ,
+      {
+        "label": { "type": "uri" , "value": "http://vivoweb.org/ontology/core#ClinicalOrganization" } ,
+        "count": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "66" }
+      } ,
+      {
+        "label": { "type": "uri" , "value": "http://vivoweb.org/ontology/core#Laboratory" } ,
+        "count": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "61" }
+      } ,
+      {
+        "label": { "type": "uri" , "value": "http://vivoweb.org/ontology/core#Division" } ,
+        "count": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "45" }
+      } ,
+      {
+        "label": { "type": "uri" , "value": "http://vivoweb.org/ontology/core#CoreLaboratory" } ,
+        "count": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "43" }
+      } ,
+      {
+        "label": { "type": "uri" , "value": "http://vivoweb.org/ontology/core#ServiceProvidingLaboratory" } ,
+        "count": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "43" }
+      } ,
+      {
+        "label": { "type": "uri" , "value": "http://vivoweb.org/ontology/core#Institute" } ,
+        "count": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "42" }
+      } ,
+      {
+        "label": { "type": "uri" , "value": "http://vivoweb.org/ontology/core#Library" } ,
+        "count": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "18" }
+      } ,
+      {
+        "label": { "type": "uri" , "value": "http://vivoweb.org/ontology/core#School" } ,
+        "count": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "18" }
+      } ,
+      {
+        "label": { "type": "uri" , "value": "http://xmlns.com/foaf/0.1/Group" } ,
+        "count": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "18" }
+      } ,
+      {
+        "label": { "type": "uri" , "value": "http://vivoweb.org/ontology/core#College" } ,
+        "count": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "16" }
+      } ,
+      {
+        "label": { "type": "uri" , "value": "http://vivoweb.org/ontology/core#Committee" } ,
+        "count": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "16" }
+      } ,
+      {
+        "label": { "type": "uri" , "value": "http://vivoweb.org/ontology/core#Hospital" } ,
+        "count": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "6" }
+      } ,
+      {
+        "label": { "type": "uri" , "value": "http://vivoweb.org/ontology/core#StudentOrganization" } ,
+        "count": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "5" }
+      } ,
+      {
+        "label": { "type": "uri" , "value": "http://vivo.ufl.edu/ontology/vivo-ufl/AdministrativeUnit" } ,
+        "count": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "3" }
+      } ,
+      {
+        "label": { "type": "uri" , "value": "http://vivoweb.org/ontology/core#Association" } ,
+        "count": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "3" }
+      } ,
+      {
+        "label": { "type": "uri" , "value": "http://vivoweb.org/ontology/core#Museum" } ,
+        "count": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "3" }
+      } ,
+      {
+        "label": { "type": "uri" , "value": "http://vivoweb.org/ontology/core#FundingOrganization" } ,
+        "count": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "2" }
+      } ,
+      {
+        "label": { "type": "uri" , "value": "http://vivoweb.org/ontology/core#Publisher" } ,
+        "count": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "2" }
+      } ,
+      {
+        "label": { "type": "uri" , "value": "http://vivoweb.org/ontology/core#Team" } ,
+        "count": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "2" }
+      } ,
+      {
+        "label": { "type": "uri" , "value": "http://purl.org/ontology/bibo/Collection" } ,
+        "count": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "1" }
+      } ,
+      {
+        "label": { "type": "uri" , "value": "http://purl.org/ontology/bibo/Journal" } ,
+        "count": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "1" }
+      } ,
+      {
+        "label": { "type": "uri" , "value": "http://purl.org/ontology/bibo/Periodical" } ,
+        "count": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "1" }
+      } ,
+      {
+        "label": { "type": "uri" , "value": "http://vivo.ufl.edu/ontology/vivo-ufl/NonGovernmentalOrganization" } ,
+        "count": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "1" }
+      } ,
+      {
+        "label": { "type": "uri" , "value": "http://vivo.ufl.edu/ontology/vivo-ufl/UFCurrentEntity" } ,
+        "count": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "1" }
+      } ,
+      {
+        "label": { "type": "uri" , "value": "http://vivoweb.org/ontology/core#Building" } ,
+        "count": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "1" }
+      } ,
+      {
+        "label": { "type": "uri" , "value": "http://vivoweb.org/ontology/core#Company" } ,
+        "count": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "1" }
+      } ,
+      {
+        "label": { "type": "uri" , "value": "http://vivoweb.org/ontology/core#Consortium" } ,
+        "count": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "1" }
+      } ,
+      {
+        "label": { "type": "uri" , "value": "http://vivoweb.org/ontology/core#Facility" } ,
+        "count": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "1" }
+      } ,
+      {
+        "label": { "type": "uri" , "value": "http://vivoweb.org/ontology/core#GeographicLocation" } ,
+        "count": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "1" }
+      } ,
+      {
+        "label": { "type": "uri" , "value": "http://vivoweb.org/ontology/core#InformationResource" } ,
+        "count": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "1" }
+      } ,
+      {
+        "label": { "type": "uri" , "value": "http://vivoweb.org/ontology/core#Location" } ,
+        "count": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "1" }
+      } ,
+      {
+        "label": { "type": "uri" , "value": "http://vivoweb.org/ontology/core#ResearchOrganization" } ,
+        "count": { "datatype": "http://www.w3.org/2001/XMLSchema#integer" , "type": "typed-literal" , "value": "1" }
+      }
+    ]
+  }
+}

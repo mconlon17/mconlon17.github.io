@@ -46,7 +46,7 @@ function draw(data) {
 	d3.selectAll("div.line")
 		.append("div")
 			.attr("class","bar")
-			.style("width",function(d){return d.count.value/(maxcount/width) + "px"})
+			.style("width",function(d){return d.count.value/15 + "px"})
 			.text(function(d){return d.count.value})
 }
 </script>
