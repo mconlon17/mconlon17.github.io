@@ -47,7 +47,7 @@ function draw(data) {
 		.append("div")
 			.attr("class","bar")
 			.style("width",function(d){return width*(parseInt(d.count.value)/maxcount) + "px"})
-			.text(function(d){return d.count.value+' '+maxcount})
+			.text(function(d){return d.count.value})
 }
 </script>
 <script>
