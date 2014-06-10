@@ -1,0 +1,14 @@
+#
+# Frequency table of the number of concepts per paper
+#
+SELECT ?label (COUNT(DISTINCT ?uri) AS ?count)
+WHERE {
+    SELECT ?uri (COUNT(DISTINCT ?concept) AS ?label)
+    WHERE {
+      ?uri a vivo:InformationResource .
+      ?uri vivo:hasSubjectArea ?concept .
+    }
+    GROUP BY ?uri
+}
+GROUP BY ?label
+ORDER BY ?label
