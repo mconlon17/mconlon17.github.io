@@ -7,6 +7,11 @@
     --  Just getting started
     Version 0.1 MC 2014-05-08
     --  Works as expected
+
+    To do
+    --  Implement Dave Eichmann's idea about building a set of triples in a
+        named graph that can be queried in real time via Ajax to produce
+        the slices need to draw the bimodal display
 """
 
 __author__ = "Michael Conlon"

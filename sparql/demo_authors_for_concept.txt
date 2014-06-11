@@ -1,0 +1,10 @@
+SELECT ?uri (SAMPLE(?xname) AS ?name) (COUNT (DISTINCT ?a) AS ?npapers)
+WHERE {
+  ?p vivo:hasSubjectArea <http://vivo.ufl.edu/individual/n9272944689> .
+  ?a vivo:linkedInformationResource ?p .
+  ?uri vivo:authorInAuthorship ?a .
+  ?uri a ufVivo:UFCurrentEntity .
+  ?uri rdfs:label ?xname .
+}
+GROUP BY ?uri
+ORDER BY DESC(?npapers)
