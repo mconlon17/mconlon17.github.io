@@ -1,0 +1,13 @@
+#
+# Count concept concept pairs
+#
+SELECT ?curi1 ?curi2 (COUNT(DISTINCT ?p) AS ?pubcount)
+WHERE {
+  ?curi1 a skos:Concept .
+  ?curi1 vivo:subjectAreaFor ?p .
+  ?p a vivo:InformationResource .
+  ?p vivo:hasSubjectArea ?curi2 .
+  FILTER( ?curi1 != ?curi2) .
+}
+GROUP BY ?curi1 ?curi2
+ORDER BY DESC(?pubcount)

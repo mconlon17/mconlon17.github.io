@@ -1,0 +1,17 @@
+#
+# Co-author counts
+#
+SELECT ?auri ?auri2 (COUNT(DISTINCT ?a2) AS ?pubcount)
+WHERE {
+  ?auri a ufVivo:UFCurrentEntity .
+  ?auri a foaf:Person .
+  ?auri vivo:authorInAuthorship ?a .
+  ?a vivo:linkedInformationResource ?p .
+  ?p vivo:informationResourceInAuthorship ?a2 .
+  ?a2 vivo:linkedAuthor ?auri2 .
+  ?auri2 a ufVivo:UFCurrentEntity .
+  ?auri2 a foaf:Person .
+  FILTER(?auri != ?auri2) .
+}
+GROUP BY ?auri ?auri2
+ORDER BY DESC(?pubcount)

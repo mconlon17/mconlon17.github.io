@@ -1,0 +1,13 @@
+#
+# Count author concept pairs
+#
+SELECT ?auri ?curi (COUNT(DISTINCT ?p) AS ?pubcount)
+WHERE {
+  ?auri a ufVivo:UFCurrentEntity .
+  ?auri a foaf:Person .
+  ?auri vivo:authorInAuthorship ?a .
+  ?a vivo:linkedInformationResource ?p .
+  ?p vivo:hasSubjectArea ?curi .
+}
+GROUP BY ?auri ?curi
+ORDER BY DESC(?pubcount)
