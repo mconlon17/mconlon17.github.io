@@ -1,0 +1,16 @@
+#
+# Frequency table of authors by pubCount
+#
+SELECT ?uri (SAMPLE(?xlabel) AS ?label) (SAMPLE(?xdeptname) AS ?deptname) (COUNT (DISTINCT ?p) AS ?count)
+WHERE {
+  ?uri a ufVivo:UFCurrentEntity .
+  ?uri a foaf:Person .
+  ?uri rdfs:label ?xlabel .
+  ?uri ufVivo:homeDept ?h .
+  ?h rdfs:label ?xdeptname .
+  ?uri vivo:authorInAuthorship ?a .
+  ?a vivo:linkedInformationResource ?p .
+  ?p a bibo:AcademicArticle .
+}
+GROUP BY ?uri
+ORDER BY DESC(?count)
