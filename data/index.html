@@ -167,11 +167,11 @@
 				</div>
 				
 					<div class="blog-post">
-					<a id="mergeuris"></a><h2 class="blog-post-title">Merge URIs from VIVO</h2>
+					<a id="mergeuris"></a><h2 class="blog-post-title">Merge URIs in VIVO</h2>
 									
 					<p>Sometimes, the same entity will be entered into VIVO more than once.  Some
-					assertions will be attributed to one of the entities and other assertions will be attributed to one or more duplicates.  This may happen because automated processes are being used to add data to your VIVO at the same time that people are using self-edit to add additional entities.  At UF we have had duplicate people, duplicate organizations, duplicate papers, duplicate grants.</p>
-					<p>merge_uri is a tool you can use to combine pairs of URIs, taking all the assertions from one entity (called "from") and assigning them to another entity (called "to"). From is removed as part of the process. So, for example, if there are two entities referring to the same organization, you can choose which one will be removed and have all the assertions about that entity assigned to the duplicate.  merge_uri is "symmetric," -- for two entities "a" and "b," you may assign all assertions from a to b, removing a, or assign all assertions from b removing a.  The results will be the same.  Typically we choose the entity with the smaller set of
+					assertions will be attributed to one of the entities and other assertions will be attributed to one or more duplicates.  This may happen because automated processes are being used to add data to your VIVO at the same time that people are using self-edit to add additional entities.  At UF we have had duplicate people, duplicate organizations, duplicate papers, and duplicate grants.</p>
+					<p>merge_uri is a tool you can use to combine pairs of URIs, taking all the assertions from one entity (called "from") and assigning them to another entity (called "to"). From is removed as part of the process. So, for example, if there are two entities referring to the same organization, you can choose which one will be removed and have all the assertions about that entity assigned to the duplicate.  merge_uri is "symmetric" -- for two entities "a" and "b," you may assign all assertions from a to b, removing a, or assign all assertions from b to a, removing b.  Typically we choose the entity with the smaller set of
 					assertions to be the "from" entity.</p>
 					<p>merge_uri should be used carefully, and as part of a comprehensive data
 					management activity for your VIVO data.
