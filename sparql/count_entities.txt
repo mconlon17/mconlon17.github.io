@@ -1,0 +1,66 @@
+#
+# Count high-level entities in VIVO.  One sub-query per count.
+#
+SELECT ?orgs ?uf_orgs ?people ?uf_people ?publications 
+       ?grants ?courses ?course_sections
+WHERE {
+
+  {
+  SELECT (COUNT(DISTINCT ?uri) AS ?orgs)
+  WHERE {
+    ?uri a foaf:Organization .
+    }
+  }
+
+  {
+  SELECT (COUNT(DISTINCT ?uri) AS ?uf_orgs)
+  WHERE {
+    ?uri a foaf:Organization .
+    ?uri a ufVivo:UFEntity .
+    }
+  }
+
+  {
+  SELECT (COUNT(DISTINCT ?uri) AS ?people)
+  WHERE {
+    ?uri a foaf:Person .
+    }
+  }
+
+  {
+  SELECT (COUNT(DISTINCT ?uri) AS ?uf_people)
+  WHERE {
+    ?uri a foaf:Person .
+    ?uri a ufVivo:UFEntity .
+    }
+  }
+
+  {
+  SELECT (COUNT(DISTINCT ?uri) AS ?publications)
+  WHERE {
+    ?uri a vivo:InformationResource .
+    }
+  }
+
+  {
+  SELECT (COUNT(DISTINCT ?uri) AS ?grants)
+  WHERE {
+    ?uri a vivo:Grant .
+    }
+  }
+  
+  {
+  SELECT (COUNT(DISTINCT ?uri) AS ?courses)
+  WHERE {
+    ?uri a ufVivo:Course .
+    }
+  }
+  
+  {
+  SELECT (COUNT(DISTINCT ?uri) AS ?course_sections)
+  WHERE {
+    ?uri a ufVivo:CourseSection .
+    }
+  }
+  
+}
