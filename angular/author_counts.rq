@@ -10,7 +10,6 @@ WHERE {
   ?h rdfs:label ?xdeptname .
   ?uri vivo:authorInAuthorship ?a .
   ?a vivo:linkedInformationResource ?p .
-  ?p a bibo:AcademicArticle .
 }
 GROUP BY ?uri
 ORDER BY DESC(?count)
