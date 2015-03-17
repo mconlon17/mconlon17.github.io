@@ -18,7 +18,7 @@
 
 1. Python.  I use it pretty raw.  I write procedurally, mostly.
 1. D3.  Weird and wonderful.
-1. Twitter Boostrap.  Finally a good way to use css to make great looking web sites. And as a bonus, they
+1. Twitter Bootstrap.  Finally a good way to use css to make great looking web sites. And as a bonus, they
 are "responsive" displaying beautifully on different size displays, right down to phones.  Mobility first!
 1. VIVO Vagrant.  Works.  Run VIVO 1.5 or 1.6.  With or without data.  Includes Fuseki for SPARQL.  Kind of amazing.
 1. Angular.  Ah.  Hard to say I "like" it. Anything that changes the names of your variables on the fly to make things 
