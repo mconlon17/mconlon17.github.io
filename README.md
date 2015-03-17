@@ -5,7 +5,7 @@
 	1. SJR
 	1. Data Management
 1. Info Out for software created to help manage VIVO and to display results from VIVO
-    1. Biosketch maker (coming soon)
+    1. Biosketch maker
 	1. D3 visualizations
 	1. Data extracts from VIVO
 	1. SPARQL queries
