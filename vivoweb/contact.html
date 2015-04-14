@@ -10,7 +10,6 @@
 		information out. A blog describes experiences with VIVO.">
     <meta name="author" content="Mike Conlon">
 	<link rel="shortcut icon" type="image/x-icon" href="/assets/ico/favicon.ico">
-  <link rel="import" href="includes.html">
 	<link href="../assets/css/bootstrap.min.css" rel="stylesheet">
   <link href="http://getbootstrap.com/assets/css/docs.min.css" rel="stylesheet">
   <title>VIVO Connect Share Discover</title>
@@ -18,12 +17,71 @@
 
   <body class="bs-docs-home">
 
-  <script>
-    var link = document.querySelector('link[rel="import"]');
-    var content = link.import;
-    var el = content.querySelector('.navbar');
-    document.body.appendChild(el.cloneNode(true));
-  </script>
+  <!-- Fixed navbar -->
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand active" href="/vivoweb/index.html">VIVO</a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Info</a>
+            <ul class="dropdown-menu">
+              <li><a href="">News</a></li>
+              <li><a href="">Events</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">Twitter</a></li>
+              <li><a href="">Flyer</a></li>
+              <li><a href="">Whitepaper</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Downloads</a>
+            <ul class="dropdown-menu">
+              <li><a href="https://github.com/vivo-project/VIVO/archive/master.zip">Software</a></li>
+              <li><a href="http://github.com/lawlesst/vivo-vagrant">Appliance</a></li>
+              <li><a href="http://github.com/vivo-isf/vivo-isf">Ontology</a></li>
+              <li><a href="http://github.com/vivo-project/tools">Related Tools</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Community</a>
+            <ul class="dropdown-menu">
+              <li><a href="">Membership</a></li>
+              <li><a href="">Sites</a></li>
+              <li><a href="">Partners</a></li>
+              <li><a href="">Facebook</a></li>
+              <li><a href="">RSS</a></li>
+              <li><a href="">Service Providers</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Support</a>
+            <ul class="dropdown-menu">
+              <li><a href="http://wiki.duraspace.org/display/VIVO">Wiki</a></li>
+              <li><a href="">Events</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">More</a>
+            <ul class="dropdown-menu">              
+              <li><a href="http://duraspace.org">Duraspace</a></li>
+              <li><a href="jobs.html">Jobs</a></li>
+              <li><a href="http://creativecommons.org/licenses/by/4.0/">CC-BY</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
   
 <!-- Page content -->
 <div class="bs-docs-featurette" style="background-color: #ffffff; color: #000000">
@@ -34,12 +92,50 @@
   </div>
 </div>
 
-  <script>
-    var link = document.querySelector('link[rel="import"]');
-    var content = link.import;
-    var el = content.querySelector('.trailer');
-    document.body.appendChild(el.cloneNode(true));
-  </script>
+<!-- Trailer Menu -->
+<div class="bs-docs-featurette trailer" style="background-color: #b7bbbc; color: #000000">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2 col-md-offset-1 col-sm-6">
+        <p class="text-left" style="font-weight:bold">Info</b>
+        <p class="text-left" style="color: #000000"><a style="color: #000000" href="">News</a></p>
+        <p class="text-left" style="color: #000000"><a style="color: #000000" href="">Events</a></p>
+        <p class="text-left" style="color: #000000"><a style="color: #000000" href="">Blog</a></p>
+        <p class="text-left" style="color: #000000"><a style="color: #000000" href="">Twitter</a></p>
+        <p class="text-left" style="color: #000000"><a style="color: #000000" href="">Flyer</a></p>
+        <p class="text-left" style="color: #000000"><a style="color: #000000" href="">Whitepaper</a></p>
+      </div>
+      <div class="col-md-2 col-sm-6">
+        <p class="text-left" style="font-weight:bold">Downloads</b>
+        <p class="text-left" style="color: #000000"><a style="color: #000000" href="">Software</a></p>
+        <p class="text-left" style="color: #000000"><a style="color: #000000" href="">Appliance</a></p>
+        <p class="text-left" style="color: #000000"><a style="color: #000000" href="">Ontology</a></p>
+        <p class="text-left" style="color: #000000"><a style="color: #000000" href="">Related Tools</a></p>
+      </div>
+      <div class="col-md-2 col-sm-6">
+        <p class="text-left" style="font-weight:bold">Community</b>
+        <p class="text-left" style="color: #000000"><a style="color: #000000" href="">Membership</a></p>
+        <p class="text-left" style="color: #000000"><a style="color: #000000" href="">Sites</a></p>
+        <p class="text-left" style="color: #000000"><a style="color: #000000" href="">Partners</a></p>
+        <p class="text-left" style="color: #000000"><a style="color: #000000" href="">Facebook</a></p>
+        <p class="text-left" style="color: #000000"><a style="color: #000000" href="">RSS</a></p>
+        <p class="text-left" style="color: #000000"><a style="color: #000000" href="">Service Providers</a></p>
+      </div>
+      <div class="col-md-2 col-sm-6">
+        <p class="text-left" style="font-weight:bold">Support</b>
+        <p class="text-left" style="color: #000000"><a style="color: #000000" href="http://wiki.duraspace.org/display/VIVO">Wiki</a></p>
+        <p class="text-left" style="color: #000000"><a style="color: #000000" href="">Events</a></p>
+        <p class="text-left" style="color: #000000"><a style="color: #000000" href="contact.html">Contact</a></p>
+      </div>
+      <div class="col-md-2 col-sm-6">
+        <p class="text-left" style="font-weight:bold">More</b>
+        <p class="text-left" style="color: #000000"><a style="color: #000000" href="http://www.duraspace.org">Duraspace</a></p>
+        <p class="text-left" style="color: #000000"><a style="color: #000000" href="jobs.html">Jobs</a></p>
+        <p class="text-left" style="color: #000000"><a style="color: #000000" href="http://creativecommons.org/licenses/by/4.0/">CC-BY</a></p>
+      </div>
+    </div>
+  </div>
+</div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
