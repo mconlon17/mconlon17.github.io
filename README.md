@@ -2,8 +2,17 @@
 
 1. Data In
     1. PubMed Attribute adder
-	1. SJR
-	1. Data Management
+    1. SJR
+    1. Data Management
+    1. VIVO Tools
+    2. Add Cities
+    3. Add papers from Pubmed
+    4. Add buildings
+    5. Remove URI from VIVO
+    6. Merge URI
+    7. Link checker for VIVO
+    8. Rapir phone numbers
+    9. Name parts
 1. Info Out for software created to help manage VIVO and to display results from VIVO
     1. Biosketch maker
 	1. D3 visualizations
