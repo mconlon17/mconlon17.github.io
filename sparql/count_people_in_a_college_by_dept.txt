@@ -1,0 +1,17 @@
+# Count people in a College by department
+
+SELECT ?hname (count(distinct ?p) as ?count)
+WHERE {
+
+    ?p a ufVivo:UFEntity .
+    ?p rdfs:label ?pname .
+
+    {<http://vivo.ufl.edu/individual/n243205> ufVivo:homeDeptFor ?p .
+     <http://vivo.ufl.edu/individual/n243205> rdfs:label ?hname .}
+    UNION
+    {<http://vivo.ufl.edu/individual/n243205> obo:BFO_0000051 ?o .
+    ?o ufVivo:homeDeptFor ?p . ?o rdfs:label ?hname .}
+
+}
+GROUP BY ?hname
+ORDER BY DESC(?count)
