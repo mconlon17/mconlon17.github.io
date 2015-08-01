@@ -1,0 +1,16 @@
+# List people in a College by department
+
+SELECT ?p (min(distinct ?pname) as ?pname) (min(distinct ?hname) as ?hname)
+WHERE {
+    ?p a ufVivo:UFEntity .
+    ?p rdfs:label ?pname .
+
+    {<http://vivo.ufl.edu/individual/n166017> ufVivo:homeDeptFor ?p .
+     <http://vivo.ufl.edu/individual/n166017> rdfs:label ?hname .}
+    UNION
+    {<http://vivo.ufl.edu/individual/n166017> obo:BFO_0000051 ?o .
+    ?o ufVivo:homeDeptFor ?p . ?o rdfs:label ?hname .}
+
+}
+GROUP BY ?p
+ORDER by ?hname ?pname
