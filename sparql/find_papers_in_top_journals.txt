@@ -1,13 +1,14 @@
-# Find UF papers published in 2013 that appeared in the
-# 10 journals with the highest impact factors
-SELECT ?uri ?issn
+# Find papers published in 2014 that appeared in 13 top journals
+SELECT ?uri ?issn ?jname ?atitle
 WHERE {
 	?uri a bibo:AcademicArticle .
 	?uri vivo:dateTimeValue ?dtv .
 	?dtv vivo:dateTime ?dt .
-	FILTER (regex(?dt,"^2013"))
+	FILTER (regex(?dt,"^2014"))
 	?uri vivo:hasPublicationVenue ?journal .
 	?journal bibo:issn ?issn .
+        ?journal rdfs:label ?jname .
+        ?uri rdfs:label ?atitle .
 	FILTER (?issn = "0028-4793" || ?issn = "0092-8674" || 
 	?issn = "1542-4863" || ?issn = "1471-0064" ||
 	?issn = "0140-6736" || ?issn = "1545-3278" ||
