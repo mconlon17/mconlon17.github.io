@@ -1,11 +1,11 @@
 # Find all the papers that have the word "guideline" in their title
 #
-SELECT ?uri ?year ?title
+SELECT ?uri ?date ?title
 WHERE {
 	?uri a vivo:InformationResource .
 	?uri rdfs:label ?title .
 	?uri vivo:dateTimeValue ?dtv .
-	?dtv vivo:dateTime ?year .
+	?dtv vivo:dateTime ?date .
 	FILTER (regex(?title,"guideline","i"))
 	}
-ORDER BY DESC(?year)
+ORDER BY DESC(?date)
