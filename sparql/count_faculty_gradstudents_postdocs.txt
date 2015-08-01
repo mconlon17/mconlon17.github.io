@@ -1,5 +1,5 @@
 #
-# Count the faculty, graduate students and postdocs in a unit
+# Count the faculty, graduate students and postdocs in a unit (Molecular Genetics and Microbiology)
 #
     SELECT
            (COUNT(DISTINCT ?fac) AS ?faculty_count)
