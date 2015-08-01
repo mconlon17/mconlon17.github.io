@@ -1,29 +1,26 @@
-# Count papers in the college of medicine for 2012
-# for each paper count the number of participating units
+# List papers in the College of Medicine for 2014.
+# For each paper count the number of UF participating departments in
+# the author list.
 #
-SELECT ?x (COUNT(DISTINCT ?home) AS ?ndept)
+SELECT ?uri (count(distinct ?hname) as ?ndept) (min(distinct ?title) as ?title)
 WHERE {
-	?x a bibo:AcademicArticle .
-	?x vivo:dateTimeValue ?dv .
-	?dv vivo:dateTime ?d .
-	FILTER(regex(?d,"^2012"))
-	?x vivo:informationResourceInAuthorship ?a .
-	?a vivo:linkedAuthor ?auth .
-	?auth ufVivo:homeDept ?home .
-	?home rdfs:label ?hlabel .
-	{http://vivo.ufl.edu/individual/n166017 vivo:hasSubOrganization ?home .}
-	UNION
-	{http://vivo.ufl.edu/individual/n166017 vivo:hasSubOrganization ?alevel1 .
-	?alevel1 vivo:hasSubOrganization ?home .}
-	UNION
-	{http://vivo.ufl.edu/individual/n166017 vivo:hasSubOrganization ?blevel1 .
-	?blevel1 vivo:hasSubOrganization ?blevel2 .
-	?blevel2 vivo:hasSubOrganization ?home}
-	UNION
-	{http://vivo.ufl.edu/individual/n166017 vivo:hasSubOrganization ?clevel1 .
-	?clevel1 vivo:hasSubOrganization ?clevel2 .
-	?clevel2 vivo:hasSubOrganization ?clevel3 .
-	?clevel3 vivo:hasSubOrganization ?home .}
-	}
-GROUP BY ?x
+    ?uri a bibo:AcademicArticle .
+    ?uri vivo:dateTimeValue ?dv .
+    ?dv vivo:dateTime ?d .
+    FILTER(regex(?d,"^2014"))
+    ?uri rdfs:label ?title .
+
+    ?uri vivo:relatedBy ?a .
+    ?a a vivo:Authorship .
+    ?a vivo:relates ?p .
+    ?p a foaf:Person .
+    ?p a ufVivo:UFEntity .
+
+    {<http://vivo.ufl.edu/individual/n166017> ufVivo:homeDeptFor ?p .
+     <http://vivo.ufl.edu/individual/n166017> rdfs:label ?hname .}
+    UNION
+    {<http://vivo.ufl.edu/individual/n166017> obo:BFO_0000051 ?o .
+    ?o ufVivo:homeDeptFor ?p . ?o rdfs:label ?hname .}
+}
+GROUP BY ?uri
 ORDER BY DESC(?ndept)
