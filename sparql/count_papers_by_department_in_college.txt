@@ -2,7 +2,7 @@
 # If the author list contains authors from multiple units in the college,
 # the paper is counted under each unit
 #
-SELECT (SAMPLE(DISTINCT ?hlabel) AS ?label) (COUNT(DISTINCT ?x) AS ?count)
+SELECT ?hlabel (COUNT(DISTINCT ?x) AS ?count)
 WHERE {
 	?x a bibo:AcademicArticle .
 	?x vivo:dateTimeValue ?dv .
@@ -14,12 +14,12 @@ WHERE {
 	?a vivo:relates ?auth .
 	?auth a ufVivo:UFEntity .
 	?auth a foaf:Person .
-	
-    {<http://vivo.ufl.edu/individual/n8858828> ufVivo:homeDeptFor ?auth .
+
+	{<http://vivo.ufl.edu/individual/n8858828> ufVivo:homeDeptFor ?auth .
      <http://vivo.ufl.edu/individual/n8858828> rdfs:label ?hlabel .}
     UNION
     {<http://vivo.ufl.edu/individual/n8858828> obo:BFO_0000051 ?o .
     ?o ufVivo:homeDeptFor ?auth . ?o rdfs:label ?hlabel .} 
 	}
-GROUP BY ?label
+GROUP BY ?hlabel
 ORDER BY DESC(?count)
