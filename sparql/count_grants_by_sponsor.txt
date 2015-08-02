@@ -1,0 +1,11 @@
+#  Count grants by sponsor
+
+SELECT ?uri (MIN(DISTINCT ?xsponsor_name) AS ?sponsor_name) (COUNT (DISTINCT ?grant) AS ?ngrants)
+WHERE {
+  ?uri a vivo:FundingOrganization .
+  ?uri rdfs:label ?xsponsor_name .
+  ?uri vivo:assigns ?grant .
+  ?grant a vivo:Grant .
+}
+GROUP BY ?uri
+ORDER BY DESC(?ngrants)
