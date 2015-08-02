@@ -1,8 +1,9 @@
 # Find all the web pages that have a web address containing the text "shands"
 
-SELECT ?uri
+SELECT ?uri ?url
 WHERE {
-  ?uri vivo:webpage ?w .
-  ?w vivo:linkURI ?linkuri .
-  FILTER(contains(str(?linkuri),"shands"))
+  ?uri obo:ARG_2000028 ?vcard .
+  ?vcard vcard:hasURL ?url_thing .
+  ?url_thing vcard:url ?url .
+  FILTER(contains(str(?url),"shands"))
 }
