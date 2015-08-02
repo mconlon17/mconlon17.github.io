@@ -1,7 +1,8 @@
-PREFIX vivo: http://vivoweb.org/ontology/core#
+# Find authorships that do not link to people
+
 SELECT ?uri
 WHERE
 {
 	?uri a vivo:Authorship .
-	FILTER NOT EXISTS {?uri vivo:linkedAuthor ?author }
+	FILTER NOT EXISTS {?uri vivo:relates ?author . ?author a foaf:Person .}
 }
