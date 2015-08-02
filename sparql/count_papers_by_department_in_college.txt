@@ -4,22 +4,22 @@
 #
 SELECT ?hlabel (COUNT(DISTINCT ?x) AS ?count)
 WHERE {
-	?x a bibo:AcademicArticle .
-	?x vivo:dateTimeValue ?dv .
-	?dv vivo:dateTime ?d .
-	FILTER(regex(?d,"^2014"))
+    ?x a bibo:AcademicArticle .
+    ?x vivo:dateTimeValue ?dv .
+    ?dv vivo:dateTime ?d .
+    FILTER(regex(?d,"^2014"))
 	
-	?x vivo:relatedBy ?a .
-	?a a vivo:Authorship .
-	?a vivo:relates ?auth .
-	?auth a ufVivo:UFEntity .
-	?auth a foaf:Person .
+    ?x vivo:relatedBy ?a .
+    ?a a vivo:Authorship .
+    ?a vivo:relates ?auth .
+    ?auth a ufVivo:UFEntity .
+    ?auth a foaf:Person .
 
-	{<http://vivo.ufl.edu/individual/n8858828> ufVivo:homeDeptFor ?auth .
+    {<http://vivo.ufl.edu/individual/n8858828> ufVivo:homeDeptFor ?auth .
      <http://vivo.ufl.edu/individual/n8858828> rdfs:label ?hlabel .}
     UNION
     {<http://vivo.ufl.edu/individual/n8858828> obo:BFO_0000051 ?o .
-    ?o ufVivo:homeDeptFor ?auth . ?o rdfs:label ?hlabel .} 
-	}
+    ?o ufVivo:homeDeptFor ?auth . ?o rdfs:label ?hlabel .}
+    }
 GROUP BY ?hlabel
 ORDER BY DESC(?count)
