@@ -1,0 +1,11 @@
+# Find all the grants that have the word "trial" in their title
+#
+SELECT ?uri ?date ?title
+WHERE {
+	?uri a vivo:Grant .
+	?uri rdfs:label ?title .
+	?uri vivo:dateTimeValue ?dtv .
+	?dtv vivo:dateTime ?date .
+	FILTER (regex(?title,"trial","i"))
+	}
+ORDER BY DESC(?date)
