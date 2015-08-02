@@ -8,13 +8,14 @@ WHERE {
     ?fac rdfs:label ?xname .
     ?fac ufVivo:homeDept ?dept .
     ?dept rdfs:label ?deptxname .
-    OPTIONAL{ ?fac vivo:authorInAuthorship ?a . 
-        ?a vivo:linkedInformationResource ?pub . 
+    OPTIONAL{ ?fac vivo:relatedBy ?a .
+        ?a a vivo:Authorship .
+        ?a vivo:relates ?pub .
         ?pub a bibo:AcademicArticle . 
         ?pub vivo:dateTimeValue ?dtv .
         ?dtv vivo:dateTime ?dt .
         FILTER (regex(str(?dt),"^2009")||regex(str(?dt),"^2010")||regex(str(?dt),"^2011")
-		    ||regex(str(?dt),"^2012")||regex(str(?dt),"^2013"))}
+		    ||regex(str(?dt),"^2012")||regex(str(?dt),"^2013")||regex(str(?dt),"^2014")||regex(str(?dt),"^2015"))}
 }
 GROUP BY ?fac
 ORDER BY DESC(?na)
