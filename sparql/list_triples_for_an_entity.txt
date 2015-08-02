@@ -1,0 +1,7 @@
+
+# List the predicates and objects of all triples for a specified subject
+
+SELECT ?p ?o
+WHERE {
+    <http://vivo.ufl.edu/individual/n2474934521>  ?p ?o .
+}
