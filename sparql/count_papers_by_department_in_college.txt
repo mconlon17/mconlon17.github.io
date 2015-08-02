@@ -1,30 +1,25 @@
-# Count papers in 2012 by units in the College of Medicine
-# If the author list contains authors from multiple units
+# Count papers in 2015 by units in the College of Liberal Arts and Sciences
+# If the author list contains authors from multiple units in the college,
 # the paper is counted under each unit
 #
-SELECT ?home (SAMPLE(DISTINCT ?hlabel) AS ?label) (COUNT(DISTINCT ?x) AS ?count)
+SELECT (SAMPLE(DISTINCT ?hlabel) AS ?label) (COUNT(DISTINCT ?x) AS ?count)
 WHERE {
 	?x a bibo:AcademicArticle .
 	?x vivo:dateTimeValue ?dv .
 	?dv vivo:dateTime ?d .
-	FILTER(regex(?d,"^2012"))
-	?x vivo:informationResourceInAuthorship ?a .
-	?a vivo:linkedAuthor ?auth .
-	?auth ufVivo:homeDept ?home .
-	?home rdfs:label ?hlabel .
-	{http://vivo.ufl.edu/individual/n166017 vivo:hasSubOrganization ?home .}
-	UNION
-	{http://vivo.ufl.edu/individual/n166017 vivo:hasSubOrganization ?alevel1 .
-	?alevel1 vivo:hasSubOrganization ?home .}
-	UNION
-	{http://vivo.ufl.edu/individual/n166017 vivo:hasSubOrganization ?blevel1 .
-	?blevel1 vivo:hasSubOrganization ?blevel2 .
-	?blevel2 vivo:hasSubOrganization ?home}
-	UNION
-	{http://vivo.ufl.edu/individual/n166017 vivo:hasSubOrganization ?clevel1 .
-	?clevel1 vivo:hasSubOrganization ?clevel2 .
-	?clevel2 vivo:hasSubOrganization ?clevel3 .
-	?clevel3 vivo:hasSubOrganization ?home .}
+	FILTER(regex(?d,"^2014"))
+	
+	?x vivo:relatedBy ?a .
+	?a a vivo:Authorship .
+	?a vivo:relates ?auth .
+	?auth a ufVivo:UFEntity .
+	?auth a foaf:Person .
+	
+    {<http://vivo.ufl.edu/individual/n8858828> ufVivo:homeDeptFor ?auth .
+     <http://vivo.ufl.edu/individual/n8858828> rdfs:label ?hlabel .}
+    UNION
+    {<http://vivo.ufl.edu/individual/n8858828> obo:BFO_0000051 ?o .
+    ?o ufVivo:homeDeptFor ?auth . ?o rdfs:label ?hlabel .} 
 	}
-GROUP BY ?home
+GROUP BY ?label
 ORDER BY DESC(?count)
