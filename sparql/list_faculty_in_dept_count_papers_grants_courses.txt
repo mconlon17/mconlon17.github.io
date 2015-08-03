@@ -1,0 +1,35 @@
+
+# List Faculty in Unit.  Include count of papers, grants, courses taught
+
+SELECT ?uri (MIN(?label) AS ?label) (COUNT(distinct ?a) as ?npubs) (Count(distinct ?g) AS ?ngrants)
+    (COUNT (distinct ?t) AS ?ncourses)
+WHERE {
+
+  # Current positions in unit and subunits of the unit.  Current positions are those
+  # without end dates
+
+  {?pos vivo:relates <http://vivo.ufl.edu/individual/n207803> . ?pos a vivo:Position .}
+  UNION
+  {<http://vivo.ufl.edu/individual/n207803> obo:BFO_0000051 ?sub .
+   ?pos vivo:relates ?sub . ?pos a vivo:Position .}
+  ?pos vivo:dateTimeInterval ?dt .
+  OPTIONAL {?dt vivo:end ?end . }
+  FILTER (!BOUND(?end))
+
+  # Positions are for faculty members
+
+  ?pos ?relates ?uri .
+  ?uri a vivo:FacultyMember .
+
+  # Faculty members have names
+
+  ?uri rdfs:label ?label .
+
+  # Collect all the authorships, if any.  Grants, if any, Teaching, if any.
+
+  OPTIONAL { ?uri vivo:relatedBy ?a . ?a a vivo:Authorship .}
+  OPTIONAL { ?uri vivo:relatedBy ?g . ?g a vivo:Grant .}
+  OPTIONAL { ?uri obo:RO_0000053 ?t . ?t a vivo:TeacherRole .}
+
+}
+GROUP BY ?uri
