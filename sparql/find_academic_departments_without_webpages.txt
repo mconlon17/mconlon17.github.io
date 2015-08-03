@@ -7,8 +7,8 @@ WHERE {
     ?uri a vivo:AcademicDepartment .
     ?uri a ufVivo:UFEntity .
     ?uri rdfs:label ?label .
-    FILTER NOT EXISTS { ?uri vivo:webpage ?w . }
-    OPTIONAL { ?uri vivo:hasSuccessorOrganization ?o }
+    FILTER NOT EXISTS { ?uri obo:ARG_2000028 ?vcard . ?vcard vcard:hasURL ?u . }
+    OPTIONAL { ?uri vivo:hasSuccessorOrganization ?o } # look to see if the org has a successor
     FILTER(!bound(?o))
 }
 ORDER BY ?label
