@@ -11,9 +11,9 @@ WHERE
 {
 	{
 	SELECT ?uri 
-		(SAMPLE(DISTINCT ?xname) AS ?name)
+		(MIN(DISTINCT ?xname) AS ?name)
 		(COUNT(DISTINCT ?a) AS ?npubs)
-		(COUNT(DISTINCT ?p) AS ?ngrants)
+		(COUNT(DISTINCT ?i) AS ?ngrants)
 		(COUNT(DISTINCT ?t) AS ?ncourses)      
 	WHERE {
 		?uri a ufVivo:UFEntity .
@@ -23,13 +23,14 @@ WHERE
 		MINUS { ?uri a vivo:NonAcademic .}
 		MINUS { ?uri ufVivo:ufid ?ufid .} # if they have a ufid, keep them
 		MINUS { ?uri a vivo:Postdoc .}
+		MINUS { ?uri a ufVivo:VIVOOptIn . }  # If they opt in, keep them
 		MINUS { ?uri a ufVivo:CourtesyFaculty .}
 		MINUS { ?uri a ufVivo:TemporaryFaculty .}
 		MINUS { ?uri a ufVivo:Housestaff .}
 		MINUS { ?uri a ufVivo:ClinicalFaculty .} 
-		OPTIONAL { ?uri vivo:authorInAuthorship ?a .}
-		OPTIONAL { ?uri vivo:hasPrincipalInvestigatorRole ?p .}
-		OPTIONAL { ?uri vivo:hasTeacherRole ?t .}
+		OPTIONAL { ?uri vivo:relatedBy ?a . ?a a vivo:AuthorShip .}
+		OPTIONAL { ?uri obo:RO_000053 ?i . ?i a vivo:InvestigatorRole .}
+		OPTIONAL { ?uri obo:RO_000053 ?t . ?t a vivo:TeacherRole .}
 		}
 	GROUP BY ?uri
 	}
