@@ -11,10 +11,10 @@ WHERE {
 ?org_uri a foaf:Organization .
 ?org_uri a ufVivo:UFEntity .
 OPTIONAL {?org_uri vitro1:mostSpecificType ?type .}
-OPTIONAL {?org_uri vivo:subOrganizationWithin ?parent .}
+OPTIONAL {?org_uri obo:BFO_0000050 ?parent .}
 OPTIONAL {?org_uri vitro2:mainImage ?image . }
 OPTIONAL {?org_uri rdfs:label ?label .}
-OPTIONAL {?org_uri vivo:webpage ?webpage .}
+OPTIONAL {?org_uri obo:ARG_2000028 ?vcard . ?vcard vcard:hasURL ?url_thing . ?url_thing vcard:url ?webpage .}
 OPTIONAL {?org_uri ufVivo:sponsorID ?sponsor .}
 OPTIONAL {?org_uri ufVivo:deptID ?deptid .}
 OPTIONAL {?org_uri vivo:hasSuccessorOrganization ?successor .}
