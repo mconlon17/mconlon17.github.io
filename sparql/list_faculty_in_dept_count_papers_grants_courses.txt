@@ -33,3 +33,4 @@ WHERE {
 
 }
 GROUP BY ?uri
+ORDER BY ?label
