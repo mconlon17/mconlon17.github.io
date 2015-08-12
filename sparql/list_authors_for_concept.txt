@@ -1,3 +1,6 @@
+# For a specified concept, find the authors with papers on that concept.
+# Count the number of papers and list authors by number of publications
+
 SELECT ?uri (SAMPLE(?name) AS ?name) (COUNT (DISTINCT ?a) AS ?npapers)
 WHERE {
   ?p vivo:hasSubjectArea <http://vivo.ufl.edu/individual/n9272944689> .
@@ -12,4 +15,4 @@ WHERE {
   ?uri rdfs:label ?name .
 }
 GROUP BY ?uri
-ORDER BY DESC(?npapers)
+ORDER BY DESC(?npapers) ?name
