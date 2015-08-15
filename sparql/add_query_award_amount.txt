@@ -1,6 +1,6 @@
-#
-# Select one of the dup[licated award amopunts to add back to VIVO
-#
+
+# Select one of the duplicated award amounts to add back to VIVO
+
 CONSTRUCT {?uri vivo:totalAwardAmount ?amount}
 WHERE {
     {
