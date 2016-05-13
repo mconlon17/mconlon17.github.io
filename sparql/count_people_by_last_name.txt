@@ -1,0 +1,12 @@
+#  Count the occurrence of last names in VIVO
+
+SELECT ?lastname (Count(distinct ?uri) as ?n)
+WHERE {
+  ?uri a ufVivo:UFCurrentEntity .
+  ?uri a foaf:Person .
+  ?uri obo:ARG_2000028 ?vcard .
+  ?vcard vcard:hasName ?name .
+  ?name vcard:familyName ?lastname .
+}
+GROUP BY ?lastname
+ORDER BY DESC(?n)
