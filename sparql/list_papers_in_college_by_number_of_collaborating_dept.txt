@@ -2,13 +2,13 @@
 # For each paper count the number of UF participating departments in
 # the author list.
 #
-SELECT ?uri (count(distinct ?hname) as ?ndept) (min(distinct ?title) as ?title)
+SELECT ?uri (count(distinct ?hname) as ?ndept) (min(distinct ?xtitle) as ?title)
 WHERE {
     ?uri a bibo:AcademicArticle .
     ?uri vivo:dateTimeValue ?dv .
     ?dv vivo:dateTime ?d .
     FILTER(regex(?d,"^2014"))
-    ?uri rdfs:label ?title .
+    ?uri rdfs:label ?xtitle .
 
     ?uri vivo:relatedBy ?a .
     ?a a vivo:Authorship .
