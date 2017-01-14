@@ -8,7 +8,7 @@ $(document).ready(function(){
         $.get("http://openvivo.org/tpf/core",
             {subject: "http://openvivo.org/a/orcid0000-0002-1304-8447", predicate: "", object: ""},
             function(data, status){
-                alert("Data: " + data + "\nStatus: " + status);
+                console.log("Data: " + data + "\nStatus: " + status);
             },
             "application/n-triples");
     });
