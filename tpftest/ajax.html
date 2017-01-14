@@ -10,7 +10,8 @@ $(document).ready(function(){
         url: "http://openvivo.org/tpf/core",
         data: {subject: "http://openvivo.org/a/orcid0000-0002-1304-8447", predicate: "", object: ""},
         success: function(data, status){
-                document.getElementById("output").innerHTML = "Data: " + data + "\<br\>Status: " + status;
+            document.getElementById("output").innerHTML = "Data: " + data + "\<br\>Status: " + status;
+            }
         });
     });
 });
