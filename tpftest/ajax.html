@@ -6,7 +6,7 @@
 $(document).ready(function(){
     $("button").click(function(){
         $.ajax({
-        headers: {Accept : "application/turtle; charset=utf-8"},
+        headers: {Accept : "text/turtle; charset=utf-8"},
         url: "http://openvivo.org/tpf/core",
         data: {subject: "http://openvivo.org/a/orcid0000-0002-1304-8447", predicate: "", object: ""},
         success: function(data, status){
