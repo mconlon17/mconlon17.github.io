@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#go").click(function(){
+        $.ajax({
+        headers: {Accept : "application/n-triples; charset=utf-8"},
+        url: "http://openvivo.org/tpf/core",
+        data: {subject: "http://openvivo.org/a/orcid0000-0002-1304-8447", predicate: "", object: "", page: "1"},
+        success: function(data, status){
+            document.getElementById("output").innerHTML = data.replace(/</g,'&lt;').replace(/>/g,'&gt;');
+            }
+        });
+    });
+});
+</script>
+</head>
+<body>
+<button id="go">TPF request via Ajax of OpenVIVO</button>
+<pre id="output"></pre>
+
+</body>
+</html>
