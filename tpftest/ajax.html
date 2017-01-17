@@ -6,9 +6,9 @@
 $(document).ready(function(){
     $("button").click(function(){
         $.ajax({
-        headers: {Accept : "text/turtle; charset=utf-8"},
+        headers: {Accept : "application/rdf+xml; charset=utf-8"},
         url: "http://openvivo.org/tpf/core",
-        data: {subject: "http://openvivo.org/a/orcid0000-0002-1304-8447", predicate: "", object: "", page: "2"},
+        data: {subject: "http://openvivo.org/a/orcid0000-0002-1304-8447", predicate: "", object: "", page: "1"},
         success: function(data, status){
             document.getElementById("output").innerHTML = data.replace(/</g,'&lt;').replace(/>/g,'&gt;');
             }
@@ -20,7 +20,7 @@ $(document).ready(function(){
 <body>
 
 <button>TPF request via Ajax of OpenVIVO</button>
-<textarea id="output" rows="150" cols="80"></textarea>
+<textarea id="output" rows="150" cols="150"></textarea>
 
 </body>
 </html>
