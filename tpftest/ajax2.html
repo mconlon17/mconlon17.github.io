@@ -6,7 +6,7 @@
 $(document).ready(function(){
     $("#go").click(function(){
         $.ajax({
-        headers: {Accept : "application/n-triples; charset=utf-8"},
+        headers: {Accept : " + format.value + "; charset=utf-8"},
         url: "http://openvivo.org/tpf/core",
         data: {subject: "http://openvivo.org/a/orcid0000-0002-1304-8447", predicate: "", object: "", page: "1"},
         success: function(data, status){
@@ -18,6 +18,8 @@ $(document).ready(function(){
 </script>
 </head>
 <body>
+<input type="radio" name="format" value="text/turtle" checked> Turtle<br>
+<input type="radio" name="format" value="application/n-triples"> N-Triples<br>
 <button id="go">TPF request via Ajax of OpenVIVO</button>
 <pre id="output"></pre>
 
