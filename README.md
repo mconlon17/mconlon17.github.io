@@ -11,7 +11,7 @@
     5. Remove URI from VIVO
     6. Merge URI
     7. Link checker for VIVO
-    8. Rapir phone numbers
+    8. Repair phone numbers
     9. Name parts
 1. Info Out for software created to help manage VIVO and to display results from VIVO
     1. Biosketch maker
@@ -26,6 +26,7 @@
 # Tools I like so far
 
 1. Python.  I use it pretty raw.  I write procedurally, mostly.
+1. rdflib for python.  Amazing.  Really great.
 1. D3.  Weird and wonderful.
 1. Twitter Bootstrap.  Finally a good way to use css to make great looking web sites. And as a bonus, they
 are "responsive" displaying beautifully on different size displays, right down to phones.  Mobility first!
