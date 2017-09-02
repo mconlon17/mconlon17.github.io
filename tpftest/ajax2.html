@@ -6,7 +6,7 @@
 var fmt = "text/turtle"
 $(document).ready(function(){
     $("#go").click(function(){
-        $.ajax({
+        $.ajax{(
         headers: {Accept : fmt + "; charset=utf-8"},
         url: "http://openvivo.org/tpf/core",
         data: {subject: "http://openvivo.org/a/orcid0000-0002-1304-8447", predicate: "", object: "", page: "1"},
