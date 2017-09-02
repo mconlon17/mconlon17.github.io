@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="VIVO, data, information, software, tools, blog, python, D3, Conlon, Florida">
+	<meta name="description" content="Some VIVO Things is a web site by Mike Conlon of the University of Florida
+		that describes software and tools such as python and D3, for getting data into VIVO and for getting 
+		information out. A blog describes experiences with VIVO.">
+    <meta name="author" content="Mike Conlon">
+	<link rel="shortcut icon" type="image/x-icon" href="/assets/ico/favicon.ico">  
+	<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/assets/css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="/assets/css/blog.css" rel="stylesheet">
+
+    <title>Some VIVO Things Blog</title>
+	
+	<style>
+	body {
+		padding-top: 70px;
+		padding-bottom: 30px;
+		}
+
+	.theme-dropdown .dropdown-menu {
+		display: block;
+		position: static;
+		margin-bottom: 20px;
+		}
+
+	.theme-showcase > p > .btn {
+		margin: 5px 0;
+		}
+	</style>
+	
+  </head>
+
+  <body role="document">
+  
+  <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Some VIVO Things</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="/data">Data In</a></li>
+            <li><a href="/info">Info Out</a></li>
+            <li class="active"><a href="/blog">The Blog</a></li>
+			<li><a href="/about">About</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">More <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="http://www.amazon.com/VIVO-Scholarly-Networking-Discovery-Synthesis/dp/1608459934/ref=sr_1_1?ie=UTF8&qid=1391973550&sr=8-1&keywords=vivo+conlon">The VIVO Book</a></li>
+                <li><a href="http://www.amazon.com/Semantic-Working-Ontologist-Second-Edition/dp/0123859654/ref=sr_1_1?ie=UTF8&qid=1391973643&sr=8-1&keywords=semantic+web+for+the+working+ontologist">The Semantic Web for the Working Ontologist</a></li>
+				<li class="divider"></li>
+                <li class="dropdown-header">Some VIVO sites</li>                
+				<li><a href="http://vivo.ufl.edu">University of Florida VIVO</a></li>
+				<li><a href="http://research-hub.griffith.edu.au/">Griffith University Research Hub</a></li>
+				<li class="divider"></li>
+                <li class="dropdown-header">Related CTSA projects</li>
+                <li><a href="http://research.icts.uiowa.edu/polyglot/">CTSAsearch</a></li>
+                <li><a href="http://ctsaconnect.org/">CTSAconnect</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+	
+	<div class="container theme-showcase" role="main">
+  
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+	<div class="jumbotron">
+        <h1>Some VIVO Things Blog</h1>
+		<p class="lead">Musings on the community, software, data, use, and whatever else comes to mind.</p>
+    </div>
+	
+	<!-- Here's the blog -->
+	
+	<div class="container">
+	
+		<div class="row">
+		
+			<div class="col-md-9 blog-main">
+			
+				<div class="blog-post">
+					<h2 class="blog-post-title">Is VIVO Fair?</h2>
+					<p class="blog-post-meta">August 27, 2017 by <a href="http://vivo.ufl.edu/individual/mconlon">Mike</a></p>
+					<p><i>NOTE: Apologies in advance.  This post is a bit longer than I would like, and contains some unavoidable technical
+						terms.  I have tried to provide citations for each term, recognizing that this will further lengthen the reading
+						for some.  I felt it was better to address this topic in one post rather than break it in two.  I hope that is
+						good for all.</i></p>
+					<p>The FAIR data principles (https://goo.gl/MFTfC6) developed by Force 11 (https://www.force11.org)
+						are increasingly popular and provide a means for assessing whether data is being shared in a
+						useful manner for others.</p>
+					<p>VIVO sites produce data in the form of assertions about the connected graph of research and
+						scholarship.  How does VIVO stack up against the FAIR data principles?</p>
+					<p>Findable. VIVO data is quite findable.  VIVO includes schema.org tags (http://schema.org) on
+						its pages to improve search engine finding.  VIVO has a registry of sites
+						(https://goo.gl/9Thaa8) with URLs for the sites.  VIVO sites can participate in Direct2Experts
+						(http://direct2experts.org/), another finding tool.  VIVO site data is aggregated by CTSAsearch
+						(https://goo.gl/Du3Fwn), yet another finding tool.  OpenVIVO (http://openvivo.org) provides
+						its data as constantly updated text files on the web.  These files are very easy to find using
+						a search engine (hint: search for "OpenVIVO data").  And with the addition of Triple Pattern
+						Fragments (TPF) (https://goo.gl/k1BtFQ), in the next release of VIVO, I expect additional tools
+						to be developed to find VIVO data.  The future is bright to further improve "find ability" of
+						VIVO data.</p>
+					<p>Accessible. If people can find your VIVO data, can they access it?  The answer is yes.  VIVO is
+						designed to share its data.  Every page in VIVO can be accessed as HTML, which browsers use to
+						render the page for humans to read, and as RDF (https://www.w3.org/RDF/), a machine readable
+						data format for computers to read.  This is one of VIVO's strongest features, and one of its
+						biggest secrets.  Programmers can access VIVO's data starting from almost any page in VIVO,
+						because VIVO provides a connected graph of scholarship and research.  Starting at a person, one
+						can find papers, leading to co-authors.  Starting at an organization, one can find people who
+						have positions in the organization.  Starting at a grant, one can find the funding agency,
+						investigators, and so on.  VIVO makes traversing the graph straightforward.</p>
+					<p>Additionally, sites may export their data to files accessible on the Internet, as OpenVIVO does,
+						or provide a SPARQL (https://en.wikipedia.org/wiki/SPARQL) endpoint.  The TPF feature in the
+						next release of VIVO will make VIVO data even easier to access.</p>
+					<p>Interoperable. VIVO data, modeled using the VIVO ontology, is amazingly interoperable.  Two sets
+						of VIVO data can be combined simply by putting them in the same file.  No other work is needed.
+						All VIVO sites and sites exporting VIVO data (there are many) are fully interoperable.  They
+						share the same data format (RDF) and the same representation/vocabulary (The VIVO Ontology).</p>
+					<p>Interoperability is lowered when sites do not use the same version of the VIVO ontology.  While
+						each version is a valid representation of scholarship, the ontology currently does not provide
+						equivalence between versions.  This must be done by software attempting to use multiple versions
+						of the ontology.  Future work may lower the effort currently needed to use multiple ontology
+						versions.</p>
+					<p>Interoperability can be lowered when VIVO sites extend the ontology in custom ways to represent
+						additional elements in VIVO, or to represent elements that should be common and in the ontology.
+						The VIVO community needs to work with sites to identify elements that should be in the common
+						ontology to avoid such customizations.</p>
+					<p>Similarly, interoperability can be lowered when sites use custom vocabulary to represent
+						research concepts.  The VIVO community needs more work to develop best practices for
+						presenting the concepts underlying research areas of scholars, and subject areas of their
+						works.</p>
+					<p>Reusable VIVO data, modeled by the VIVO ontology, achieves the highest standards for
+						reusability.  VIVO data is "Five Star Linked Data (https://goo.gl/GRN1RV)," a term coined by
+						Tim Berners-Lee. (https://goo.gl/rrjzmZ).  VIVO data is 1) on the web; 2) machine readable
+						structured data; 3) uses a non-proprietary format; 4) published using open W3C standards; and
+						5) links to other open data.  Anyone on the Internet can reuse VIVO data.</p>
+					<p>And yet, there are things we can do to improve reusability.  We can clarify the license under
+						which sites provide VIVO data, and provide that information with the data.  We can clarify
+						where sites obtained their data and provide that information with the data.  VIVO's current
+						practice is to "inherit" provenance information from the source providing the information --
+						that is, if the data came from site x, we currently assume site x provided the data.  We can
+						go further and assert such facts explicitly in the VIVO data.  We currently assume that VIVO
+						data is provided by each site in a manner that supports reuse with attrbution.  We can clarify
+						this by providing a license assertion in the VIVO data.</p>
+					<p>Each VIVO site determines for itself how best to meet the FAIR data principles, if at all.
+						Some sites share their data freely, while others rely on the delivered VIVO software to share
+						their data.  Still others have their data behind firewalls, preventing sharing.  Unshared data
+						cannot be FAIR.</p>
+					<p>Each of the FAIR data principles has sub-headings providing further guidance regarding what it
+						means to be Findable, Accessible, Interoperable, and Reusable.  I urge you take a look at the
+						principles and consider how VIVO can be improved and how your data practices can be improved to
+						further the goal of VIVO data as FAIR data.</p>
+					<p>There is more that VIVO can do to improve VIVO's data as FAIR data.  We are all learning how
+						to be FAIR.  I think VIVO Is doing well and can do better.</p>
+					<p>So perhaps a short working answer to "Is VIVO FAIR?" is: 1) the VIVO project supports the FAIR
+						data principles; 2) the VIVO ontology is a strong element of VIVO which supports the FAIR data
+						principles;  3) the VIVO software provides features which support the FAIR data principles;
+						and 4) VIVO sites provide VIVO data and each can share data according to the FAIR data
+						principles.</p>
+					<p>If you are involved with a VIVO site and are non-technical, you may wish to discuss with your
+						technical staff how your site is addressing FAIR data principles.  If you are at a VIVO site
+						and are technical, you may wish to speak with the non-technical members of the team regarding
+						how your site should address FAIR data principles.  Working together, sites should be able to
+						align their practices with their institutional requirements and with the FAIR data
+						principles.</p>
+					<p>What do you think?  What more can the VIVO project do to promote data sharing using the FAIR
+						data principles?  What features could be added to the ontology or to the software to make
+						sharing data even more natural?</p>
+				</div><!-- End Post -->
+				
+				<p class="blog-post-meta"><a href="the-vivo-conference.html">Previous Posts</a></p>
+			
+			</div><!-- End the blog-main -->
+			
+			<div class="col-md-3">
+				<div class="sidebar-module sidebar-module-inset">
+					<h4>About VIVO</h4>
+					<p>VIVO is an open source, semantic web application for organizing information.  
+					VIVO is often used by academic institutions to represent the scholarly work
+					of their faculty, staff and students. See <a href="http://vivoweb.org" class="btn
+					btn-xs btn-info">the 
+					VIVO Project Web Site</a> for more info.</p>
+				</div>
+				<div class="sidebar-module">
+					<h4>Archives</h4>
+					<ol class="list-unstyled">
+					  <li><a href="an-expert-finder-for-vivo.html">March 2014</a></li>
+					  <li><a href="ctsa-social-network-analysis-at-sunbelt-xxxiv.html">February 2014</a></li>
+					</ol>
+				</div>
+				<div class="sidebar-module">
+					<h4>Elsewhere</h4>
+					<ol class="list-unstyled">
+					  <li><a href="https://github.com/mconlon17">GitHub</a></li>
+					  <li><a href="http://twitter.com/mconlon17">Twitter</a></li>
+					  <li><a href="http://facebook.com/mconlon">Facebook</a></li>
+					  <li><a href="http://vivo.ufl.edu/individual/mconlon">VIVO</a></li>
+					</ol>
+				</div>
+			</div><!-- /.blog-sidebar -->
+			
+		</div><!-- End blog row -->
+		</div><!-- End blog container -->
+
+		<hr>
+
+		<footer>
+		<p><a href="http://vivo.ufl.edu/individual/mconlon">Mike Conlon</a>, 
+	    2017. Licensed under <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share Alike 3.0 Unported License</a>.</p>
+		VIVO is a project of <a href="http://duraspace.org">Duraspace</a>. 
+		Visit the <a href="http://vivoweb.org">The VIVO Project Web Site</a> and <a href="https://wiki.duraspace.org/display/VIVO">The VIVO Wiki</a>
+		</footer>	
+
+	</div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
