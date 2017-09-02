@@ -80,7 +80,7 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
 	<div class="jumbotron">
         <h1>Some VIVO Things Blog</h1>
-		<p class="lead">Musings on the community, ecosystem, software, data, use, and whatever else comes to mind.</p>
+		<p class="lead">Musings on the ecosystem, community, software, data, use, and whatever else comes to mind.</p>
     </div>
 	
 	<!-- Here's the blog -->
@@ -92,27 +92,113 @@
 			<div class="col-md-9 blog-main">
 			
 				<div class="blog-post">
-					<h2 class="blog-post-title">The VIVO Conference, August 6-8, Austin, Texas</h2>
-					<p class="blog-post-meta">July 6, 2014 by <a href="http://vivo.ufl.edu/individual/mconlon">Mike</a></p>
-					<p>This year, VIVO will hold its fifth annual conference.  The conference brings together an eclectic group of people – developers, scientists, implementers, vendors, university administrators, non-profits, ontologists, funding agency representatives and more.  The first day consists of workshops, followed by two days of presentations and opportunities for meeting people and growing the VIVO community.</p>
-					<p>While we have papers, and posters, key notes, and invited speakers, it’s not your typical academic conference.  Most conferences exist for the purpose of presenting the academic work of the people chosen to present.  The VIVO conference has that, but the purpose is quite different.  The VIVO conference exists to build community.  To build community, we share our work with each other.  We also seek out people who are interested in similar topics and find time to talk through opportunities for collaboration and growth.  The conference is designed with long breaks so people have the time to stop by after talks and come to share ideas with each other.  The conference runs on a conference-wide session schedule – all session breaks occur simultaneously so that people mix after sessions and people in different sessions can share what they have seen and heard.</p>
-					<p>The first conference was held at the New York Hall of Science in 2010.  Built for the 1964 World’s Fair in Flushing New York, the Hall of Science is a children’s museum.  The conference breakout sessions were held in laboratories.  The general sessions were held in a beautiful auditorium.  The poster session was held in a gallery in which all the posters were displayed around the walls of the large oval room, visible to all simultaneously.  Several of the speakers, myself included, had visited the hall as children.  The children of 2010 experienced the museum along with the VIVO conference attendees – children and conference attendees mingling and chatting and having lunch together and having a great time.  One of the attendees told me “I was here as a child, and it reminds me why I became a scientist.”  Another told me “This is the best conference I have ever attended.” And a third said “Thank you.  When I heard we’d be mixed with children, I thought it was crazy.  But the energy and enthusiasm is infectious, amazing.  Every conference should be like this.”</p>
-					<p>Our second conference was at the Gaylord Hotel in Washington DC.  A massive conference center with outstanding amenities, the settings could not have been more different.  The day before the workshops, an earthquake hit the DC area, slightly damaging parts of the hotel.  The VIVO team gathered in a parking lot, and eventually retreated to a restaurant waiting for the hotel to be reopened and hoping the conference could continue.  The hotel was reopened.  We had a fire drill in the middle of the opening keynote.  On the closing day of the conference, a hurricane bore down on DC and people scrambled to move flights up and escape the storm.  Despite the distractions, the conference was a great success.  The poster session was held in the penthouse nightclub overlooking the Potomac River and Washington DC at night.  The breathtaking view, fantastic setting and enthusiastic attendees contributed to a memorable evening.</p>
-					<p>2012 brought us to Miami.  The conference sponsored a shuttle bus to South Beach for night time fun.  We had an opportunity to leave the posters up following the Thursday night session.  Friday, conference attendees could continue to discuss the work they had seen – bringing people by to continue discussions started the day before.</p>
-					<p>The 2013 conference was held in St. Louis.  The city provided a perfect setting.  The opening reception on the roof of the hotel was followed by a baseball game in Busch Stadium located next door.  The downtown area’s linear park full of food trucks provided a great lunch time opportunity for extended discussion.  In view of the arch and the Mississippi, attendees had a great opportunity to visit a beautiful city in a part of the country new to many.  As with previous conferences, the conference closed with a light hearted interactive session in which the attendees are asked questions about VIVO and their interests and they responded in real-time time using hand-held clickers.  This feedback is then used to shape the work of the VIVO community.</p>
-					<p>Austin, Texas is the site of the 2014 VIVO conference.  Austin is one of the most exciting emerging cities in the country, and bills itself as the “live music capital of the world.”  Home of many hi-tech companies, as well as a host of famous and not so famous bands, Austin is also known for its food and its nightlife.  The conference hotel is right across a beautiful lake from the downtown area with all it has to offer.  This year, for the first time, the VIVO conference is being held jointly with the Science of Team Science conference.  Attendees of one conference can attend all the sessions of the other.  The Science of Team Science conference is also in its fifth year and will bring a fascinating group of people to share their ideas.</p>
-					<p>I do hope you will be able to join us in Austin, August 6-8.  To register, please see <a href="http://vivoconference.org">the conference web site</a>.  See you in Austin!</p>
+					<h2 class="blog-post-title">Is VIVO Fair?</h2>
+					<p class="blog-post-meta">August 27, 2017 by <a href="http://vivo.ufl.edu/individual/mconlon">Mike</a></p>
+					<p><i>NOTE: Apologies in advance.  This post is a bit longer than I would like, and contains some unavoidable technical
+						terms.  I have tried to provide citations for each term, recognizing that this will further lengthen the reading
+						for some.  I felt it was better to address this topic in one post rather than break it in two.  I hope that is
+						good for all.</i></p>
+					<p><a href="https://goo.gl/MFTfC6">The FAIR Data Principles</a> developed by
+                        <a href="https://www.force11.org">Force 11</a>
+						are increasingly popular and provide a means for assessing whether data is being shared in a
+						useful manner for others.</p>
+					<p>VIVO sites produce data in the form of assertions about the connected graph of research and
+						scholarship.  How does VIVO stack up against the FAIR data principles?</p>
+					<p>Findable. VIVO data is quite findable.  VIVO includes
+                        <a href="http://schema.org">schema.org</a> tags on
+						its pages to improve search engine finding.  VIVO has a
+                        <a href="https://goo.gl/9Thaa8">registry of sites</a>
+                        with URLs for the sites.  VIVO sites can participate in
+                        <a href="http://direct2experts.org/">Direct2Experts</a>, another finding tool.  VIVO site data
+                        is aggregated by <a href="https://goo.gl/Du3Fwn">CTSAsearch</a>, yet another finding tool.
+                        <a href="http://openvivo.org">OpenVIVO</a> provides
+						its data as constantly updated text files on the web.  These files are very easy to find using
+						a search engine (hint: search for "OpenVIVO data").  And with the addition of
+                        <a href="https://goo.gl/k1BtFQ">Triple Pattern
+						Fragments (TPF)</a>, in the next release of VIVO, I expect additional tools
+						to be developed to find VIVO data.  The future is bright to further improve "find ability" of
+						VIVO data.</p>
+					<p>Accessible. If people can find your VIVO data, can they access it?  The answer is yes.  VIVO is
+						designed to share its data.  Every page in VIVO can be accessed as HTML, which browsers use to
+						render the page for humans to read, and as
+                        <a href="https://www.w3.org/RDF/">Resource Description Framework (RDF)</a>, a machine readable
+						data format for computers to read.  This is one of VIVO's strongest features, and one of its
+						biggest secrets.  Programmers can access VIVO's data starting from almost any page in VIVO,
+						because VIVO provides a connected graph of scholarship and research.  Starting at a person, one
+						can find papers, leading to co-authors.  Starting at an organization, one can find people who
+						have positions in the organization.  Starting at a grant, one can find the funding agency,
+						investigators, and so on.  VIVO makes traversing the graph straightforward.</p>
+					<p>Additionally, sites may export their data to files accessible on the Internet, as OpenVIVO does,
+						or provide a <a href="https://en.wikipedia.org/wiki/SPARQL">SPARQL</a> endpoint.  The TPF
+                        feature in the
+						next release of VIVO will make VIVO data even easier to access.</p>
+					<p>Interoperable. VIVO data, modeled using the VIVO ontology, is amazingly interoperable.  Two sets
+						of VIVO data can be combined simply by putting them in the same file.  No other work is needed.
+						All VIVO sites and sites exporting VIVO data (there are many) are fully interoperable.  They
+						share the same data format (RDF) and the same representation/vocabulary (The VIVO Ontology).</p>
+					<p>Interoperability is lowered when sites do not use the same version of the VIVO ontology.  While
+						each version is a valid representation of scholarship, the ontology currently does not provide
+						equivalence between versions.  This must be done by software attempting to use multiple versions
+						of the ontology.  Future work may lower the effort currently needed to use multiple ontology
+						versions.</p>
+					<p>Interoperability can be lowered when VIVO sites extend the ontology in custom ways to represent
+						additional elements in VIVO, or to represent elements that should be common and in the ontology.
+						The VIVO community needs to work with sites to identify elements that should be in the common
+						ontology to avoid such customizations.</p>
+					<p>Similarly, interoperability can be lowered when sites use custom vocabulary to represent
+						research concepts.  The VIVO community needs more work to develop best practices for
+						presenting the concepts underlying research areas of scholars, and subject areas of their
+						works.</p>
+					<p>Reusable VIVO data, modeled by the VIVO ontology, achieves the highest standards for
+						re-usability.  VIVO data is "<a href="https://goo.gl/GRN1RV">Five Star Linked Data</a>," a term
+                        coined by
+						<a href="https://goo.gl/rrjzmZ">Tim Berners-Lee</a>.  VIVO data is 1) on the web; 2) machine
+                        readable
+						structured data; 3) uses a non-proprietary format; 4) published using open W3C standards; and
+						5) links to other open data.  Anyone on the Internet can reuse VIVO data.</p>
+					<p>And yet, there are things we can do to improve re-usability.  We can clarify the license under
+						which sites provide VIVO data, and provide that information with the data.  We can clarify
+						where sites obtained their data and provide that information with the data.  VIVO's current
+						practice is to "inherit" provenance information from the source providing the information --
+						that is, if the data came from site x, we currently assume site x provided the data.  We can
+						go further and assert such facts explicitly in the VIVO data.  We currently assume that VIVO
+						data is provided by each site in a manner that supports reuse with attrbution.  We can clarify
+						this by providing a license assertion in the VIVO data.</p>
+					<p>Each VIVO site determines for itself how best to meet the FAIR data principles, if at all.
+						Some sites share their data freely, while others rely on the delivered VIVO software to share
+						their data.  Still others have their data behind firewalls, preventing sharing.  Unshared data
+						cannot be FAIR.</p>
+					<p>Each of the FAIR data principles has sub-headings providing further guidance regarding what it
+						means to be Findable, Accessible, Interoperable, and Reusable.  I urge you take a look at the
+						principles and consider how VIVO can be improved and how your data practices can be improved to
+						further the goal of VIVO data as FAIR data.</p>
+					<p>There is more that VIVO can do to improve VIVO's data as FAIR data.  We are all learning how
+						to be FAIR.  I think VIVO Is doing well and can do better.</p>
+					<p>So perhaps a short working answer to "Is VIVO FAIR?" is: 1) the VIVO project supports the FAIR
+						data principles; 2) the VIVO ontology is a strong element of VIVO which supports the FAIR data
+						principles;  3) the VIVO software provides features which support the FAIR data principles;
+						and 4) VIVO sites provide VIVO data and each can share data according to the FAIR data
+						principles.</p>
+					<p>If you are involved with a VIVO site and are non-technical, you may wish to discuss with your
+						technical staff how your site is addressing FAIR data principles.  If you are at a VIVO site
+						and are technical, you may wish to speak with the non-technical members of the team regarding
+						how your site should address FAIR data principles.  Working together, sites should be able to
+						align their practices with their institutional requirements and with the FAIR data
+						principles.</p>
+					<p>What do you think?  What more can the VIVO project do to promote data sharing using the FAIR
+						data principles?  What features could be added to the ontology or to the software to make
+						sharing data even more natural?</p>
 				</div><!-- End Post -->
 				
-				<p class="blog-post-meta"><a href="an-expert-finder-for-vivo.html">Previous Posts</a></p>
+				<p class="blog-post-meta"><a href="the-vivo-conference.html">Previous Posts</a></p>
 			
 			</div><!-- End the blog-main -->
 			
 			<div class="col-md-3">
 				<div class="sidebar-module sidebar-module-inset">
 					<h4>About VIVO</h4>
-					<p>VIVO is an open source, semantic web application for organizing information.  
-					VIVO is often used by academic institutions to represent the scholarly work
+					<p>Vitro is an open source, semantic web application for organizing information.
+					VIVO is used by academic institutions to represent the scholarly work
 					of their faculty, staff and students. See <a href="http://vivoweb.org" class="btn
 					btn-xs btn-info">the 
 					VIVO Project Web Site</a> for more info.</p>
@@ -140,13 +226,15 @@
 
 		<hr>
 
-	    <footer>
-		<p><a href="http://vivo.ufl.edu/individual/mconlon">Mike Conlon</a>,
-		2017. Licensed under <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share Alike 3.0 Unported License</a>.<br/>
+		<footer>
+		<p><a href="http://vivo.ufl.edu/individual/mconlon">Mike Conlon</a>, 2017. Licensed under 
+            <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share Alike 
+                3.0 Unported License</a>.<br/>
 		VIVO is a project of <a href="http://duraspace.org">Duraspace</a>. 
-		Visit the <a href="http://vivoweb.org">The VIVO Project Web Site</a> and <a href="https://wiki.duraspace.org/display/VIVO">The VIVO Wiki</a>
+		Visit the <a href="http://vivoweb.org">The VIVO Project Web Site</a> and 
+            <a href="https://wiki.duraspace.org/display/VIVO">The VIVO Wiki</a>
 		</p>
-		</footer>
+        </footer>
 
 	</div> <!-- /container -->
 
