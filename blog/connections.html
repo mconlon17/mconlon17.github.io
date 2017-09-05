@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="VIVO, data, information, software, tools, blog, python, D3, Conlon, Florida">
+	<meta name="description" content="Some VIVO Things is a web site by Mike Conlon of the University of Florida
+		that describes software and tools such as python and D3, for getting data into VIVO and for getting 
+		information out. A blog describes experiences with VIVO.">
+    <meta name="author" content="Mike Conlon">
+	<link rel="shortcut icon" type="image/x-icon" href="/assets/ico/favicon.ico">  
+	<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/assets/css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="/assets/css/blog.css" rel="stylesheet">
+
+    <title>Some VIVO Things Blog</title>
+	
+	<style>
+	body {
+		padding-top: 70px;
+		padding-bottom: 30px;
+		}
+
+	.theme-dropdown .dropdown-menu {
+		display: block;
+		position: static;
+		margin-bottom: 20px;
+		}
+
+	.theme-showcase > p > .btn {
+		margin: 5px 0;
+		}
+	</style>
+	
+  </head>
+
+  <body role="document">
+  
+  <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Some VIVO Things</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="/data">Data In</a></li>
+            <li><a href="/info">Info Out</a></li>
+            <li class="active"><a href="/blog">The Blog</a></li>
+			<li><a href="/about">About</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">More <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="http://www.amazon.com/VIVO-Scholarly-Networking-Discovery-Synthesis/dp/1608459934/ref=sr_1_1?ie=UTF8&qid=1391973550&sr=8-1&keywords=vivo+conlon">The VIVO Book</a></li>
+                <li><a href="http://www.amazon.com/Semantic-Working-Ontologist-Second-Edition/dp/0123859654/ref=sr_1_1?ie=UTF8&qid=1391973643&sr=8-1&keywords=semantic+web+for+the+working+ontologist">The Semantic Web for the Working Ontologist</a></li>
+				<li class="divider"></li>
+                <li class="dropdown-header">Some VIVO sites</li>                
+				<li><a href="http://vivo.ufl.edu">University of Florida VIVO</a></li>
+				<li><a href="http://research-hub.griffith.edu.au/">Griffith University Research Hub</a></li>
+				<li class="divider"></li>
+                <li class="dropdown-header">Related CTSA projects</li>
+                <li><a href="http://research.icts.uiowa.edu/polyglot/">CTSAsearch</a></li>
+                <li><a href="http://ctsaconnect.org/">CTSAconnect</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+	
+	<div class="container theme-showcase" role="main">
+  
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+	<div class="jumbotron">
+        <h1>Some VIVO Things Blog</h1>
+		<p class="lead">Musings on the ecosystem, community, software, data, use, and whatever else comes to mind.</p>
+    </div>
+	
+	<!-- Here's the blog -->
+	
+	<div class="container">
+	
+		<div class="row">
+		
+			<div class="col-md-9 blog-main">
+			
+				<div class="blog-post">
+					<h2 class="blog-post-title">Connections</h2>
+					<p class="blog-post-meta">July 6, 2017 by <a href="http://vivo.ufl.edu/individual/mconlon">Mike</a></p>
+                    <p>When I first saw VIVO, I was struck by the simplicity and power of its connective nature.  Anything could be connected to anything through the elegant syntax of the semantic web.  Over the years, there has been a focus on "profiles" -- assemblies of works of individual scholars, in formats that resemble department web pages, or curriculum vitae, or biosketches.  This focus has created a perception that VIVO is a profile system.  That's unfortunate.</p>
+                    
+                    <p>VIVO can display profiles, and there is great value in using an open source, semantic web application to display profiles.  But VIVO is much more than a profile system.  VIVO creates an integrated "graph" of the entities it represents.  Graphs are the natural structures for representing connections.  Triples are the natural means of representing graphs in computers.</p>
+                    
+                    <p>What connections are of interest?  A simple, but perhaps not very useful answer is "all."  We want to know which people used what resource.  We want to know which grants funded what datasets.  We want to know what events exhibited which presentations.</p>
+                    
+                    <p>Suppose we wish to make connections between six kinds of things -- works, people, datasets, grants, organizations, and people.  We can, of course, imagine other kinds of things we might wish to connect -- events, resources, locations, time periods, and so on.  For six kinds of things, there are 15 kinds of pairs of things -- grants and people, works and datasets, plus the six reflexive pairings -- people to people, works to works, etc.</p>
+                    
+                    <p>We can start to think of the kinds of connections there might be between various kinds of things.  Consider people and grants.  We have a person funded by a grant.  A person is the principal investigator of a grant.  A  person might follow a grant, in the way a person might follow another person in social media.  There could be many types of connections between people and grants.  Each can be modeled in VIVO.</p>
+                    
+                    <p>We can start to think of a thing and the types of connections that thing might have to other things.  Consider a publication as a thing.  The publication is connected to a journal, to its authors, to a time of publication.  The publication is connected to its publisher through its journal, to various organizations through its authors, to a full text representation in a repository, to metrics regarding its use, possibly to grant funding, to software and datasets, to concepts, and to other publications through references and citations.  In other words, the publication is a node in a connected graph consisting of other elements of scholarship.</p>
+                    
+                    <p>Some connections have their own data -- data about the connection itself.  A person has a position in an organization.  The position is a connection between the person and the organization indicating employment.  The employment has a time period, and a title.  The position typically has a type.  Each of these pieces of data are about the connection between the person and the organization.</p>
+                    
+                    <p>Each connection is recorded as data in VIVO.  VIVO has data about the connected things, and the nature of the connection between the things, and data about the connection between the things.  Of all of these, the person has a bit of a special place in a VIVO.  There has been more effort put into representing people and their connections, and more effort in displaying people and their connections.  This is the so-called profile, and leads to the characterization of VIVO as a profile system.  But underneath, VIVO is a connected graph, and we can have any amount of detail we wish about any of the elements of the graph.</p>
+                    
+                    <p>What if we made profiles of events rather than people?  What would an event "profile" look like?  What information do we want to see? How far into the graph of connections would we reach?  Are there important connections between events?  Between events and other things in the connected graph of scholarship?  What would we be able to know that is difficult to know now?  The same questions can be asked of any of the graph entities.</p>
+                    
+                    <p>What are the connections of interest?  What connections are already in VIVO and which should be added?  What is missing in order to make the connections of interest?  If we had the connections we need, how would we use them to better understand and use the scholarship of our organization and of the world?  What tools and capabilities would we create?</p>
+                    
+                    <p>In future columns, I'll share some thoughts about these questions.  Please share your thoughts with others.  It is through sharing that we will grow our understanding of the utility of connections, and of what we must build next.</p>
+
+			
+				</div><!-- End Post -->
+				
+				<p class="blog-post-meta"><a href="the-vivo-conference.html">Previous Posts</a></p>
+			
+			</div><!-- End the blog-main -->
+			
+			<div class="col-md-3">
+				<div class="sidebar-module sidebar-module-inset">
+					<h4>About VIVO</h4>
+					<p>Vitro is an open source, semantic web application for organizing information.
+					VIVO is used by academic institutions to represent the scholarly work
+					of their faculty, staff and students. See <a href="http://vivoweb.org" class="btn
+					btn-xs btn-info">the 
+					VIVO Project Web Site</a> for more info.</p>
+				</div>
+				<div class="sidebar-module">
+					<h4>Archives</h4>
+					<ol class="list-unstyled">
+					  <li><a href="an-expert-finder-for-vivo.html">March 2014</a></li>
+					  <li><a href="ctsa-social-network-analysis-at-sunbelt-xxxiv.html">February 2014</a></li>
+					</ol>
+				</div>
+				<div class="sidebar-module">
+					<h4>Elsewhere</h4>
+					<ol class="list-unstyled">
+					  <li><a href="https://github.com/mconlon17">GitHub</a></li>
+					  <li><a href="http://twitter.com/mconlon17">Twitter</a></li>
+					  <li><a href="http://facebook.com/mconlon">Facebook</a></li>
+					  <li><a href="http://vivo.ufl.edu/individual/mconlon">VIVO</a></li>
+					</ol>
+				</div>
+			</div><!-- /.blog-sidebar -->
+			
+		</div><!-- End blog row -->
+		</div><!-- End blog container -->
+
+		<hr>
+
+		<footer>
+		<p><a href="http://vivo.ufl.edu/individual/mconlon">Mike Conlon</a>, 2017. Licensed under
+            <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share Alike
+                3.0 Unported License</a>.<br/>
+		VIVO is a project of <a href="http://duraspace.org">Duraspace</a>. 
+		Visit the <a href="http://vivoweb.org">The VIVO Project Web Site</a> and
+            <a href="https://wiki.duraspace.org/display/VIVO">The VIVO Wiki</a>
+		</p>
+        </footer>
+
+	</div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
