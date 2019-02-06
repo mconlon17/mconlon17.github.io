@@ -3,30 +3,40 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-table {
+#customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
-  border-spacing: 0;
   width: 100%;
+}
+
+#customers td, #customers th {
   border: 1px solid #ddd;
+  padding: 8px;
 }
 
-th, td {
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
   text-align: left;
-  padding: 16px;
-}
-
-tr:nth-child(even) {
-  background-color: #f2f2f2
+  background-color: #4CAF50;
+  color: white;
 }
 </style>
 </head>
 <body>
-<table class="table table-striped table-bordered">
+  <h1>vivo.owl</h1>
+  Annotation properties, classes, datatype properties, object properties
+  
+<table id="customers">
 <thead>
 <tr>
-<th>t</th>
-<th>s</th>
-<th>l</th>
+<th>Type</th>
+<th>IRI</th>
+<th>Label</th>
 </tr>
 </thead>
 <tbody>
